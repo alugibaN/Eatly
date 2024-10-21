@@ -1,15 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./components/app/app";
+import { createRoot } from "react-dom/client";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import ThemeProvaider from "./theme/ThemeProvider";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+const domRoot = document.getElementById("root");
+const root = createRoot(domRoot);
+root.render(
+  <BrowserRouter>
+    <ThemeProvaider>
+      <App />
+    </ThemeProvaider>
+  </BrowserRouter>
 );
-
-// Если вы хотите начать измерять производительность в своем приложении, передайте функцию
-// для регистрации результатов (например, reportWebVitals(console.log))
-// или отправьте в конечную точку аналитики. Подробнее: https://bit.ly/CRA-vitals
-// reportWebVitals();
