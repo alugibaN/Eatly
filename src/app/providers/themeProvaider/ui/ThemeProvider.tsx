@@ -1,5 +1,5 @@
 import { FC, useMemo, useState, ReactNode } from "react";
-import { LOCAL_SORAGE_THEME_KEY, Theme, ThemeContext } from "./Theme.context";
+import { LOCAL_SORAGE_THEME_KEY, Theme, ThemeContext } from "../lib/Theme.context";
 
 const defaultTheme = localStorage.getItem(LOCAL_SORAGE_THEME_KEY) as Theme || Theme.LIGHT // Получаем значение с локального хранилища если значение пустое то как значение по умолчанию ставим светлую тему 
 
