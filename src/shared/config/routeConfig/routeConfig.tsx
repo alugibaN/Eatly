@@ -3,18 +3,18 @@ import { HomePage } from "pages/homePage/index";
 import { RouteProps } from "react-router-dom";
 
 export enum AppRoutes {
-  HOUM = "houm",
+  HOME = "home",
   ABOUT = "about",
 };
 
 export const RoutePath: Record<AppRoutes, string> = {
-  [AppRoutes.HOUM]: '/',
-  [AppRoutes.ABOUT]: '/bout'
+  [AppRoutes.HOME]: '/',
+  [AppRoutes.ABOUT]: '/about'
 };
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
-  [AppRoutes.HOUM]: {
-    path: RoutePath.houm,
+  [AppRoutes.HOME]: {
+    path: RoutePath.home,
     element: <HomePage/>
   },
   [AppRoutes.ABOUT]: {

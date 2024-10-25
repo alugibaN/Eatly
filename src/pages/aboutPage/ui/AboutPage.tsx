@@ -1,6 +1,6 @@
 const AboutPage =()=>{
   return(
-    <div className={`app`}>
+    <div >
         About Page
     </div>
   );
