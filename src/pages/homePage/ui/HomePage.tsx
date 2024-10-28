@@ -1,10 +1,12 @@
-import { classNames } from "shared/lib/classNames/ClassNames";
+import { useTranslation } from "react-i18next";
 
 const HomePage =()=>{
-  
+  const {t} = useTranslation()
   return(
     <div>
-        Home Page
+       {t("Домашняя страница")}
+  
+
     </div>
   );
 };
