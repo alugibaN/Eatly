@@ -1,4 +1,4 @@
-declare module '*.module.scss' {
+declare module "*.module.scss" {
     const classes: { [key: string]: string };
     export = classes;
   }
@@ -12,4 +12,4 @@ declare module '*.module.scss' {
     export default SVG
   }
 
-  declare const __IS_DEV__:boolean;
+declare const __IS_DEV__:boolean;

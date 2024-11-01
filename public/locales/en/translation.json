@@ -2,6 +2,9 @@
   "Текстовый поле": "Test example",
   "Перевод":"Translation",
   "Домашняя страница": "Home page",
-  "Язык": "English"
+  "Язык": "English",
+  "Произошла непредвиденная ошибка":"An unexpected error has occurred",
+  "Обновить страницу":"Refresh the page"
+
 
 }
