@@ -16,7 +16,8 @@ export default [
             "react/react-in-jsx-scope": "off",
             "react/jsx-uses-react": "error",
             "react/jsx-uses-vars": "error",
-            "no-undef": "off"
+            "no-undef": "off",
+            "max-len": ["error", { ignoreComents:true, code: 100}]
         },
         "settings": {
             "react": {

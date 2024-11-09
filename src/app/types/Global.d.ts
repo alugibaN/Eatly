@@ -13,3 +13,11 @@ declare module "*.module.scss" {
   }
 
 declare const __IS_DEV__:boolean;
+
+// declare module '@jest/expect' {
+//   export interface Matchers<R extends void | Promise<void>>
+//     extends TestingLibraryMatchers<
+//       ReturnType<typeof expect.stringContaining>,
+//       R
+//     > {}
+// }

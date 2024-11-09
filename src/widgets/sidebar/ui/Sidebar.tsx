@@ -2,7 +2,7 @@ import React from "react";
 import { classNames } from "shared/lib/classNames/ClassNames";
 import cls from "./Sidebar.module.scss";
 import { useState } from "react";
-import { ThemeSwitcher } from "widgets/themeSwitcher/index";
+import { ThemeSwitcher } from "widgets/ThemeSwitcher/index";
 import LangSwitcher from "widgets/LangSwwitcher/LangSwitcher";
 
 interface SidebarProps {
@@ -17,6 +17,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
       
     return (
         <div
+        data-testid = "sidebar"
             className={classNames(cls.sidebar, { [cls.collapsed]: collapsed }, [
                 className,
             ])}
