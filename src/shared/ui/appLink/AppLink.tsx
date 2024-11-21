@@ -5,8 +5,9 @@ import { Link, LinkProps } from "react-router-dom"
 import { FC } from "react"
 
 export enum AppLinkTheme {
-  PRIMARY= "primary",
-  SECONDARY= "secondary"
+  PRIMARY = "primary",
+  SECONDARY = "secondary",
+  BORDER_PRIMARY = 'border_primary'
 }
 
 interface AppLinkProps extends LinkProps {
@@ -25,7 +26,7 @@ const  AppLink: FC <AppLinkProps> = (props:AppLinkProps)=> {
     return (
         <Link 
             to={to} 
-            className={classNames(cls.app_ink, {}, [className, cls[theme]])} 
+            className={classNames(cls.app__link, {}, [className, cls[theme]])} 
             {...otherProps}
         >
             {children}

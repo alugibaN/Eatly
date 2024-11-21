@@ -1,0 +1,13 @@
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../shared/assets/fonts/Roboto-Black.ttf') format('ttf'),
+       url('../../shared/assets/fonts/Roboto-Bold.ttf') format('ttf'),
+       url('../../shared/assets/fonts/Roboto-Medium.ttf') format('ttf'),
+       url('../../shared/assets/fonts/Roboto-Regular.ttf') format('ttf'),
+       url('../../shared/assets/fonts/Roboto-Light.ttf') format('ttf'),
+       url('../../shared/assets/fonts/Roboto-Thin.ttf') format('ttf');
+  font-weight: 100, 300, 400, 500, 700, 900;
+  font-style: normal;
+  font-display: swap;
+}

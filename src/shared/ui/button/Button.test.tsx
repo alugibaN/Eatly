@@ -1,4 +1,4 @@
-import Button, { ThemeButton } from "./Button";
+import Button, { ButtonTheme } from "./Button";
 import { render, screen } from "@testing-library/react";
 import React from "react";
 
@@ -11,7 +11,7 @@ describe("classNames", () => {
 
 
   test("Test clear theme", () => {
-    render(<Button theme={ThemeButton.CLEAR}>TEST</Button>);
+    render(<Button theme={ButtonTheme.CLEAR}>TEST</Button>);
     // Проверяем, что текст "Test"  внутри компонента Button существует
     expect(screen.getByText("TEST")).toHaveClass("button");
     screen.debug();

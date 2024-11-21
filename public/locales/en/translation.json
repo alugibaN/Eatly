@@ -1,10 +1,18 @@
 {
   "Текстовый поле": "Test example",
-  "Перевод":"Translation",
+  "Перевод": "Translation",
   "Домашняя страница": "Home page",
   "Язык": "English",
-  "Произошла непредвиденная ошибка":"An unexpected error has occurred",
-  "Обновить страницу":"Refresh the page"
-
-
+  "Произошла непредвиденная ошибка": "An unexpected error has occurred",
+  "Обновить страницу": "Refresh the page",
+  "Короткий язык": "EN",
+  "Меню": "Menu",
+  "Блог": "Blog",
+  "Контакты": "Contact",
+  "Ценообразование": "Pricing",
+  "Авторизация": "Login",
+  "Регистрация": "Sign Up",
+  "БОЛЕЕ 1000 ПОЛЬЗОВАТЕЛЕЙ": "OVER 1000 USER",
+  "Наслаждайтесь Едой Со Всего Мира": "Enjoy Foods All Over The World",
+  "20 доллоров": "EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get paychecks up to two days early. Get a $20 bonus"
 }

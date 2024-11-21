@@ -1,0 +1,24 @@
+.banner{
+  display: flex;
+}
+.bunner__text{
+  width: 50vw;
+}
+.banner__food{
+  width: 50vw;
+  width: 500px;
+  height:500px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+};
+
+.bunner__food_img{
+  position: absolute;
+  left: -45px; top:5px
+}
+.bunner__text_buttons{
+  display: flex;
+}

@@ -4,6 +4,8 @@ import cls from "./Sidebar.module.scss";
 import { useState } from "react";
 import { ThemeSwitcher } from "widgets/ThemeSwitcher/index";
 import LangSwitcher from "widgets/LangSwwitcher/LangSwitcher";
+import Button, { ButtonSize, ButtonTheme } from "shared/ui/button/Button";
+import AppLink, { AppLinkTheme } from "shared/ui/appLink/AppLink";
 
 interface SidebarProps {
   className?: string;
@@ -16,16 +18,39 @@ export const Sidebar = ({ className }: SidebarProps) => {
     };
       
     return (
-        <div
-        data-testid = "sidebar"
-            className={classNames(cls.sidebar, { [cls.collapsed]: collapsed }, [
-                className,
-            ])}
+        <div 
+            data-testid = "sidebar" 
+            className={classNames(cls.sidebar, { [cls.collapsed]: collapsed }, [className,])}
         >
-            <button type="button" onClick={onToggle}>toggle</button>
+            <div className={cls.items}>
+            <AppLink
+                    theme={AppLinkTheme.SECONDARY}
+                    to={"/"}
+                    className={cls.main_link}
+                >
+                    Главная
+                </AppLink>
+                <AppLink
+                    theme={AppLinkTheme.SECONDARY}
+                    to={"/about"}
+                    className={cls.main_link}
+                >
+                    О сайте
+                </AppLink>
+            </div>
+            <Button 
+                type="button" 
+                onClick={onToggle} 
+                className={cls.collapseBtn} 
+                theme={ButtonTheme.BACGROUND_INVERTED} 
+                square
+                size={ButtonSize.L}
+            > 
+                {collapsed? ">": "<"}
+            </Button>
             <div className={cls.switchers}>
                 <ThemeSwitcher/>
-                <LangSwitcher className={cls.lang}/>
+                <LangSwitcher short={collapsed} className={cls.lang}/>
             </div>
         </div>
     );

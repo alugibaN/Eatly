@@ -1,16 +1,42 @@
 .navbar{
   width:100%;
-  height:var(--navbar-height);
+  height:150px;
   background: var(--inverted-bg-color);
   display: flex;
-  align-items: center;
+  align-items: center; justify-content: center;
   padding: 20px;
+  padding: auto 0 
 };
+.navbar__header{
+  max-width: 90vw;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 15vw 40vw 15vw 20vw;
+  grid-template-areas:
+  "logo links gap  auth";
+  margin: auto; 
+  padding-top:40px;
+  border-bottom: 1px solid #D0D0D0;
+  padding-bottom: 30px;
+  font-size: 17;
+
+}
+
+.logo{
+  grid-area: logo
+}
 
 .links{
-margin-left: auto;
+  display: flex;
+  gap: 10px;
+  grid-area:links;
+  font-weight: 500
 };
 
-.main_link{
-  margin-right:15px ;
+.auth{
+  display: flex;
+  justify-content: end;
+  gap:10px;
+  grid-area: auth;
+  font-weight: 700
 }

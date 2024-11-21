@@ -1,8 +1,14 @@
 .app.light{
-  --bg-color: #e8e8ea;
-  --inverted-bg-color: #070761;
+  --bg-color: #F9F9F9;
+  --inverted-bg-color: #F9F9F9;
+  --secondary-color: #6C5FBC;
+  
+  --button-color: #6C5FBC;
+  --button-primary-color: #F0EFF5;
+  --button-standart-color:#606060;
+
   --primary-color: #190cd4;
-  --secondary-color: #e00404;
-  --inverted-primary-color: #049604;
-  --inverted-secondary-color: #04ff04;
+  // --secondary-color: #e00404;
+  --inverted-primary-color: #04ff04;
+  --inverted-secondary-color: #049604;
 }
