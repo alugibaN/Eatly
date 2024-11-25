@@ -1,5 +1,8 @@
 {
   "name": "production_project_code_course",
+  "imports": {
+    "*": "./src/*"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

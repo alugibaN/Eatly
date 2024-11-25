@@ -1,8 +1,6 @@
-// import React from "react";
 import cls from "./Navbar.module.scss";
 import { classNames } from "shared/lib/classNames/ClassNames";
-import Logo from "shared/assets/icons/Logo.svg";
-import Button from "shared/ui/button/Button";
+import Logo from "shared/assets/icons/logo.svg";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import AppLink, { AppLinkTheme } from "shared/ui/appLink/AppLink";
@@ -29,7 +27,7 @@ function Navbar(props: NavbarProps) {
       <div className={classNames(cls.auth, {}, [])}>
       <LangSwitcher/>
         <AppLink to={"/"}>{t("Авторизация")}</AppLink>
-        <AppLink theme={AppLinkTheme.SECONDARY} to={"/"}>{t("Регистрация")}</AppLink>
+        <AppLink className="pd" theme={AppLinkTheme.SECONDARY} to={"/"}>{t("Регистрация")}</AppLink>
       </div>
         </header>
     // </div>

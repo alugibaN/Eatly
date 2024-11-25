@@ -1,24 +1,138 @@
 .banner{
   display: flex;
+  width: 1130px;
+  margin: auto;
+  position: relative;
+  margin-bottom: 12vh;
 }
 .bunner__text{
-  width: 50vw;
+  margin-top: 7.5%;
+  width: 50%;
+};
+
+.bunner__text_users{
+  font-family: "Roboto";
+  padding-top: 20px;
+  color:#201F1F;
+  opacity: 0.5;
+
 }
-.banner__food{
-  width: 50vw;
-  width: 500px;
-  height:500px;
-  background-color: var(--secondary-color);
-  border-radius: 50%;
+.bunner__text_title{
+  padding-top:  17px;
+  font-size: 4rem;
+  color:#201F1F;
+}
+.bunner__text_title_world{
+  color: #5C4EAE;
+}
+.bunner__text_subtitle{
+  max-width:500px;
+  color: #A0A0A0;
+  font-size: 1.15rem;
+};
+
+
+
+
+.bunner__text_buttons{
+  margin-top: 15%;
+  gap:28px ;
   display: flex;
-  justify-content: center;
+};
+.bunner__text_trustpilot{
+  margin-top: 30px;
+}
+
+
+.banner__food{
+  margin-left: 6.3%;
+  margin-top: 10.6% ;
+  width: 50%;
+  display: flex; 
+  justify-content:space-around;
+
+};
+
+.bunner__food_circle{
+  background-color: #685BB8;
+  border-radius: 50%;
   position: relative;
+  width: 380px; height: 380px;
 };
 
 .bunner__food_img{
   position: absolute;
-  left: -45px; top:5px
-}
-.bunner__text_buttons{
+  top: 11px; left: -32px;
+  z-index: 10;
+  width: 400px; height:400px;
+};
+
+.bunner__food_graph{
+  position: absolute;
+  width:262px; height:280px;
+  z-index: 11;
+  bottom: -110px; left: -120px
+};
+
+
+
+
+
+
+.banner__food_mini{
+  width: 300px; height: 90px;
   display: flex;
+  gap: 15px;
+  position:absolute;
+  top:-54px; right: -76px;
+  z-index: 13;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  // box-shadow: 12px 12px 6px 10px #201F1F;
+  color: #323142;
+  padding: 5px 10px 5px 10px;
+};
+
+.banner__food_mini_img{
+  width:70px; height: 70px;
+
+};
+
+.banner__food_mini_container{
+  // gap:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+};
+
+.banner__food_mini_title{
+  font-size: 1rem;
+};
+
+.banner__food_mini_subtitle{
+  margin-top: 9px;
+  margin-bottom: 6px;
+  font-size: 0.7rem;
+};
+
+.banner__food_mini_time{
+  position: absolute;
+  font-size: 10px;
+  opacity: 0.5;
+  bottom: 12px; right: 25px;
+};
+
+.bunner__food_illustration{
+  position: absolute;
+  bottom: -100px; left: -130px
+};
+.bunner__food_illustrator_top{
+  position:absolute;
+  top:-81px; right: -115px;
+  z-index: 20;
 }
+.bunner__food_arrow{
+  position: absolute;
+  right: -55px; top:49px
+}
+

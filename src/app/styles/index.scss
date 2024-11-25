@@ -5,12 +5,11 @@
 @use "./fonts.scss";
 
 .app {
-  font: var(--font-m);
+  font-size: var(--font-m);
   background: var(--bg-color);
   color: var(--primary-color);
-  min-height: 100vh;
-  min-width: 100vw;
-  font-family: "Roboto";
+  font-family: 'Roboto';
+  overflow: hidden;
 }
 
 .content-page {
@@ -19,6 +18,5 @@
 
 .page-wrapper {
   flex-grow: 1;
-  padding: 20px;
 }
  
