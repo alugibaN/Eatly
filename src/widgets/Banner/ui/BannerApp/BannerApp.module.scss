@@ -1,27 +1,26 @@
 .bunner{
   display: flex;
-  // position: relative;
-  // align-items: center;
-  justify-items: center;
-  // padding-top: 95px; 
-  // padding-left: 198px;
+  padding-top: 95px; padding-left: 60px; padding-bottom: 107px;
 };
 
 .bunner__app_img{
   width:340px; height: 569px;
-  margin-top: 90px;
-  // margin-left: auto;
+  margin-right: 110px;
+  margin-left: auto;
 };
 .bunner__text_container{
+  position: relative;
   display: flex;
   flex-direction: column;
-  width: 700px;
-  // gap:30px;   tc  padding: 83px; 
-  // margin-right: auto;
+  align-items: flex-start;
+  width: 560px;
+  gap:30px;
+  padding: 83px;
+  margin-right: auto;
 };
 .bunner__text_title{
   color: #18181B;
-  font-size: 3.2em;
+  font-size: 2.7em;
   width: 400px;
 };
 
@@ -31,8 +30,14 @@ color: #6C5FBC;
 
 .bunner__text_list{
   color: #676767; 
-  font-size: 1.3em;
-  margin-left: 40px;
-  margin-top: 18px;
+  font-size: 1em;
+  margin-left: 20px 
 };
+.bunner__text_button{
+  width:100px
+}
+.bunner__vectore{
+  position: absolute;
+  left: 210px; bottom: 110px;
+}
 
