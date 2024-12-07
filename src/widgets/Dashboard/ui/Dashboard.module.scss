@@ -1,0 +1,51 @@
+
+.Dashboard{
+  height: 100vh;
+  width:1234px;
+  margin: 0 auto;
+};
+.banners{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.banner__food_mini{
+  width: 350px; height: 90px;
+  display: flex;
+  gap: 15px;
+
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 12px 12px 6px 10px #201F1F;
+  color: #323142;
+  padding: 5px 10px 5px 10px;
+};
+
+.banner__food_mini_img{
+  width:70px; height: 70px;
+
+};
+
+.banner__food_mini_container{
+  // gap:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+};
+
+.banner__food_mini_title{
+  font-size: 1rem;
+};
+
+.banner__food_mini_subtitle{
+  margin-top: 9px;
+  margin-bottom: 6px;
+  font-size: 0.7rem;
+};
+
+.banner__food_mini_time{
+  position: absolute;
+  font-size: 10px;
+  opacity: 0.5;
+  bottom: 12px; right: 25px;
+};

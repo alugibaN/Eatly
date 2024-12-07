@@ -12,22 +12,22 @@
 //   font-display: swap;
 // }
 
-// @font-face {
-//   font-family: 'Roboto';
-//   src: local('Roboto-Regular'), url("../../shared/assets/fonts/Roboto.ttf") format('ttf');
-//   // url('../../shared/assets/fonts/Roboto.ttf') format('ttf');
-//   // font-weight: 100, 300, 400, 500, 700, 900;
-//   // font-style: normal;
-//   font-display: swap;
-// }
-// @font-face {
-//   font-family: 'Poppins';
-//   src: local('Poppins'), url("../../shared/assets/fonts/Poppins.otf") format('otf');
-//   // url('../../shared/assets/fonts/Roboto.ttf') format('ttf');
-//   // font-weight: 100, 300, 400, 500, 700, 900;
-//   // font-style: normal;
-//   font-display: swap;
-// }
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto-Regular'), url("../../shared/assets/fonts/Roboto.ttf") format('ttf');
+  // url('../../shared/assets/fonts/Roboto.ttf') format('ttf');
+  // font-weight: 100, 300, 400, 500, 700, 900;
+  // font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url("../../shared/assets/fonts/Poppins.otf") format('otf');
+  // url('../../shared/assets/fonts/Roboto.ttf') format('ttf');
+  // font-weight: 100, 300, 400, 500, 700, 900;
+  // font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'Roboto';

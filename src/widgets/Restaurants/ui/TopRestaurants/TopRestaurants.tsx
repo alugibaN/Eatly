@@ -15,7 +15,7 @@ const TopRestaurants = (props: TopRestaurantsProps) => {
   const { className } = props;
   const { t } = useTranslation();
   return (
-    <div className={classNames(cls.TopRestaurants, {}, [className])}>
+    <section className={classNames(cls.TopRestaurants, {}, [className])}>
       <div className={cls. restaurant}>
         <h2 className={cls.restaurant__title}>
           {t("Наш Топ")}
@@ -71,7 +71,7 @@ const TopRestaurants = (props: TopRestaurantsProps) => {
           {/* <AppLink className={cls.link} to={"/"}>View All <Arrow/></AppLink> */}
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 
