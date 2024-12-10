@@ -7,7 +7,7 @@ import Arrow from "../../../shared/assets/icons/arrow.svg";
 import IllustrationBottom from "../../../shared/assets/icons/illustration-bottom.svg";
 import IllustrationTop from "../../../shared/assets/icons/illustration-top.svg";
 import { useTranslation } from "react-i18next";
-import AppLink, { AppLinkTheme } from "shared/ui/appLink/AppLink";
+import AppLink, { AppLinkSize, AppLinkTheme } from "shared/ui/appLink/AppLink";
 import BannerKPI from "./BannerKPI/BaneerKPI";
 
 interface BannerProps {
@@ -22,17 +22,21 @@ const Banner = (props: BannerProps) => {
       <div className={cls.bunner__text}>
         <div className={cls.bunner__text_container}>
           <p className={cls.bunner__text_users}>
-            ---{t("БОЛЕЕ 1000 ПОЛЬЗОВАТЕЛЕЙ")}
+          {t("БОЛЕЕ 1000 ПОЛЬЗОВАТЕЛЕЙ")}
           </p>
           <h1 className={cls.bunner__text_title}>
             {t("Наслаждайтесь Едой Со Всего")}
             <span className={cls.bunner__text_title_world}>{t("Мира")}</span>
           </h1>
-          <h2 className={cls.bunner__text_subtitle}>{t("20 доллоров")}</h2>
+          <h2 className={cls.bunner__text_subtitle}>
+            {t("Вкусная помощь")}
+            <span className={cls.bunner__text_subtitle_bonus}>{t("20 бонусов")}</span>
+            </h2>
           <div className={cls.bunner__text_buttons}>
             <AppLink
               className={cls.banner__text_button}
-              theme={AppLinkTheme.SECONDARY}
+              theme={AppLinkTheme.PRIMARY}
+              size={AppLinkSize.sizeL}
               to={"/"}
             >
               {t("Начать")}

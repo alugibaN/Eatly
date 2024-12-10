@@ -1,8 +1,16 @@
 
 .Dashboard{
-  height: 100vh;
+  border-top: 1px solid #D7D7D7;
+  border-bottom: 1px solid #D7D7D7;
+  // height: 100vh;
   width:1234px;
   margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin-bottom:200px;
+  display: flex; 
+  justify-content: space-between;
+  color:#18181B
 };
 .banners{
   display: flex;
@@ -49,3 +57,75 @@
   opacity: 0.5;
   bottom: 12px; right: 25px;
 };
+
+
+
+
+.dashboard__purchases{
+width:534px; height:390px;
+background-color: #FFFFFF;
+display: flex;
+flex-direction: column;
+border-radius: 30px;
+padding: 40px 40px;
+
+}
+.purchases{
+  display: flex;
+  justify-content: space-between;
+  height: 20%
+  };
+.purchases__title{
+ font-size: 1.8em;
+}
+.purchases__select{
+
+}
+.purchases_spisok{
+list-style: none;
+display: flex;
+flex-direction: column;
+gap:20px;
+height: 60%;
+}
+.purchases__item{
+  width:100%;
+  border:#323142 1px solid;
+  border-radius: 10px;
+  height: 40%;
+
+}
+.purchases_item_title{
+
+}
+.purchases_item_subtitle{
+
+}
+.purchases__item{
+display: flex;
+padding: 10px 20px;
+}
+.purchases__money{
+  background-color: #F2FDF6;
+  width:50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.purchases__wallelt{
+  background-color: #F4F0FF;
+  width:50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.purchases_item_title{
+
+}
+.purchases_item_subtitle{
+
+}

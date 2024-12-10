@@ -9,7 +9,7 @@ interface LangSwitcherProps {
   short?: boolean;
 }
 
-function LangSwitcher({ className, short }: LangSwitcherProps) {
+function LangSwitcher({ className, short =true }: LangSwitcherProps) {
     const { t, i18n } = useTranslation();
     const toggle = () => {
         i18n.changeLanguage(i18n.language === "ru" ? "en" : "ru");

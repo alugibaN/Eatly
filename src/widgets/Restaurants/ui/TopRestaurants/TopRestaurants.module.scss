@@ -1,7 +1,7 @@
 .TopRestaurants{
   display: flex;
   justify-content: center;
-  width: 1130px; max-height: 750px;
+  width: var(--component-width-max); max-height: 750px;
   border-top: 1px solid #D0D0D0;
   border-bottom: 1px solid #D0D0D0;
   margin:auto;
@@ -18,7 +18,9 @@
   align-items: center;
 };
 .restaurant__title{
-  font-size: 3em;
+  font-weight: 700;
+  margin-top: 55px;
+  font-size: 3.3em;
   color:#323142
 };
 .restaurant__title_last{

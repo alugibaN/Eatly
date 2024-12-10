@@ -10,9 +10,15 @@ export enum AppLinkTheme {
   BORDER_PRIMARY = 'border_primary'
 }
 
+export enum AppLinkSize {
+    sizeM = "size_m",
+    sizeL = "size_l",
+}
+
 interface AppLinkProps extends LinkProps {
   className?:string,
   theme?: AppLinkTheme,
+  size?: AppLinkSize,  
 }
 
 const  AppLink: FC <AppLinkProps> = (props:AppLinkProps)=> {
@@ -21,6 +27,7 @@ const  AppLink: FC <AppLinkProps> = (props:AppLinkProps)=> {
         className, 
         children, 
         theme = AppLinkTheme.PRIMARY, 
+        size = AppLinkSize.sizeM,
         ...otherProps
     } = props
     return (

@@ -38,13 +38,15 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
 
     const fileLoader = {
     // Так же можно в регулярку добавить шрифты для обработки
-        test: /\.(png|jpg|gif|ttf)$/,
-        use: [
-            {
-                loader: "file-loader",
-                options: {},
-            },
-        ],
+        test: /\.(png|jpg|gif|ttf|woff2)$/,
+        type: 'asset/resource',
+
+        // use: [
+        //     {
+        //         loader: "file-loader",
+        //         options: {},
+        //     },
+        // ],
     };
 
     return [cssLoader, babelLoader, typescriptLoader, svgLoader, fileLoader];

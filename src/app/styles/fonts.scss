@@ -1,37 +1,49 @@
-
-// @font-face {
-//   font-family: 'Roboto';
-//   src: url('../../shared/assets/fonts/Roboto-Black.ttf') format('ttf'),
-//        url('../../shared/assets/fonts/Roboto-Bold.ttf') format('ttf'),
-//        url('../../shared/assets/fonts/Roboto-Medium.ttf') format('ttf'),
-//        url('../../shared/assets/fonts/Roboto-Regular.ttf') format('ttf'),
-//        url('../../shared/assets/fonts/Roboto-Light.ttf') format('ttf'),
-//        url('../../shared/assets/fonts/Roboto-Thin.ttf') format('ttf');
-//   font-weight: 100, 300, 400, 500, 700, 900;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
 @font-face {
   font-family: 'Roboto';
-  src: local('Roboto-Regular'), url("../../shared/assets/fonts/Roboto.ttf") format('ttf');
-  // url('../../shared/assets/fonts/Roboto.ttf') format('ttf');
-  // font-weight: 100, 300, 400, 500, 700, 900;
-  // font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: local('Poppins'), url("../../shared/assets/fonts/Poppins.otf") format('otf');
-  // url('../../shared/assets/fonts/Roboto.ttf') format('ttf');
-  // font-weight: 100, 300, 400, 500, 700, 900;
-  // font-style: normal;
+  src: url('../../shared/assets/fonts/Roboto-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: local('Roboto-Regular'), url("../../shared/assets/fonts/Poppins-Regular.ttf") format('ttf');
-  // url('../../shared/assets/fonts/Roboto.ttf') format('ttf');
+  src: url('../../shared/assets/fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:
+       url("../../shared/assets/fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: 
+       url("../../shared/assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weights: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  src:
+       url("../../shared/assets/fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: 
+       url("../../shared/assets/fonts/Roboto-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
   font-display: swap;
 }
