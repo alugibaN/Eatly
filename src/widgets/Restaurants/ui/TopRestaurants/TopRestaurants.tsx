@@ -16,7 +16,7 @@ const TopRestaurants = (props: TopRestaurantsProps) => {
   const { t } = useTranslation();
   return (
     <section className={classNames(cls.TopRestaurants, {}, [className])}>
-      <div className={cls. restaurant}>
+      {/* <div className={cls. restaurant}> */}
         <h2 className={cls.restaurant__title}>
           {t("Наш Топ")}
           <span className={cls.restaurant__title_last}>{t("Рестаранов")}</span>
@@ -24,11 +24,11 @@ const TopRestaurants = (props: TopRestaurantsProps) => {
 
         <ul className={cls.restaurant__spisok}>
           <li className={cls.restaurant__spisok_item}>
-            <img src={ChickenRest} alt="ChickenRest" />
-            <div className={cls.restaurant__container__text}>
+            <img className={cls.restaurant__img} src={ChickenRest} alt="ChickenRest" />
+            {/* <div className={cls.restaurant__container__text}> */}
             <span className={cls.restaurant__healthy}>Healthy</span>
             <h3 className={cls.restaurant__spisok_item_title}>The Chicken King</h3>
-            <div className={cls.restaurant__container_text}>
+            <div className={cls.restaurant__container_text_time}>
               <span className={cls.restaurant__category}>
                 <p>24{t("мин")}</p>
                 <Start />
@@ -36,14 +36,14 @@ const TopRestaurants = (props: TopRestaurantsProps) => {
               </span>
               <Bookmark />
             </div>
-            </div>
+            {/* </div> */}
           </li>
           <li className={cls.restaurant__spisok_item}>
-            <img src={ChickenRest} alt="ChickenRest" />
-            <div className={cls.restaurant__container__text}>
+          <img className={cls.restaurant__img} src={ChickenRest} alt="ChickenRest" />
+            {/* <div className={cls.restaurant__container__text}> */}
             <span className={cls.restaurant__healthy}>Healthy</span>
             <h3 className={cls.restaurant__spisok_item_title}>The Chicken King</h3>
-            <div className={cls.restaurant__container_text}>
+            <div className={cls.restaurant__container_text_time}>
               <span className={cls.restaurant__category}>
                 <p>24{t("мин")}</p>
                 <Start />
@@ -51,14 +51,14 @@ const TopRestaurants = (props: TopRestaurantsProps) => {
               </span>
               <Bookmark />
             </div>
-            </div>
+            {/* </div> */}
           </li>
           <li className={cls.restaurant__spisok_item}>
-            <img src={ChickenRest} alt="ChickenRest" />
-            <div className={cls.restaurant__container__text}>
+          <img className={cls.restaurant__img} src={ChickenRest} alt="ChickenRest" />
+            {/* <div className={cls.restaurant__container__text}> */}
             <span className={cls.restaurant__healthy}>Healthy</span>
             <h3 className={cls.restaurant__spisok_item_title}>The Chicken King</h3>
-            <div className={cls.restaurant__container_text}>
+            <div className={cls.restaurant__container_text_time}>
               <span className={cls.restaurant__category}>
                 <p>24{t("мин")}</p>
                 <Start />
@@ -66,11 +66,11 @@ const TopRestaurants = (props: TopRestaurantsProps) => {
               </span>
               <Bookmark />
             </div>
-            </div>
+            {/* </div> */}
           </li>
           {/* <AppLink className={cls.link} to={"/"}>View All <Arrow/></AppLink> */}
         </ul>
-      </div>
+      {/* </div> */}
     </section>
   );
 };
