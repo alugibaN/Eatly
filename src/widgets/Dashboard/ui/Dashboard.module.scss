@@ -2,35 +2,45 @@
 .Dashboard{
   border-top: 1px solid #D7D7D7;
   border-bottom: 1px solid #D7D7D7;
-  // height: 100vh;
-  width:1234px;
+  width:var(--component-width-max);
   margin: 0 auto;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  margin-bottom:200px;
+  padding-top: 11.5vh;
+  padding-bottom: 15.3vh;
   display: flex; 
   justify-content: space-between;
   color:#18181B
 };
+
+.dashboard__title{
+  font-weight: 900;
+  font-size: 4em;
+  max-width: 600px;
+  line-height: 70px;
+}
+.dashboard__purchases_words{
+  color: var(--button-bg-primary-color)
+}
+
 .banners{
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 5vh;
 }
 .banner__food_mini{
-  width: 350px; height: 90px;
+  margin-left: -10px;
+  width: 385px; height: 100px;
   display: flex;
   gap: 15px;
-
   border-radius: 10px;
   background-color: #FFFFFF;
-  box-shadow: 12px 12px 6px 10px #201F1F;
   color: #323142;
   padding: 5px 10px 5px 10px;
+  position: relative;
 };
 
 .banner__food_mini_img{
-  width:70px; height: 70px;
+  width:100px; height: 100px;
 
 };
 
@@ -42,18 +52,21 @@
 };
 
 .banner__food_mini_title{
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500
 };
 
 .banner__food_mini_subtitle{
-  margin-top: 9px;
+  margin-top: 8px;
   margin-bottom: 6px;
-  font-size: 0.7rem;
+  font-size: 0.8em;
+  font-weight: 500
 };
 
 .banner__food_mini_time{
   position: absolute;
-  font-size: 10px;
+  font-size: 0.8em;
+  font-weight: 500;
   opacity: 0.5;
   bottom: 12px; right: 25px;
 };
@@ -62,70 +75,111 @@
 
 
 .dashboard__purchases{
-width:534px; height:390px;
+width:600px;
 background-color: #FFFFFF;
 display: flex;
 flex-direction: column;
 border-radius: 30px;
-padding: 40px 40px;
+padding: 40px 46 px;
 
 }
 .purchases{
   display: flex;
   justify-content: space-between;
-  height: 20%
+  margin: 55px 45px 0
+
   };
 .purchases__title{
- font-size: 1.8em;
+ font-size: 2.2em;
 }
 .purchases__select{
-
+  border:none;
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  font-size: 1.5em;
+  padding: 10px 5px;
+  font-weight: 500;
 }
 .purchases_spisok{
-list-style: none;
-display: flex;
-flex-direction: column;
-gap:20px;
-height: 60%;
+  margin-top: 50px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  height: 80%;
 }
 .purchases__item{
-  width:100%;
-  border:#323142 1px solid;
-  border-radius: 10px;
+  width:85%; height: 135px;
+  margin:0 auto;
+  border:#EDF2F7 1px solid;
+  border-radius: 20px;
   height: 40%;
+  display: grid;
+  grid-template-columns: 80px 1fr 100px;
+  grid-template-rows: 1fr 20px;
+  padding: 10px 20px;
+  align-items: center;
+}
 
-}
-.purchases_item_title{
-
-}
-.purchases_item_subtitle{
-
-}
-.purchases__item{
-display: flex;
-padding: 10px 20px;
-}
 .purchases__money{
   background-color: #F2FDF6;
-  width:50px;
-  height: 50px;
+  width:60px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 50px;
 }
-.purchases__wallelt{
+.purchases__wallet{
   background-color: #F4F0FF;
-  width:50px;
-  height: 50px;
+  width:60px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 50px;
 }
-.purchases_item_title{
+
+.purchases__item_title{
+  font-weight: 500;
+  font-size: 1.4em;
+}
+.purchases__item_subtitle{
+  margin-top: 7px;
+  font-weight: 500;
+  font-size: 0.9em;
+  color:#A0AEC0;
+}
+
+.purchases__item_coast{
+  font-weight: 700;
+  font-size: 1.3em;
+  display: grid;
+  justify-content: end;
+  margin-right: 4px;
+}
+.purchases__item_load_wallet{
+  width: 100%;
+  height: 10px;
+  background-color: #E2DFF2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.purchases__item_load{
+  width: 100%;
+  height: 10px;
+  background-color: #E2DFF2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.wallet{
+  background-color: #E2DFF2;
 
 }
-.purchases_item_subtitle{
-
+.money{
+  background-color: #FEEFD1;
 }
