@@ -15,7 +15,7 @@
     "lint:scss": "npx stylelint \"**/*.scss\"",
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
     "unit": "jest --config ./config/jest/jest.config.mjs",
-    "storybook": "storybook dev --config-dir config/.storybook -p 6006 ",       
+    "storybook": "storybook dev --config-dir config/.storybook -p 6006 ",
     "build-storybook": "storybook build -c ./config/storybook"
   },
   "keywords": [],
@@ -55,6 +55,8 @@
     "css-loader": "^7.1.2",
     "eslint": "^9.13.0",
     "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-compiler": "^19.0.0-beta-37ed2a7-20241206",
+    "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-storybook": "^0.11.0",
     "file-loader": "^6.2.0",
     "globals": "^15.11.0",

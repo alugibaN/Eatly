@@ -40,13 +40,6 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
     // Так же можно в регулярку добавить шрифты для обработки
         test: /\.(png|jpg|gif|ttf|woff2)$/,
         type: 'asset/resource',
-
-        // use: [
-        //     {
-        //         loader: "file-loader",
-        //         options: {},
-        //     },
-        // ],
     };
 
     return [cssLoader, babelLoader, typescriptLoader, svgLoader, fileLoader];

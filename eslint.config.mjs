@@ -2,12 +2,13 @@ import globals from "globals";
 import pluginJs from "@eslint/js";
 import tseslint from "typescript-eslint";
 import pluginReact from "eslint-plugin-react";
-
+import reactCompiler from "eslint-plugin-react-compiler"
 
 export default [
-    // 'plugin:react/jsx-runtime',
-
     {files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
+        plugins: {
+            "react-compiler": reactCompiler,
+        },
         rules:{
             "react/jsx-indent": [2,4],
             "indent": [2,4],
@@ -17,7 +18,8 @@ export default [
             "react/jsx-uses-react": "error",
             "react/jsx-uses-vars": "error",
             "no-undef": "off",
-            "max-len": ["error", { ignoreComents:true, code: 100}]
+            "react-compiler/react-compiler": "error",
+            "max-len": ["error", { ignoreComments:true, code: 100}]
         },
         "settings": {
             "react": {
