@@ -4,19 +4,22 @@ import { RouteProps } from "react-router-dom";
 import React from "react";
 import {NotFound} from "pages/notFound/NotFound";
 import UiKit from "pages/UiKit/ui/UiKit";
+import MenuPage from "pages/MenuPage/MenuPage";
 
 export enum AppRoutes {
   HOME = "home",
   ABOUT = "about",
   NOT_FOUND ="not_found",
-  UIKIT = "ui_kit"
+  UIKIT = "ui_kit",
+  MENU = "MENU"
 };
 
 export const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.HOME]: "/",
     [AppRoutes.ABOUT]: "/about",
     [AppRoutes.NOT_FOUND]: "*",
-    [AppRoutes.UIKIT]: "/uikikt"
+    [AppRoutes.UIKIT]: "/uikikt",
+    [AppRoutes.MENU]: "/menu"
 };
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
@@ -35,5 +38,9 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
     [AppRoutes.NOT_FOUND]: {
         path:RoutePath.not_found,
         element: <NotFound/>
+    },
+    [AppRoutes.MENU]: {
+        path: RoutePath.MENU,
+        element: <MenuPage/ >
     }
 }

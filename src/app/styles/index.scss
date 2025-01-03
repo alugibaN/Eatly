@@ -4,11 +4,13 @@
 @use "themes/dark";
 @use "./fonts.scss";
 
-.app {
+body{
   font-size: var(--font-m);
+  font-family: 'Roboto';
+}
+.app {
   background: var(--bg-color);
   color: var(--primary-color);
-  font-family: 'Roboto';
   overflow: hidden;
 }
 

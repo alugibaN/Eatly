@@ -1,0 +1,11 @@
+.MenuHead{
+  max-width: var(--component-width-max);
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 750px 100px 1fr;
+  grid-template-rows: 400px 150px 150px;
+  grid-template-areas: "baner none category"
+                       "input none category"
+                       "button none category"
+}

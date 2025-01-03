@@ -19,7 +19,7 @@ function Navbar(props: NavbarProps) {
       <Logo/>
       </div>
       <div className={cls.links}>
-        <AppLink theme={AppLinkTheme.SECONDARY} to={"/"}>
+        <AppLink theme={AppLinkTheme.SECONDARY} to={"/menu"}>
           {t("Меню")}
         </AppLink>
         <AppLink theme={AppLinkTheme.SECONDARY} to={"/"}>

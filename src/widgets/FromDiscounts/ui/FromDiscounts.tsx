@@ -1,28 +1,28 @@
-import cls from "./FromDiscounts.module.scss"
-import { classNames } from "shared/lib/classNames/ClassNames"
-import Food from "shared/assets/icons/FoodSalat.png"
-import Button from "shared/ui/button/Button";
+import cls from "./FromDiscounts.module.scss";
+import { classNames } from "shared/lib/classNames/ClassNames";
+import Food from "shared/assets/icons/FoodSalat.png";
+import GetForm from "./GetForm/GetForm";
+import Discounts from "./Discounts/Discounts";
 
- interface FromDiscountsProps {
- className?: string
+export enum FromDiscountsSize {
+  M = "sizeM",
+  L = "sizeL",
+}
+
+interface FromDiscountsProps {
+  className?: string;
+  isInput?: boolean;
+  size?: FromDiscountsSize;
 }
 
 const FromDiscounts = (props: FromDiscountsProps) => {
-  const {className} = props 
+  const { className, isInput = true, size = FromDiscountsSize.L } = props;
   return (
-    <div  className={classNames(cls.fromDiscounts, {}, [className])}>
-      <h3 className={cls.form__title}>GET 50%</h3>
-     <form className={cls.form}>
-      <fieldset className={cls.form__fildset}>
-        <input className={cls.form__input} type="email"/>
-        <Button className={cls.form__button}>
-          SUBSCRIBE
-        </Button>
-      </fieldset>
-    </form>
-    <img className={cls.food} src={Food} alt="food" />
+    <div className={classNames(cls.fromDiscounts, {}, [cls[size],])}>
+      {isInput ? <GetForm /> : <Discounts />}
+      <img className={cls.food} src={Food} alt="food" />
     </div>
-  )
+  );
 };
 
 export default FromDiscounts;

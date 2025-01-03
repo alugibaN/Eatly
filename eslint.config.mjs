@@ -19,7 +19,8 @@ export default [
             "react/jsx-uses-vars": "error",
             "no-undef": "off",
             "react-compiler/react-compiler": "error",
-            "max-len": ["error", { ignoreComments:true, code: 100}]
+            "max-len": ["error", { ignoreComments:true, code: 100}],
+            "@typescript-eslint/no-unused-vars":"offs"   
         },
         "settings": {
             "react": {
