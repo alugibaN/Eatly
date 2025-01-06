@@ -11,7 +11,7 @@ export enum AppRoutes {
   ABOUT = "about",
   NOT_FOUND ="not_found",
   UIKIT = "ui_kit",
-  MENU = "MENU"
+  MENU = "menu",
 };
 
 export const RoutePath: Record<AppRoutes, string> = {
@@ -35,12 +35,12 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
         path: RoutePath.ui_kit,
         element: <UiKit/>
     },
+    [AppRoutes.MENU]: {
+        path: RoutePath.menu,
+        element: <MenuPage/ >
+    },
     [AppRoutes.NOT_FOUND]: {
         path:RoutePath.not_found,
         element: <NotFound/>
-    },
-    [AppRoutes.MENU]: {
-        path: RoutePath.MENU,
-        element: <MenuPage/ >
     }
 }

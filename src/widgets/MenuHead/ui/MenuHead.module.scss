@@ -2,10 +2,15 @@
   max-width: var(--component-width-max);
   min-height: 100vh;
   margin: 0 auto;
+  padding-top: 85px;
   display: grid;
-  grid-template-columns: 750px 100px 1fr;
-  grid-template-rows: 400px 150px 150px;
+  grid-template-columns: 900px 100px 1fr;
+  grid-template-rows: 400px 100px 75px;
   grid-template-areas: "baner none category"
                        "input none category"
                        "button none category"
+};
+.buttons {
+  width: 100%;
+  grid-area: button;
 }
