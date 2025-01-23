@@ -5,6 +5,15 @@
   font-size: 1.2em;
 }
 
+.primary{
+  background-color: var(--button-bg-primary-color);
+  color: var( --fronts-color-secondary);
+  padding: 18px 25px;
+  font-size: 1.1em;
+  font-weight: 300;
+  border-radius: 10px;
+}
+
 .clear {
   padding:0;
   background: none;
@@ -34,21 +43,22 @@
   color: var(--fronts-color-secondary) 
 }
 
-.square{
-  padding: 0;
-}
+// .square{
+//   padding: 0;
+// }
 
-.square.size_m{
-  width: var(--font-line-m);
-  height: var(--font-line-m);
-  font-size: var(--font-size-m);
+.size_m{
+  // width: var(--font-line-m);
+  // height: var(--font-line-m);
+  // font-size: var(--font-size-m);
+  width: 200px;
 }
-.square.size_l{
+.size_l{
   width: var(--font-line-l);
   height: var(--font-line-l);
   font-size: var(--font-size-l);
 }
-.square.size_xl{
+.size_xl{
   width: var(--font-line-xl);
   height: var(--font-line-xl);
   font-size: var(--font-size-xl);

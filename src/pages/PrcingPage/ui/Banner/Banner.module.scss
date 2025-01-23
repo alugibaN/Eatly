@@ -1,0 +1,41 @@
+.Banner{
+margin-bottom: 600px;
+}
+.Banner__rectangle{
+  max-width: var(--component-width-max);
+  height: 334px;
+  margin: 200px auto;
+  background-color: var(--bg-color-second);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center
+};
+.Banner__title{
+  font-weight: 500;
+  color: var(--fronts-color-secondary);
+  font-size: 3em;
+  margin: 44px
+}
+.Banner__title::after{
+  // content: url(../../../../shared/assets/icons/Vector-pricing.svg)
+  // content: url(../../../../shared/assets/icons/Vector-pricing.svg);
+  display: inline-block; /* или block */
+  width: 100px; /* Задайте ширину */
+  height: 100px; /* Задайте высоту */
+  background-size: contain; /* Чтобы SVG не вылезал */
+  background-repeat: no-repeat; /* Чтобы SVG не повторялся */
+}
+.Banner__img{
+  object-fit: cover;
+  border: transparent
+}
+.Banner__img::after{
+  display: flex;
+  margin-top: 700px;
+  content: url('../../../../shared/assets/icons/illustration-bottom.svg');
+  // background-image: ;
+  background-color: aqua;
+  width: 200px;
+  height: 200px
+}

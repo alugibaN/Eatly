@@ -1,0 +1,24 @@
+
+.blog__post{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 10px 10px 50px black;
+  padding: 25px 20px 30px;
+  display: grid;
+  gap:  20px;
+}
+
+.blog__post_title{
+  font-weight: 700;
+  font-size: 1.4hem;
+}
+
+.blog__post_img{
+  width: 100%;
+}
+.size_M{
+  width: 250px
+}
+.size_L{
+  size: 350px
+}

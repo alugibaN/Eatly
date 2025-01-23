@@ -1,0 +1,67 @@
+.Writing{
+  max-width: var(--component-width-max);
+  margin:auto;
+  display: grid;
+  grid-template-columns: 1fr minmax(250px, 350px);
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: 
+  "title title"
+  "avtor avtor"
+  "img img"
+  "text top"
+  "button .";
+
+};
+
+.article__title{
+  margin:120px 0 30px;
+  font-weight: 700;
+  font-size: 2em;
+  grid-area: title
+};
+
+.article__avtor{
+  grid-area: avtor
+};
+
+.article__img{
+ width: 100%; max-height: 400px;
+ margin: 60px 0 80px;
+ grid-area: img
+};
+
+.article__text{
+  grid-area: text;
+  display: grid;
+  gap:35px;
+  padding-right: 70px ;
+  border-right: 1px solid var(--border-bottom-color)
+};
+
+.article__text_title{
+  font-weight: 700;
+  font-size: 2.6em;
+}
+
+.article__text_Paragraph{ 
+  font-weight: 400;
+  font-size: 1.8em;
+  line-height: 1.3em;
+  text-align: justify;
+}
+
+.article__text_spisok{
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 1.3em;
+}
+
+.top__aticles{
+  display: grid;
+  padding-left: 60px;
+  gap:80px;
+};
+
+.button{
+  margin-bottom: 100px;
+}

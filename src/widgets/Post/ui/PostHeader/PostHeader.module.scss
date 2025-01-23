@@ -1,0 +1,30 @@
+.blog__post_container{
+  display:grid ;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+  "img subtitle n"
+  "img title data";
+}
+.blog__post_avatar{
+  grid-area: img;
+  margin-right: 10px;
+}
+.blog__post_avtor{
+  grid-area: subtitle;
+  font-weight: 400;
+  font-size: 0.9em;
+  color:#8D8D8D;
+  display: flex;
+  align-items: flex-end;
+}
+.blog__post_name{
+  grid-area: title;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.blog__post_data{
+  grid-area: data;
+  font-weight: 500;
+  color:#B7B4B4;
+}

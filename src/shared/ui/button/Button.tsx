@@ -3,11 +3,12 @@ import cls from "./Button.module.scss";
 import { ButtonHTMLAttributes, FC } from "react";
 
 export enum ButtonTheme {
+  PRIMARY = 'primary',
   CLEAR = "clear",
   OUTLINE = "outline",
   BACGROUND_INVERTED = "bacgroundInverted",
   BORDER = "border",
-  BACKGROUND = "background"
+  BACKGROUND = "background",
 }
 export enum ButtonSize {
   M = "size_m",
@@ -29,7 +30,7 @@ const Button: FC<ButtonProps> = (props) => {
       children, 
       theme, 
       square, 
-      size = ButtonSize.M, 
+      size, 
       ...otherProps 
     } = props;
 

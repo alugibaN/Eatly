@@ -1,0 +1,28 @@
+.BlogPage{
+  margin-top: 150px
+}
+
+
+.blog__posts{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: auto auto;
+  list-style: none;
+  gap:30px;
+  margin-bottom: 200px;
+}
+
+
+.blog__title{
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 75px 0;
+}
+.blog__title_article{
+  color: var(--fronts-color-primary)
+}
+
+

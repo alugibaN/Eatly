@@ -2,6 +2,8 @@
   font-size: 5em;
   font-weight: 900;
   color: #DEDCEF;
+  position: relative;
+  z-index: 10;
 }
 
 .form{
@@ -15,7 +17,9 @@
 
 
 .form__fildset{
-  border:none
+  border:none;
+  position: relative;
+  z-index: 10;
 }
 
 .form__input{
@@ -28,10 +32,10 @@
 
 .form__button{
   border:none;
-  color:#DEDCEF;
-  background-color: #5C4EAE;
-  padding: 18px 25px;
-  font-size: 1.1em;
-  font-weight: 300;
-  border-radius: 10px;
+//   color:#DEDCEF;
+  // background-color: #5C4EAE;
+//   padding: 18px 25px;
+//   font-size: 1.1em;
+//   font-weight: 300;
+//   border-radius: 10px;
 }

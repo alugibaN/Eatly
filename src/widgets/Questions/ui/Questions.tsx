@@ -30,6 +30,7 @@ const Questions = (props: QuestionsProps) => {
     },
   ];
 
+  
   const { className } = props;
   return (
     <section className={classNames(cls.Questions, {}, [className])}>

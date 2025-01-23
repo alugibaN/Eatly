@@ -22,13 +22,13 @@ function Navbar(props: NavbarProps) {
         <AppLink theme={AppLinkTheme.SECONDARY} to={"/menu"}>
           {t("Меню")}
         </AppLink>
-        <AppLink theme={AppLinkTheme.SECONDARY} to={"/"}>
+        <AppLink theme={AppLinkTheme.SECONDARY} to={"/blog"}>
           {t("Блог")}
         </AppLink>
-        <AppLink theme={AppLinkTheme.SECONDARY} to={"/"}>
+        <AppLink theme={AppLinkTheme.SECONDARY} to={"/pricing"}>
           {t("Ценообразование")}
         </AppLink>
-        <AppLink theme={AppLinkTheme.SECONDARY} to={"/"}>
+        <AppLink theme={AppLinkTheme.SECONDARY} to={"/contact"}>
           {t("Контакты")}
         </AppLink>
       </div>

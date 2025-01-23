@@ -1,0 +1,106 @@
+.affordable{
+  width: var(--component-width-max);
+  background-color: #F9F9F9;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  border: 1px solid #EAEAEB;
+  margin-bottom: 150px
+};
+
+.affordable__category{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 180px 1fr 180px 235px 180px;
+  grid-template-areas: "pricing n basic h premium";
+  padding: 51px 65px;
+};
+
+.affordable__category_item_pricing{
+  grid-area: pricing;
+  display: grid;
+  gap:20px;
+}
+.affordable__category_item_basic{
+  grid-area: basic;
+  gap:20px;
+}
+.affordable__category_item_premium{
+  grid-area: premium;
+  gap:20px;
+}
+
+.affordable__category_title{
+  font-size: 1.8em;
+  font-weight: 700;
+}
+.affordable__category_subtitle{
+  font-size: 0.8em;
+  font-weight: 500;
+  color: var(--fronts-color-subtitle);
+};
+
+.affordable__cost{
+  list-style-type: none;
+  padding: 51px 65px;
+  border-bottom: 1px solid var(--border-bottom-color);
+  border-top: 1px solid var(--border-bottom-color);
+  display: grid;
+  grid-template-columns: 180px 1fr 180px 235px 180px;
+  grid-template-areas: "pricing n basic h premium";
+}
+.affordable__cost_item_basic{
+  display: flex ;
+  grid-area: basic;
+}
+
+.affordable__cost_item_premium{
+  display: flex;
+  grid-area: premium;
+}
+
+.affordable__cost_dolar{
+  font-size: 1.5em;
+  font-weight: 900;
+  display: flex;
+}
+
+.affordable__cost_price{
+  font-size: 4em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.affordable__cost_mounth{
+  display: flex;
+  align-items: flex-end; 
+}
+
+.affordable__advantage{
+  list-style-type: none;
+  padding: 51px 65px;
+  display: flex;
+  flex-direction: column;
+  gap:35px;
+
+}
+// .affordable__advantage_title{}
+.affordable__advantage_item{
+  display: grid;
+  grid-template-columns: 180px 1fr 180px 235px 180px;
+  grid-template-areas: "pricing n basic h premium";
+}
+.affordable__advantage_item_title{
+  grid-area:pricing;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #606060;
+}
+.affordable__advantage_item_basic{
+  grid-area:basic;
+
+}
+.affordable__advantage_item_premium{
+  grid-area:premium;
+}
