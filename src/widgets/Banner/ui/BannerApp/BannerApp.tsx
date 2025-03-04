@@ -17,12 +17,12 @@ const BannerApp = (props: BannerAppProps) => {
   return (
     <div className={classNames(cls.bunner, {}, [className])}>
       <img className={cls.bunner__app_img} src={Mobail} alt="Mobail" />
-      <ul className={cls.bunner__text_container}>
-        <h2 className={cls.bunner__text_title}>
+      <h2 className={cls.bunner__text_title}>
           {t("Премиум")}
           <span className={cls.bunner__text_quality}>{t("Качество")}</span>
           {t("Для вашего здоровья")}
         </h2>
+      <ul className={cls.bunner__text_container}>
         <li className={cls.bunner__text_list}>{t("Премиум продукты")}</li>
         <li className={cls.bunner__text_list}>{t("Эти продукты")}</li>
         <AppLink

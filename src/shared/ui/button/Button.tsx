@@ -16,7 +16,7 @@ export enum ButtonSize {
   XL = "size_xl"
 }
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement| SVGAElement> {
   className?: string;
   theme?: ButtonTheme
   square?:boolean;

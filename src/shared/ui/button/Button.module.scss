@@ -12,13 +12,18 @@
   font-size: 1.1em;
   font-weight: 300;
   border-radius: 10px;
+  border: none;
 }
 
 .clear {
   padding:0;
   background: none;
   border:none;
+  border-radius: 10px;
   outline: none;
+  background-color: var(--button-bg-link-color);
+
+  
 }
 
 .bacgroundInverted {
@@ -54,12 +59,12 @@
   width: 200px;
 }
 .size_l{
-  width: var(--font-line-l);
-  height: var(--font-line-l);
-  font-size: var(--font-size-l);
+  width: var(--button-size-L);
+  height: var(--button-height-size-L);
+  // font-size: var(--font-size-l);
 }
 .size_xl{
-  width: var(--font-line-xl);
-  height: var(--font-line-xl);
-  font-size: var(--font-size-xl);
+  width: var(--button-size-L);
+  // height: var(--font-line-xl);
+  // font-size: var(--font-size-xl);
 }

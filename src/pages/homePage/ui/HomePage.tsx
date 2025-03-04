@@ -13,12 +13,12 @@ const HomePage = () => {
     <>
     <Banner/>
     <BannerKPI/>
-    <BannerApp/> 
+    {/* <BannerApp/> 
     <TopRestaurants/> 
     <DishesTop/>
     <Dashboard/>
     <Comments/>
-    <FromDiscounts/>
+    <FromDiscounts/> */}
     </>
   );
 };

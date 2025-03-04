@@ -1,7 +1,6 @@
 .comments{
   width: var(--component-width-max);
   margin: 0 auto;
-  // height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,11 +8,12 @@
   color:#323142;
   overflow-x: auto;
   margin-bottom: 100px;
+  overflow: hidden;
 
 }
 .comments__title{
   font-size: 3.5em;
-  font-weight: 500;
+  font-weight: 700;
   color:#6C5FBC
 }
 .comments__say{
@@ -35,7 +35,6 @@
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  
 }
 .comments__user{
   display: grid;
@@ -74,6 +73,7 @@
 }
 
 .coments__text{
+  width: 540px;
   margin-top: 40px;
   font-size: 1.5em;
   opacity: 0.7;

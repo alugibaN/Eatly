@@ -17,8 +17,6 @@ const BannerKPI = (props: BannerKPIProps) => {
     <ul className={classNames(cls.banner, {}, [className])}>
         <VectorLeftBottom className={cls.banner__vectore_left_bottom} />
         <VectorLeftTop className={cls.banner__vectore__left_top} />
-
-
         <li className={cls.bunner__text_container}>
           <h3 className={cls.bunner__title}>10K+</h3>
           <p className={cls.banner__subtitle}>{t("Довольных пользователей")}</p>

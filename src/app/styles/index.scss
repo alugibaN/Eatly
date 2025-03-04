@@ -6,7 +6,8 @@
 
 body{
   font-size: var(--font-m);
-  font-family: 'Roboto';
+  font-family:"Montserrat", 'Roboto';
+  scrollbar-color:#FFF3D6
 }
 .app {
   background: var(--bg-color);
@@ -21,4 +22,3 @@ body{
 .page-wrapper {
   flex-grow: 1;
 }
- 

@@ -1,0 +1,51 @@
+.BannerAuth{
+  width: 100%; height:100%;
+  background-color: var(--bg-color-second );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+};
+
+.ve{
+  position: absolute;
+  top:500px; right: 270px
+};
+
+.vect1{
+  position: absolute;  
+  top: 120px; left: 250px
+}
+.vect2{
+  position: absolute;  
+  top: 165px; right: 270px
+}
+.vect3{
+  position: absolute;  
+  top: 150px; right: 290px
+}
+.vect4{
+  position: absolute;  
+  top: 200px; left: 100px
+}
+
+.gro{
+  position: absolute;
+  top: 130px; left: 150px; 
+}
+
+.BannerAuth__title{
+  display: flex;
+  justify-content:center ;
+  font-weight: 500;
+  font-size: 2.5em;
+  color: var(--fronts-color-secondary)
+}
+.BannerAuth__text{
+  margin-top: 20px;
+  text-align:center;
+  color: #D3CFEB;
+  font-size: 0.9em;
+  width: 500px;
+}

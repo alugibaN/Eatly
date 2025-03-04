@@ -18,13 +18,12 @@ margin-bottom: 600px;
   margin: 44px
 }
 .Banner__title::after{
-  // content: url(../../../../shared/assets/icons/Vector-pricing.svg)
-  // content: url(../../../../shared/assets/icons/Vector-pricing.svg);
-  display: inline-block; /* или block */
-  width: 100px; /* Задайте ширину */
-  height: 100px; /* Задайте высоту */
-  background-size: contain; /* Чтобы SVG не вылезал */
-  background-repeat: no-repeat; /* Чтобы SVG не повторялся */
+
+  display: inline-block; 
+  width: 100px; 
+  height: 100px; 
+  background-size: contain; 
+  background-repeat: no-repeat; 
 }
 .Banner__img{
   object-fit: cover;
@@ -33,8 +32,7 @@ margin-bottom: 600px;
 .Banner__img::after{
   display: flex;
   margin-top: 700px;
-  content: url('../../../../shared/assets/icons/illustration-bottom.svg');
-  // background-image: ;
+  // content: url('../../../../shared/assets/icons/illustration-bottom.svg');
   background-color: aqua;
   width: 200px;
   height: 200px

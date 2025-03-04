@@ -40,14 +40,6 @@ const Comments = (props: CommentsProps) => {
           </p>
           <Stars className={cls.stars} />
         </li>
-        {/* <li className={cls.comments__item}>
-          <p className={cls.coments__text}>
-            “ Online invoice payment helps companies save time, are faster and
-            save maximum effort for the clients and save maximum effort. Online
-            invoice payment helps companies save time ”
-          </p>
-          <Stars className={cls.stars} />
-        </li>
         <li className={cls.comments__item}>
           <p className={cls.coments__text}>
             “ Online invoice payment helps companies save time, are faster and
@@ -63,7 +55,15 @@ const Comments = (props: CommentsProps) => {
             invoice payment helps companies save time ”
           </p>
           <Stars className={cls.stars} />
-        </li> */}
+        </li>
+        <li className={cls.comments__item}>
+          <p className={cls.coments__text}>
+            “ Online invoice payment helps companies save time, are faster and
+            save maximum effort for the clients and save maximum effort. Online
+            invoice payment helps companies save time ”
+          </p>
+          <Stars className={cls.stars} />
+        </li>
       </ul>
     </section>
   );

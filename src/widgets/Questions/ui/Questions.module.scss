@@ -12,7 +12,7 @@ margin-bottom: 130px
 display: flex;
 flex-direction: column;
 align-items: center;
-width: 400px;
+width: 500px;
 font-weight: 700;
 font-size: 45px;
 margin-bottom:40px; 
@@ -25,6 +25,7 @@ margin-bottom:40px;
 width: 100%;
 margin: 0 auto;
 border-bottom: 1px solid var(--border-bottom-color);
+cursor: pointer;
 };
 
 .details::marker{
@@ -39,7 +40,6 @@ border-bottom: 1px solid var(--border-bottom-color);
   font-size: 24px;
   font-weight: 700;
   color: var(--fronts-color-title);
-  // border-bottom: 1px solid var(--border-bottom-color);
   padding: 20px 10px 30px;
 };
 
@@ -53,10 +53,12 @@ border-bottom: 1px solid var(--border-bottom-color);
   width: 30px; height: 30px;
   border-radius: 15px;
   font-weight: 300;
+
 };
 
 details[open] summary:before {
   content: "-";
+  font-size: 30px;
 };
 
 .text{

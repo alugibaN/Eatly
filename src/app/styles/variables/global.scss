@@ -9,12 +9,22 @@
   --font-size-xl: 32px;
   --font-line-xl: 40px;
   --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-famile-main);
+  
+  --font-title-banner-size-xl: 5em; 
+
+
+
 
   // Размеры 
   --navbar-height: 50px;
   --sidebar-width:300px;
  --sidebar-width-collapsed: 80px;
 
+ // Button size wigth
+ --button-size-L: 200px;
+
+ //Button size height
+ --button-height-size-L: 60px;
 
  --component-width-max: 1380px;
 

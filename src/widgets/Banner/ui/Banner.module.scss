@@ -1,14 +1,13 @@
 .banner{
-  display: flex;
-  width: var(--component-width-max);
-  height:80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: var(--component-width-max);
   margin: auto;
   position: relative;
-  margin-bottom: 9vh;
+  margin-bottom: 85px;
 }
 .bunner__text{
   margin-top: 7.5%;
-  width: 50%;
 };
 
 .bunner__text_users{
@@ -25,132 +24,136 @@
   display: inline-block;
   width:60px;
   height:2px;
-  background-color:#201F1F;
+  background-color:var(--fronts-color-title-primary);
   margin-bottom: 4px;
   margin-right: 25px;
+  opacity: 0.3;
 }
-
 .bunner__text_title{
   font-size: 5em;
-  color:#201F1F;
+  color: var(--fronts-color-title-primary);
 }
 .bunner__text_title_world{
-  color: #5C4EAE;
+  color: var(--fronts-color-title-second );
 }
 .bunner__text_subtitle{
   padding-top: 25px;
-  max-width:530px;
-  color: #A0A0A0;
-  font-weight: 400;
+  max-width:85%;
+  color: var(--fronts-color-subtitle-primary);
+  font-weight: 500;
   line-height: 25px;
   font-size: 1.25em;
+  text-align: justify;
 };
 .bunner__text_subtitle_bonus{
   color: var( --button-bg-primary-color)
 }
 
 .bunner__text_buttons{
-
-  font-size: 1.1em;
   margin-top: 75px;
   gap:20px ;
   display: flex;
 };
+
 .bunner__text_trustpilot{
   margin-top: 40px;
+  width: 301px;
+  height: 31px;
 }
 
 .banner__food{
-  margin-left: 6.3%;
-  margin-top: 11% ;
-  width: 50%;
-  display: flex; 
-  justify-content:space-around;
-
+  margin-top: 7% ;
+  width: 100%;
+  height: auto;
 };
 
-.bunner__food_circle{
-  background-color: #685BB8;
-  border-radius: 50%;
-  position: relative;
-  width: 470px; height: 480px;
-};
-
-.bunner__food_img{
-  position: absolute;
-  top: 10px; left: -45px;
-  z-index: 10;
-  width: 510px; height:510px;
-};
-
-.bunner__food_graph{
-  position: absolute;
-  width:320px; height:340px;
-  z-index: 11;
-  bottom: -120px; left: -150px
-};
-
-
-
-
-
-
-.banner__food_mini{
-  width: 365px; height: 100px;
-  display: flex;
-  gap: 15px;
-  position:absolute;
-  top:-65px; right: -80px;
-  z-index: 13;
-  border-radius: 15px;
-  background-color: #FFFFFF;
-  // box-shadow: 12px 12px 6px 10px #201F1F;
-  color: #323142;
-  padding: 5px 10px 5px 10px;
-};
-
-.banner__food_mini_img{
-  width:90px; height: 90px;
-
-};
-
-.banner__food_mini_container{
-  // gap:10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-};
-
-.banner__food_mini_title{
-  font-weight: 500;
-  font-size: 1.3em;
-};
-
-.banner__food_mini_subtitle{
-  margin-top: 9px;
-  margin-bottom: 6px;
-  font-size: 0.8rem;
-};
-
-.banner__food_mini_time{
-  position: absolute;
-  font-size: 12px;
-  opacity: 0.5;
-  bottom: 17px; right: 30px;
-  font-weight: 400
-};
-
-.bunner__food_illustration{
-  position: absolute;
-  bottom: -95px; left: -157px
-};
-.bunner__food_illustrator_top{
-  position:absolute;
-  top:-99px; right: -123px;
-  z-index: 20;
-}
-.bunner__food_arrow{
-  position: absolute;
-  right: -50px; top:70px
+@media screen and (max-width: 1520px) {
+  .banner{
+    max-width: calc(100vw * (1350 / 1520));
+  }
+  .bunner__text_title{
+    font-size: 5vw
+  }
+  .bunner__text_subtitle{
+    font-size: 1.3vw;
+    padding-top: 15px;
+  }
+  .bunner__text_users{
+    padding-bottom: 10px;
+    font-size: 0.9em;
+  }
+  .bunner__text_buttons{
+    margin-top: 50px;
+    gap:10;
+  }
+  .bunner__text_trustpilot{
+    margin-top: 20px;
+  }
 }
 
+@media screen and (max-width: 1100px) {
+  .banner{
+    max-width: calc(100vw * (955 / 1100));
+  }
+  .bunner__text_title{
+    font-size: 5vw
+  }
+
+  .bunner__text_users{
+    padding-bottom: 10px;
+    font-size: 0.9em;
+  }
+  .bunner__text_buttons{
+    margin-top: 30px;
+    gap:10;
+  }
+  .bunner__text_trustpilot{
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .banner{
+    display: flex;
+    flex-direction: column;
+  }
+  .bunner__text{
+    display: flex;
+    justify-content: center;
+  }
+  .bunner__text_title{
+    width: 80%;
+    padding-left:20px ;
+    font-size: 8vw;
+    margin: 0 auto;
+  }
+  .bunner__text_users{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--fronts-color-title-primary);
+    opacity: 1;
+    font-weight: 600;
+  }
+  .bunner__text_users::before{
+    opacity: 1;
+    height: 1px;
+  }
+  .bunner__text_subtitle{
+    line-height: 30px;
+    width: 90%;
+    font-size: 2.4vw;
+    margin: auto;
+    text-align:center;
+  }
+  .bunner__text_buttons{
+    display: flex;
+    justify-content: center;
+  }
+  .bunner__text_trustpilot{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+}

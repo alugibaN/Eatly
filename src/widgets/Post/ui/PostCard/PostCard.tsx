@@ -9,7 +9,7 @@ enum PostSize {
 } 
 
 export interface PostCardProps {
-  obj?: { img: any; title: string },
+  obj?: { img: string; title: string },
   className?: string,
   size?: PostSize,
 }

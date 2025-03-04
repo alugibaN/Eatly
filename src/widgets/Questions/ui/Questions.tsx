@@ -39,7 +39,7 @@ const Questions = (props: QuestionsProps) => {
         <span className={cls.title__words}> Questions</span>
       </h2>
       {obj.map((el: any, i: number) => (
-        <details className={cls.details} id={i.toString()}>
+        <details key={i} className={cls.details} id={i.toString()}>
           <summary className={cls.summary}>{el.question}</summary>
           <p className={cls.text}>{el.text}</p>
         </details>

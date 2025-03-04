@@ -1,12 +1,13 @@
 .app.light{
   --bg-color: #F9F9F9;
   --bg-color-second: #6C5FBC;
+  --bg-color-auth: #FFFFFF;
   
   --button-bg-primary-color: #6C5FBC;
   --button-bg-second-primary-color: #F3F5F6;
   --button-primary-color: #F9F9F9;
   --button-standart-color: #606060;
-
+  --button-bg-link-color: #F5F5F5;
   // --button-size-m: 10px;
   --bg-filter: #FFFFFF;
 
@@ -14,14 +15,54 @@
   --fronts-color-primary: #6C5FBC;
   --fronts-color-secondary:#F3F5F6;
   --fronts-color-title: #323142;
+  --fronts-color-title-primary: #201F1F;
+  --fronts-color-title-second:#5C4EAE;
   --fronts-color-subtitle: #686868;
+  --fronts-color-subtitle-primary :#A0A0A0;
+  --fronts-color-cancelled: #F1534E;
+  
+  --fronts-color-cost:#C2C3CB;
+
+
+
+  // app-link 
+  --link-colors-view: #B9B9C3;
 
 // border-color
   --border-bottom-color: #ADADAD;
 
+  // input-bg
+  --input-bg-color: #F5F5F5;
+
 
   --primary-color: #323142;
+
+
   // --secondary-color: #e00404;
   --inverted-primary-color: #04ff04;
   --inverted-secondary-color: #049604;
+
+
+
+  //bg-color-category
+  --bg-color-category-pizza:#FFF3D6;
+  --bg-color-category-asian:#F7C5BA;
+  --bg-color-category-donat:#F9E5CB;
+  --bg-color-category-ice:#C5D4FF;
+  
+ // color border category
+  --color-border-pizza:#DDD1B3;
+  --color-border-asian:#F9866C;
+  --color-border-donat:#D7C3A9;  
+  --color-border-ice:#A3B2DD;
+
+  // bg-color-line
+  --bg-color-line: #6C5FBC;
+
+  //bg-color-border-circle
+    --bg-color-border-circle:#BBB6D7;
+
+//
+ --color-navbar-line: #282828;
+
 }

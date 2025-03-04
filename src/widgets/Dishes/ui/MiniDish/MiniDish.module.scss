@@ -1,0 +1,48 @@
+.MiniDish{
+  margin-left: -10px;
+  width: 385px; height: 100px;
+  display: flex;
+  gap: 15px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  color: #323142;
+  padding: 5px 10px 5px 10px;
+  position: relative;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.1);
+};
+
+.dish__food_mini_img{
+  width:90px; height: 90px;
+
+};
+
+.dish__food_mini_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+};
+
+.dish__food_mini_title{
+  font-size: 1.5rem;
+  font-weight: 600
+};
+
+.dish__food_mini_subtitle{
+  margin-top: 8px;
+  margin-bottom: 6px;
+  font-size: 0.8em;
+  font-weight: 600
+};
+
+.dish__food_mini_time{
+  position: absolute;
+  font-size: 0.8em;
+  font-weight: 500;
+  opacity: 0.5;
+  bottom: 12px; right: 25px;
+};
+
+.cancelled{
+  color: var(--fronts-color-cancelled)
+}

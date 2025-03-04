@@ -1,7 +1,111 @@
 .CategoryFilter{
- background-color: var(--bg-filter);
- box-shadow: 10px 10px 10px black;
- grid-area: category;
- border-radius: 20px;
- padding: 25px 23px;
+  background-color: var(--bg-filter);
+  box-shadow: 10px 10px 10px black;
+  grid-area: category;
+  border-radius: 20px;
+  padding: 25px 23px;
+}
+
+
+
+.title{
+  font-weight: 700;
+  font-size: 1.3em;
+  margin-bottom:20px;
+}
+
+
+.category__spisok_food{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:15px;
+  margin-bottom: 25px;
+}
+
+.category__food{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // padding: 16px;
+  width: 75px;
+  height: 100px;
+  gap:15px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.Pizza{
+  background-color: var(--bg-color-category-pizza);
+}
+.Pizza:hover{
+  transform: scaleX(1.1) scaleY(1.1);
+}
+.Pizza__active{
+  border: solid 5px var(--color-border-pizza);
+}
+
+.Asian{
+  background-color: var(--bg-color-category-asian);
+}
+.Asian:hover{
+  transform: scaleX(1.1) scaleY(1.1);
+}
+.Asian__active{
+  border: solid 5px var(--color-border-asian)
+}
+.Donat{
+  background-color: var(--bg-color-category-donat);
+}
+.Donat:hover{
+  transform: scaleX(1.1) scaleY(1.1);
+}
+.Donat__active{
+  border: solid 5px var(--color-border-donat)
+}
+.Ice{
+  background-color: var(--bg-color-category-ice);
+}
+.Ice:hover{
+  transform: scaleX(1.1) scaleY(1.1);
+}
+.Ice__active{
+  border: solid 5px var(--color-border-ice) 
+}
+
+.sortBySpisok{
+  list-style-type: none;
+  display: grid;
+  justify-items:start;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  color: var(--fronts-color-subtitle);
+
+}
+
+.sortBySpisok__item{
+  border: none;
+  background-color:var(--bg-filter);
+  font-size: 1.1em;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.sortBySpisok__item:hover{
+  color:var(--fronts-color-primary)
+}
+
+.active{
+  color:var(--fronts-color-primary)
+}
+
+
+.button{
+  width: 100%;
+  margin-top:70px;
 }

@@ -1,13 +1,12 @@
 .dishesTop{
   width: var(--component-width-max);
-  margin: 0 auto;
+  margin: 115px auto 115px;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Roboto";
   font-weight: 900;
   color: #323142;
-  margin-bottom:28vh;
   gap:68px
 }
 
@@ -23,98 +22,8 @@
   display: flex;
   gap:30px;
 }
-
-.dish{
-  list-style: none;
-  background-color: #FFFFFF;
-  width:250px; 
-  border-radius: 40px;
-  position: relative;
-  box-shadow: 5px 20px 20px;
-  padding-top: 10px;
-}
-
-.dish__heart{
-  position: absolute;
-  right: 25px; top:25px
-}
-
-.dish__img{
-  margin-top: 20px;
-  margin-left: 8px;
-  width:220px;
-  height:217px
-}
-
-.dish__heathy{
-  padding: 2px 5px;
-  background-color: #F7EDD0;
-  color: #E1B647;
-  border-radius: 5px;
-  margin-left: 20px;
-  font-weight: 300;
-}
-
-.dish__title{
-  width: 80%;
-  margin-left: 20px;
-  margin-top: 5px;
-  font-size: 1.5em;
-  font-weight: 700;
-}
-
-.dish__info{
-  margin-left: 20px;
-  margin-top: 10px;
-  display: grid;
-  grid-template-columns: 80px 30px 60px 1fr;
-  grid-template-areas: "time star rating div";
-  font-weight: 400;
-  font-size: 1.2em;
-  color:#8D96A5;
-}
-
-.dish__info_time{
-  grid-area: time;
-  margin-top: 3px;
-}
-
-.dish__info_time::after{
-  content: '';
-  margin: 10px 0 0 10px;
-  width: 6px; height: 6px;
-  border-radius: 10px;
-  background-color: #8D96A5;
-}
-
-.dish__info_star{
-  grid-area: star;
-}
-
-.dish__info_rating{
-  margin-top: 4px;
-  grid-template-areas: rating;
-}
-
-.dish__cost{
-  width:80%;
-  margin: 20px 20px;
+.applink{
   display: flex;
-  justify-content: space-between;
-  align-items:center;
-}
-.dish__cost_title{
-  font-size: 1.6em;
-}
-.dish__cost_subtitle{
-  font-size: 1em;
-}
-.dish__cost_add{
-  background-color: #323142;
-  color:#FFFFFF;
-  padding: 0 15px;
-  font-size: 2.2em;
-  font-weight: 300;
-  border-radius: 10px;
-  margin-top: 5px;
+  gap: 10p;
+  margin-left: auto;
 }

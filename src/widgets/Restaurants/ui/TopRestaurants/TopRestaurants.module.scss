@@ -3,13 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-   width: var(--component-width-max);
+  width: var(--component-width-max);
   border-top: 1px solid #D0D0D0;
   border-bottom: 1px solid #D0D0D0;
-  margin:auto;
+  margin: auto;
   padding-top: 40px;
-  padding-bottom: 28.3vh;
-  margin-bottom: 10.4vh;
+  padding-bottom: 130px;
   color:#323142
 };
 
@@ -21,7 +20,7 @@
 .restaurant__title{
   font-weight: 700;
   margin-top: 55px;
-  font-size: 3.3em;
+  font-size: 3em;
   color:#323142
 };
 .restaurant__title_last{
@@ -35,73 +34,24 @@
   margin-top: 50px;
   padding-top: 30px;
 }
-.restaurant__spisok_item{
+.applink{
+  font-weight: 500;
   display: flex;
-  flex-direction: column;
-  max-width: 430px;
-  box-shadow: 10px 6px 6px 6px #323142;
-  border-radius: 35px
-};
-.restaurant__img{
-  width:430px
+  gap: 10px;
+  margin-left: auto;
+  margin-top: 65px;
 }
-.restaurant__spisok_item_title{
-  font-size: 1.6em;
-  font-weight: 700;
-  margin:0 25px
-};
-.restaurant__container{
-  background-color: #EFE6CB;
-};
-.restaurant__healthy{
-  background-color: #EFE6CB;
-  color:#D39E1C;
-  width: 70px;
-  padding: 4px 10px;
-  border-radius: 10px;
-  font-weight: 300;
-  margin:15px 25px 5px
-};
-.restaurant__container__text{
-  padding: 15px 25px;
-  display: grid;
-  flex-direction: column;
-  background-color: #F7F7F8;
+.arrow{
+  // color:#B9B9C3;
+  // color: #6C5FBC;
+  stroke:#B9B9C3;
 }
 
-.restaurant__container_text_time{
-  display: grid;
-  margin: 12px 28px 10px;
-  grid-template-columns: 88px 35px 40px 1fr 47px;
-  grid-template-areas: "time star rating div book";
-  color:#8D96A5;
-  font-size: 1.2em
-};
+.applink:hover{
 
-.restaurant__category{
-  grid-area:time;
-  display: flex;
-  font-weight: 300;
-  margin: 2px 0 0 0;
-};
+  color:#6C5FBC;
 
-.restaurant__category::after{
-  content: '';
-  margin: 10px 0 0 10px;
-  width: 6px; height: 6px;
-  border-radius: 10px;
-  background-color: #8D96A5;
-}
-
-.restaurant__category_star{
-  grid-area:star;
-
-}
-.restaurant__category_rating{
-  margin-top: 2px;
-  grid-area: rating;
-}
-.restaurant__category_bookmark{
-  margin-top: -15px;
-  grid-area: book;
+  .arrow:hover{
+    stroke:#6C5FBC;
+  }
 }

@@ -6,9 +6,12 @@ import { ThemeSwitcher } from "widgets/ThemeSwitcher/index";
 import LangSwitcher from "widgets/LangSwwitcher/LangSwitcher";
 import Button, { ButtonSize, ButtonTheme } from "shared/ui/button/Button";
 import AppLink, { AppLinkTheme } from "shared/ui/appLink/AppLink";
+import { spawn } from "child_process";
+import Menu from "shared/assets/icons/menu.svg";
+import Clouse from "shared/assets/icons/clouse.svg"
 
 interface SidebarProps {
-  className?: string;
+    className?: string;
 }
 export const Sidebar = ({ className }: SidebarProps) => {
     const [collapsed, setColapsed] = useState(false);
@@ -16,13 +19,30 @@ export const Sidebar = ({ className }: SidebarProps) => {
     const onToggle = () => {
         setColapsed((prev) => !prev);
     };
-      
+    
     return (
-        <div 
+        <div
             data-testid = "sidebar" 
             className={classNames(cls.sidebar, { [cls.collapsed]: collapsed }, [className,])}
         >
-            <div className={cls.items}>
+        <Button 
+            theme={ButtonTheme.CLEAR} 
+            className={cls.navicon}
+            onClick={onToggle}
+        >
+            {collapsed ? <Clouse/> : <Menu/>}
+        </Button>
+        
+        
+        
+        </div>
+    );
+};
+        // <div 
+        //     data-testid = "sidebar" 
+        //     className={classNames(cls.sidebar, { [cls.collapsed]: collapsed }, [className,])}
+        // >
+            {/* <div className={cls.items}>
             <AppLink
                     theme={AppLinkTheme.SECONDARY}
                     to={"/"}
@@ -51,7 +71,5 @@ export const Sidebar = ({ className }: SidebarProps) => {
             <div className={cls.switchers}>
                 <ThemeSwitcher/>
                 <LangSwitcher short={collapsed} className={cls.lang}/>
-            </div>
-        </div>
-    );
-};
+            </div> */}
+        // </div>

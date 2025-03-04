@@ -2,8 +2,10 @@ import cls from "./Navbar.module.scss";
 import { classNames } from "shared/lib/classNames/ClassNames";
 import Logo from "shared/assets/icons/logo.svg";
 import { useTranslation } from "react-i18next";
-import AppLink, { AppLinkTheme } from "shared/ui/appLink/AppLink";
+import AppLink, { AppLinkSize, AppLinkTheme } from "shared/ui/appLink/AppLink";
 import LangSwitcher from "widgets/LangSwwitcher/LangSwitcher";
+import { Sidebar } from "widgets/Sidebar";
+import useSizeWindow from "shared/lib/hooks/useSizeWindow/useSizeWindow";
 
 interface NavbarProps {
   className?: string;
@@ -12,37 +14,44 @@ interface NavbarProps {
 function Navbar(props: NavbarProps) {
   const { className } = props;
   const { t } = useTranslation();
+  const {windowWidth} = useSizeWindow()
 
   return (
     <header className={cls.navbar}>
-      <div className={cls.logo} >
-      <Logo/>
+      <div className={cls.logo}>
+        <Logo />
       </div>
+      {windowWidth > 970 
+      ? <>
       <div className={cls.links}>
-        <AppLink theme={AppLinkTheme.SECONDARY} to={"/menu"}>
+        <AppLink size={AppLinkSize.size_null} theme={AppLinkTheme.SECONDARY} to={"/menu"}>
           {t("Меню")}
         </AppLink>
-        <AppLink theme={AppLinkTheme.SECONDARY} to={"/blog"}>
+        <AppLink size={AppLinkSize.size_null} theme={AppLinkTheme.SECONDARY} to={"/blog"}>
           {t("Блог")}
         </AppLink>
-        <AppLink theme={AppLinkTheme.SECONDARY} to={"/pricing"}>
+        <AppLink size={AppLinkSize.size_null} theme={AppLinkTheme.SECONDARY} to={"/pricing"}>
           {t("Ценообразование")}
         </AppLink>
-        <AppLink theme={AppLinkTheme.SECONDARY} to={"/contact"}>
+        <AppLink size={AppLinkSize.size_null} theme={AppLinkTheme.SECONDARY} to={"/contact"}>
           {t("Контакты")}
         </AppLink>
       </div>
       <div className={classNames(cls.auth, {}, [])}>
-        <LangSwitcher />
-        <AppLink theme={AppLinkTheme.SECONDARY} to={"/"}>
+        <AppLink theme={AppLinkTheme.SECONDARY} to={"/login"}>
           {t("Авторизация")}
         </AppLink>
-        <AppLink className="pd" to={"/"}>
+        <AppLink className="pd" to={"/auth"}>
           {t("Регистрация")}
         </AppLink>
-      </div>
+      </div> 
+      </>
+      : 
+      <Sidebar/>
+      }
     </header>
   );
 }
 
 export default Navbar;
+        {/* <LangSwitcher />  */}

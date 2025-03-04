@@ -1,13 +1,27 @@
 .bunner{
-  display: flex;
-  padding-top: 95px; padding-left: 60px; padding-bottom: 122px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 150px 1fr 1fr;
+  grid-template-areas: 
+  "d img t title v"
+  "d img t text v";
+  grid-template-rows: 1fr auto;
+  margin-top: 115px;
+  margin-bottom: 120px;
 };
 
 .bunner__app_img{
   width:410px; height: 700px;
-  margin-right: 230px;
   margin-top: 20px;
-  margin-left: auto;
+  grid-area: img
+};
+.bunner__text_title{
+  color: #18181B;
+  font-size: 4em;
+  width: 600px;
+  font-weight: 700;
+  line-height: 65px;
+  grid-area: title;
+  padding-top: 150px
 };
 .bunner__text_container{
   position: relative;
@@ -16,16 +30,8 @@
   align-items: flex-start;
   width: 560px;
   gap:30px;
-  padding: 115px  0 0 0 ;
-  margin-right: auto;
-};
-.bunner__text_title{
-  color: #18181B;
-  font-size: 4em;
-  width: 500px;
-  font-weight: 900;
-  line-height: 65px;
-  margin-bottom: 43px
+  grid-area: text;
+  margin-bottom: 60px;
 };
 
 .bunner__text_quality{
@@ -45,6 +51,6 @@ color: var(--button-bg-primary-color);
 
 .bunner__vectore{
   position: absolute;
-  left: 140px; bottom: 50px;
+  left: 170px; bottom: -50px;
 }
 
