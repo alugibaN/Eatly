@@ -1,76 +1,75 @@
-.navbar{
-  max-width:  var(--component-width-max);
-  width:100%;
+.navbar {
+  width: 100%;
+  font-weight: 700;
+  display: grid;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 20px;
+  z-index: 100;
+}
+
+.navbar__container {
+  height: var(--navbar-height);
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eeeeee;
+  border-radius: 30px;
+  max-width: 1280px;
+  width: 100%;
   display: grid;
   align-items: center;
-  grid-auto-flow: column;
-  grid-template-columns: 237px 1fr auto;
-  grid-template-areas:
-  "logo links auth";
-  margin: auto; 
-  padding: 23px 0px 30px;
-  border-bottom: 1px solid #D0D0D0;
-  // height: 110px
-};
+  grid-template-columns: auto auto 1fr auto;
+  grid-template-areas: "logo links null auth";
+  margin: auto;
+  padding: 0 15px;
+  position: sticky;
+  margin-bottom: 20px;
+}
 
-.logo{  
+.navbar__logo {
   grid-area: logo;
-  // padding-top: 13px
-};
-
-.links{
+  margin-right: 20px;
+}
+.navbar__links {
+  grid-area: links;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  grid-area:links;
-  font-weight: 700;
-  font-size: 1.3rem ;
-  gap: 60px;
-  padding-top: 7px 
-};
-
-.auth{
-  display: flex;
-  justify-content: end;
-  // gap:37px;
-  grid-area: auth;
-  font-weight: 700;
-  padding-top: 10px;
-  font-size: 1.3em
-};
-.navicon{
-  grid-area: auth;
-  display: flex;
-  // align-items: flex-end;
-}
-// .navicon:hover{
-//   transform: ;
-// }
-
-
-@media screen and (max-width: 1490px) {
-
-  .navbar{
-        max-width: calc(100vw * (1280 / 1440));
-    grid-template-columns: 170px 1fr auto;
-    gap:30px
-  }
-  .links{
-    gap: 38px
-  }
-  .auth{
-    gap: 0
-  }
-
+  gap: 10px;
 }
 
-@media screen and (max-width: 1070px) {
-  .navbar{
-    max-width: calc(100vw * (1195 / 1380));
-    grid-template-columns: auto 1fr auto;
-    gap:30px
-  }
-  .links{
-    gap: 15px
+.navbar__auth {
+  grid-area: auth;
+  display: flex;
+}
+
+.navbar__menu {
+  grid-area: auth;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  opacity: 0.8;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: background-color 0.6s;
+}
+
+.navbar__menu.open {
+  background-color: #f0eeff;
+  transition: background-color 0.6s;
+}
+
+.navbar__menu_icon {
+  height: 24px;
+  width: 24px;
+}
+
+@media screen and (max-width: 1320px) {
+  .navbar {
+    width: 96%;
   }
 }

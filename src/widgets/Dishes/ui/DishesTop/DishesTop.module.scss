@@ -1,6 +1,6 @@
 .dishesTop{
-  width: var(--component-width-max);
-  margin: 115px auto 115px;
+ max-width: 100%;
+  margin: 115px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,6 +24,24 @@
 }
 .applink{
   display: flex;
-  gap: 10p;
+  gap: 10px;
   margin-left: auto;
+}
+
+@media screen and (max-width: 1320px) {
+  .dishesTop{
+    margin: 115px 20px;
+  }
+  .dishes{
+    gap:15px
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .dishes{
+    max-width: 765px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px
+  }
 }

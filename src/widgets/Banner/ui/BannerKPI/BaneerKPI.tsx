@@ -21,7 +21,7 @@ const BannerKPI = (props: BannerKPIProps) => {
           <h3 className={cls.bunner__title}>10K+</h3>
           <p className={cls.banner__subtitle}>{t("Довольных пользователей")}</p>
         </li>
-          <li className={cls.bunner__text_container}>
+          <li className={`${cls.bunner__text_container} ${cls.center}`}>
           <h3 className={cls.bunner__title}>4M</h3>
         <p className={cls.banner__subtitle}>{t("Здоровое питание")}</p>
         </li>

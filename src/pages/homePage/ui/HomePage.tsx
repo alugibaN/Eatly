@@ -9,16 +9,16 @@ import TopRestaurants from "widgets/Restaurants/ui/TopRestaurants/TopRestaurants
 import Comments from "widgets/Сomments/ui/Comments";
 const HomePage = () => {
   const { t } = useTranslation();
-    return (
+  return (
     <>
-    <Banner/>
-    <BannerKPI/>
-    {/* <BannerApp/> 
-    <TopRestaurants/> 
-    <DishesTop/>
-    <Dashboard/>
-    <Comments/>
-    <FromDiscounts/> */}
+      <Banner />
+      <BannerKPI />
+      <BannerApp />
+      <TopRestaurants />
+      <DishesTop />
+      <Dashboard />
+      {/* <Comments/> */}
+    <FromDiscounts/> 
     </>
   );
 };

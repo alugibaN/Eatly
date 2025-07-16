@@ -87,7 +87,7 @@ const CategoryFilter = (props: CategoryFilterProps) => {
           </button>
         ))}
       </div>
-      <h3 className={cls.title}>Sort By</h3>
+    <h3 className={cls.title}>Sort By</h3>
       <div className={cls.sortBySpisok}>
         {valueInpuButton.map((el, index) => (
           <input
@@ -101,35 +101,13 @@ const CategoryFilter = (props: CategoryFilterProps) => {
           />
         ))}
       </div>
-      <h3 className={cls.title}>Price</h3>
+      {/* <h3 className={cls.title}>Price</h3>
       <RangeWithMarks/>
       <Button theme={ButtonTheme.PRIMARY} className={cls.button}>
         Apply
-      </Button>
+      </Button> */}
     </div>
   );
 };
 
 export default CategoryFilter;
-
-{
-  // className={`${cls.category__food}  ${cls.pizza}`}>
-  /* <button className={`${cls.category__food}  ${cls.asian}`}>
-<Asian className={cls.category__food_icons} />
-<h4 className={cls.category__food_title}>Asian</h4>
-</button>
-<button className={`${cls.category__food}  ${cls.donat}`}>
-<Donat className={cls.category__food_icons} />
-<h4 className={cls.category__food_title}>Donat</h4>
-</button>
-<button className={`${cls.category__food}  ${cls.ice}`}>
-<Ice className={cls.category__food_icons} />
-<h4 className={cls.category__food_title}>Ice</h4>
-</button> */
-}
-
-{
-  /* <input onClick={e=>addClassactive(e)} type="button" value="Recomended" className={cls.sortBySpisok__item}/>
-        <input type="button" value="Fast Delivery" className={cls.sortBySpisok__item}/>
-        <input type="button" value="Most Popular" className={cls.sortBySpisok__item}/> */
-}

@@ -1,0 +1,96 @@
+.restaurant__spisok_item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 397px;
+  box-shadow: 20px 20px 23px rgba(0, 0, 0, 0.1);
+  border-radius: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.restaurant__spisok_item:hover {
+  transform: scale(1.01);
+}
+
+.restaurant__img {
+  width: 100%;
+  border-radius: 35px 35px 0px 0;
+}
+.restaurant__spisok_item_title {
+  font-size: 1.6em;
+  font-weight: 700;
+  margin: 0 25px;
+}
+
+.restaurant__healthy {
+  background-color: #efe6cb;
+  color: #d39e1c;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-weight: 300;
+  margin: 15px 25px 5px;
+  display: flex;
+}
+.restaurant__container__text {
+  padding: 15px 25px;
+  display: grid;
+  flex-direction: column;
+  background-color: #f7f7f8;
+}
+
+.restaurant__container_text_time {
+  display: grid;
+  margin: 12px 28px 15px;
+  grid-template-columns: 88px 35px 40px 1fr 47px;
+  grid-template-areas: "time star rating . book";
+  color: #8d96a5;
+  font-size: 1.2em;
+  width: 100%;
+  max-width: calc(100% - 60px);
+}
+
+.restaurant__category {
+  grid-area: time;
+  display: flex;
+  font-weight: 300;
+  margin: 2px 0 0 0;
+}
+
+.restaurant__category::after {
+  content: "";
+  margin: 10px 0 0 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #8d96a5;
+}
+
+.restaurant__category_star {
+  grid-area: star;
+}
+.restaurant__category_rating {
+  margin-top: 2px;
+  grid-area: rating;
+}
+.restaurant__category_bookmark {
+  margin-top: -10px;
+  fill: #6c5fbc;
+  display: grid;
+  grid-area: book;
+}
+
+.restaurant__category_bookmark::before {
+  content: "";
+  // display: grid;
+  grid-area: book;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+@media screen and (max-width: 1320px) {
+  .restaurant__spisok_item {
+    width: auto;
+  }
+}

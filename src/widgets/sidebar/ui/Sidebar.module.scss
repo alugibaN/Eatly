@@ -1,26 +1,75 @@
-.navicon{
-  width: 50px;
-  height:50px
-}
-// .navicon:hover{
-//   transform: scale(1.2);
-// }
-.navicon:active{
-  transform: scale(0.9);
-}
-
-
-
 .sidebar {
   grid-area: auth;
-  // height: calc(100vh - var(--navbar-height));
-  // width: var(--sidebar-width);
-  // background: var(--inverted-bg-color);
-  // position: relative;
-  // transition: width 0.5s;
+  height: calc(100vh - var(--navbar-height));
+  width: var(--sidebar-width);
+  background-color: var( --bg-color);
+  position: relative;
+  transition: width 0.5s;
+  display: flex;
+  flex-direction: column;
+  // gap:10px;
+  padding: 30px 20px;
+  font-weight: 500;
+  color: var(--without-color)
+}
+
+.collapsed {
+  width: var(--sidebar-width-collapsed);
+  padding: 0;
+  .switchers{
+    flex-direction: column;
+    align-items: center;
+  }
+  .lang{
+    margin-left: 0 
+  }
+
+}
+.collapseBtn{
+  position: absolute;
+  bottom: 40px;
+  right: -32px;
+  z-index: 10;
 
 }
 
+
+.sidebar__item{
+  color: var(--without-color);
+  display: flex;
+  align-items: end;
+  gap: 10px
+}
+.sidbar__text{
+  display: flex;
+  align-items: end;
+}
+
+.home{
+  stroke:var(--without-color);
+  width: 25px;
+  height: 20px;
+}
+.order{
+  stroke:var(--without-color);
+  width: 25px;
+  height: 22px;
+}
+.messages{
+  stroke:var(--without-color);
+  width: 25px;
+  height: 22px;
+}
+.wallet{
+  stroke:var(--without-color);
+  width: 25px;
+  height: 22px;
+}
+
+
+// .lang{
+//   margin-left: 20px;
+// }
 // .switchers{
 //   position: absolute;
 //   bottom:20px;
@@ -28,28 +77,13 @@
 //   justify-content: center;
 //   width: 100%;
 // }
-
-// .collapsed {
-//   width: var(--sidebar-width-collapsed);
-//   .switchers{
-//     flex-direction: column;
-//     align-items: center;
-//   }
-//   .lang{
-//     margin-left: 0 
-//   }
-
+// .navicon{
+//   width: 50px;
+//   height:50px
 // }
-// .collapseBtn{
-//   position: absolute;
-//   bottom: 40px;
-//   right: -32px;
-//   z-index: 10;
-
-// }
-
-
-
-// .lang{
-//   margin-left: 20px;
+// // .navicon:hover{
+// //   transform: scale(1.2);
+// // }
+// .navicon:active{
+//   transform: scale(0.9);
 // }

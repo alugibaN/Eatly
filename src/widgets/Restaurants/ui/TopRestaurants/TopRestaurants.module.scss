@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: var(--component-width-max);
+  max-width: 100%;
   border-top: 1px solid #D0D0D0;
   border-bottom: 1px solid #D0D0D0;
   margin: auto;
@@ -29,8 +29,8 @@
 };
 .restaurant__spisok{
   display: flex;
+  width: 100%;
   gap: 44px;
-  width: var(--component-width-max);
   margin-top: 50px;
   padding-top: 30px;
 }
@@ -42,16 +42,37 @@
   margin-top: 65px;
 }
 .arrow{
-  // color:#B9B9C3;
-  // color: #6C5FBC;
   stroke:#B9B9C3;
 }
 
 .applink:hover{
-
   color:#6C5FBC;
-
   .arrow:hover{
     stroke:#6C5FBC;
   }
+}
+
+@media screen and (max-width: 1320px) {
+  .TopRestaurants{
+    margin: 0 20px;
+    }
+    .restaurant__spisok{
+      gap:20px
+    }
+}
+@media screen and (max-width:1000px) {
+  .restaurant__spisok{
+    flex-wrap: wrap ;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:600px){
+  .restaurant__title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2em;
+  }
+
 }

@@ -17,12 +17,12 @@ interface FromDiscountsProps {
 }
 
 const FromDiscounts = (props: FromDiscountsProps) => {
-  const { className, isInput = true, size = FromDiscountsSize.L } = props;
+  const { isInput = true, size = FromDiscountsSize.L } = props;
   return (
     <div className={classNames(cls.fromDiscounts, {}, [cls[size],])}>
-      <Mask className={cls.mask}/>
+      {/* <Mask className={cls.mask}/> */}
       {isInput ? <GetForm /> : <Discounts />}
-      <img className={cls.food} src={Food} alt="food" />
+       {isInput ? <img className={cls.food} src={Food} alt="food" /> : null}
     </div>
   );
 };

@@ -30,6 +30,7 @@
   cursor: pointer; 
   border-radius: 50%;
   border: 5px solid var(--bg-color-border-circle);
+  margin-top: -15px;
 }
 
 .circle::-moz-range-thumb {
@@ -39,6 +40,7 @@
   cursor: pointer; 
   border-radius: 50%;
   border: 5px solid var(--bg-color-border-circle);
+  margin-top: -15px;
 }
 
 // .price__spisok{

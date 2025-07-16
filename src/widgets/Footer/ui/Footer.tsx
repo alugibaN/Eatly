@@ -15,29 +15,53 @@ const Footer = (props: FooterProps) => {
   const { className } = props;
   return (
     <footer className={classNames(cls.footer, {}, [className])}>
-        <div className={cls.footer__links}>
-      <Logo className={cls.footer__logo}/>
-    
-        <AppLink className={cls.footer__link} theme={AppLinkTheme.SECONDARY} to={"/"}>
+      <div className={cls.footer__links}>
+        <Logo className={cls.footer__link_logo} />
+        <AppLink
+          className={cls.footer__link_blog}
+          theme={AppLinkTheme.SECONDARY}
+          to={"/"}
+        >
           Blog
         </AppLink>
-        <AppLink className={cls.footer__link} theme={AppLinkTheme.SECONDARY} to={"/"}>
+        <AppLink
+          className={cls.footer__link_pricing}
+          theme={AppLinkTheme.SECONDARY}
+          to={"/"}
+        >
           Pricing
         </AppLink>
-        <AppLink className={cls.footer__link} theme={AppLinkTheme.SECONDARY} to={"/"}>
+        <AppLink
+          className={cls.footer__link_about}
+          theme={AppLinkTheme.SECONDARY}
+          to={"/"}
+        >
           About Us
         </AppLink>
-        <AppLink className={cls.footer__link} theme={AppLinkTheme.SECONDARY} to={"/"}>
+        <AppLink
+          className={cls.footer__link_contact}
+          theme={AppLinkTheme.SECONDARY}
+          to={"/"}
+        >
           Contact
         </AppLink>
       </div>
       <div className={cls.footer__social}>
-      <span>© 2023 EATLY All Rights Reserved.</span>
-        <Insta  className={cls.footer__icons}/>
-        <LinkedIn className={cls.footer__icons}/>
-        <Facebook className={cls.footer__icons}/>
-        <Tviter className={cls.footer__icons}/>
+        <a href="/" className={cls.footer__social_link}>
+          {" "}
+          <Insta className={cls.footer__icons} />{" "}
+        </a>
+        <a href="/" className={cls.footer__social_link}>
+          <LinkedIn className={cls.footer__icons} />
+        </a>
+        <a href="/" className={cls.footer__social_link}>
+          <Facebook className={cls.footer__icons} />
+        </a>
+        <a href="/" className={cls.footer__social_link}>
+          <Tviter className={cls.footer__icons} />
+        </a>
       </div>
+      <span className={cls.eatly}>© 2023 EATLY All Rights Reserved.</span>
     </footer>
   );
 };

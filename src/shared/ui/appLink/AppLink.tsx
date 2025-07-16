@@ -1,13 +1,14 @@
 import React from "react";
 import { classNames } from "shared/lib/classNames/ClassNames";
 import cls from "./AppLink.module.scss";
-import { Link, LinkProps } from "react-router-dom";
+import { LinkProps, NavLink } from "react-router-dom";
 import { FC } from "react";
 
 export enum AppLinkTheme {
   PRIMARY = "primary",
   SECONDARY = "secondary",
   BORDER_PRIMARY = "border_primary",
+  WITHOUT_STYLES = "without__styles",
 
   NONE_BG = "none_bg",
   VIEW_ALL = "view_all",
@@ -31,17 +32,22 @@ const AppLink: FC<AppLinkProps> = (props: AppLinkProps) => {
     className,
     children,
     theme = AppLinkTheme.PRIMARY,
-    size = AppLinkSize.sizeM,
+    size = AppLinkSize.sizeL,
     ...otherProps
   } = props;
+
   return (
-    <Link
+    <NavLink
       to={to}
-      className={classNames(cls.app__link, {}, [className,cls[size], cls[theme]])}
+      className={classNames(cls.app__link, {}, [
+        className,
+        cls[size],
+        cls[theme],
+      ])}
       {...otherProps}
     >
-    {children}
-    </Link>
+      {children}
+    </NavLink>
   );
 };
 

@@ -46,3 +46,24 @@
 .cancelled{
   color: var(--fronts-color-cancelled)
 }
+
+
+@media screen and (max-width: 550px) {
+  .MiniDish{
+    width: 228px;
+    height: auto;
+  }
+  .dish__food_mini_img{
+    height: 51px;
+    width: 51px;
+  }
+  .dish__food_mini_title{
+    font-size: 1em;
+  }
+  .dish__food_mini_subtitle{
+  font-size: 0.7em;
+  }
+  .dish__food_mini_time{
+    font-size: 0.5em;
+  }
+}

@@ -6,6 +6,7 @@ import burgerKing from "shared/assets/icons/BurgerKing.png"
 import  Arrow from "shared/assets/icons/arrow-right-ser.svg";
 import AppLink, { AppLinkTheme } from "shared/ui/appLink/AppLink";
 import ItemRestaurants from "../ItemRestaurants/ItemRestaurants";
+import { ListRestaurant } from "features/ListRestaurant";
 
 
 interface TopRestaurantsProps {
@@ -47,11 +48,7 @@ const TopRestaurants = (props: TopRestaurantsProps) => {
           {t("Наш Топ")}
           <span className={cls.restaurant__title_last}>{t("Рестаранов")}</span>
         </h2>
-        <ul className={cls.restaurant__spisok}>
-          {rest.map((el,i)=>(
-            <ItemRestaurants obj={el} key={i}/>
-          ))}
-        </ul>
+          <ListRestaurant/>
         <div>
           
         </div>

@@ -17,7 +17,7 @@ const PricingPage = (props: PricingPageProps) => {
       <Banner/>
       <Affordable/>
       <Dashboard/>
-      <Comments/>
+      {/* <Comments/> */}
     </main>
   )
 };

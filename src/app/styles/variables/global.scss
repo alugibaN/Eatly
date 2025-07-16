@@ -16,7 +16,7 @@
 
 
   // Размеры 
-  --navbar-height: 50px;
+
   --sidebar-width:300px;
  --sidebar-width-collapsed: 80px;
 
@@ -26,7 +26,8 @@
  //Button size height
  --button-height-size-L: 60px;
 
- --component-width-max: 1380px;
+
+//  --component-profile-width-max: 1380px
 
 
  // z-index
@@ -35,4 +36,10 @@
 
  //Цвета 
  --overlay-color: rgb(0 0 0 / 60%);
+
+
+
+
+ --component-width-max: 1280px;
+ --navbar-height: 88px;
 }

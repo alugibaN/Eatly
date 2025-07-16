@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 430px;
+  max-width: 397px;
   box-shadow: 20px 20px 23px rgba(0, 0, 0, 0.1);
   border-radius: 35px;
   border: 1px solid  rgba(0, 0, 0, 0.1);
@@ -14,7 +14,7 @@
 }
 
 .restaurant__img{
-  width:430px;
+  width:100%;
   border-radius: 35px 35px 0px 0;
 }
 .restaurant__spisok_item_title{
@@ -23,7 +23,7 @@
   margin:0 25px
 };
 .restaurant__container{
-  background-color: #EFE6CB;
+  // background-color: #EFE6CB;
 };
 .restaurant__healthy{
   background-color: #EFE6CB;
@@ -44,8 +44,8 @@
 .restaurant__container_text_time{
   display: grid;
   margin: 12px 28px 15px;
-  grid-template-columns: 88px 35px 40px 175px 47px;
-  grid-template-areas: "time star rating div book";
+  grid-template-columns: 88px 35px 40px 1fr 47px;
+  grid-template-areas: "time star rating null . book";
   color:#8D96A5;
   font-size: 1.2em
 };
@@ -76,4 +76,12 @@
 .restaurant__category_bookmark{
   margin-top: -10px;
   grid-area: book;
+}
+
+
+@media screen and (max-width:1320px) {
+  .restaurant__spisok_item{
+  width: auto;
+  
+  }
 }

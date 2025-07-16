@@ -12,60 +12,42 @@ const Comments = (props: CommentsProps) => {
   const { className } = props;
   return (
     <section className={classNames(cls.comments, {}, [className])}>
-      <h2 className={cls.comments__title}>
-        Customer <span className={cls.comments__say}>Say</span>
-      </h2>
-      <ul className={cls.comments__spisok}>
-        <li className={cls.comments__item}>
-          <div className={cls.comments__user}>
-            <img src={Avatar} alt="" className={cls.comments_img} />
-            <div className={cls.comments__comments}>
-              <p className={cls.comments__name}>Alexander R.</p>
-              <span className={cls.comments__time}>01 Eear With Us</span>
-            </div>
-            <Path className={cls.path} />
-          </div>
-          <p className={cls.coments__text}>
-            “ Online invoice payment helps companies save time, are faster and
-            save maximum effort for the clients and save maximum effort. Online
-            invoice payment helps companies save time ”
-          </p>
-          <Stars className={cls.stars} />
-        </li>
-        <li className={cls.comments__item}>
-          <p className={cls.coments__text}>
-            “ Online invoice payment helps companies save time, are faster and
-            save maximum effort for the clients and save maximum effort. Online
-            invoice payment helps companies save time ”
-          </p>
-          <Stars className={cls.stars} />
-        </li>
-        <li className={cls.comments__item}>
-          <p className={cls.coments__text}>
-            “ Online invoice payment helps companies save time, are faster and
-            save maximum effort for the clients and save maximum effort. Online
-            invoice payment helps companies save time ”
-          </p>
-          <Stars className={cls.stars} />
-        </li>
-        <li className={cls.comments__item}>
-          <p className={cls.coments__text}>
-            “ Online invoice payment helps companies save time, are faster and
-            save maximum effort for the clients and save maximum effort. Online
-            invoice payment helps companies save time ”
-          </p>
-          <Stars className={cls.stars} />
-        </li>
-        <li className={cls.comments__item}>
-          <p className={cls.coments__text}>
-            “ Online invoice payment helps companies save time, are faster and
-            save maximum effort for the clients and save maximum effort. Online
-            invoice payment helps companies save time ”
-          </p>
-          <Stars className={cls.stars} />
-        </li>
+    <h2 className={cls.comments__title}>
+      Customer <span className={cls.comments__say}>Say</span>
+    </h2>
+    
+    <div className={cls.comments__wrapper}>
+      <ul className={cls.comments__list}>
+        {[1, 2, 3, 4, 5].map((item) => (
+          <li key={item} className={cls.comments__item}>
+            {item === 1 && (
+              <div className={cls.comments__user}>
+                <img 
+                  src={Avatar} 
+                  alt="User avatar" 
+                  className={cls.comments__img} 
+                  loading="lazy"
+                />
+                <div className={cls.comments__userInfo}>
+                  <p className={cls.comments__name}>Alexander R.</p>
+                  <span className={cls.comments__time}>01 Year With Us</span>
+                </div>
+                <Path className={cls.comments__path} />
+              </div>
+            )}
+            
+            <p className={cls.comments__text}>
+              "Online invoice payment helps companies save time, are faster and
+              save maximum effort for the clients and save maximum effort.
+              Online invoice payment helps companies save time"
+            </p>
+            
+            <Stars className={cls.comments__stars} />
+          </li>
+        ))}
       </ul>
-    </section>
+    </div>
+  </section>
   );
 };
 

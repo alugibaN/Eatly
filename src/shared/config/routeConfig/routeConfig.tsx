@@ -13,7 +13,7 @@ import LoginPage from "pages/Auth/LoginPage/ui/LoginPage";
 import AuthPage from "pages/Auth/AuthPage/ui/AuthPage";
 import ForgotPasswordPage from "pages/Auth/ForgotPasswordPage/ui/ForgotPasswordPage";
 
-export enum AppRoutes {
+ enum AppRoutes {
   HOME = "home",
   ABOUT = "about",
   UIKIT = "ui_kit",
@@ -24,7 +24,7 @@ export enum AppRoutes {
   CONTACT = "contact",
   NOT_FOUND = "not_found",
 }
-export const NedWrapperRoutes: Record<AppRoutes, boolean> = {
+ const NedWrapperRoutes: Record<AppRoutes, boolean> = {
     [AppRoutes.HOME]: true,
     [AppRoutes.ABOUT]: true,
     [AppRoutes.UIKIT]: true,

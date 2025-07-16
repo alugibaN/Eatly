@@ -15,10 +15,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid #6B5CBE;  
   gap: 15px;
-  width: 17vw;
+  width: 20vw;
   text-align:center
+}
+.center{
+  border-right: 1px solid #6B5CBE;  
+  border-left: 1px solid #6B5CBE;  
 }
 
 .bunner__title{
@@ -45,9 +48,56 @@
 };
 .banner__vector_right_top{
   position: absolute;
-  right: 0px
+  right: 0px;
+  height: 300px
 };
 .banner__vectore_right_bottom{
   position: absolute;
-  right: 10px
+  right: 10px;
+  height: 300px
 };
+
+@media screen and (max-width: 1000px) {
+  .banner{
+    height: auto;
+    flex-direction: column;
+  }
+  .bunner__text_container{
+    height: 250px;
+    max-width: 400px;
+    min-width: 375px;
+  }
+  .center{
+    border-right: none;  
+    border-left: none;  
+    border-top: 1px solid #6B5CBE;  
+    border-bottom: 1px solid #6B5CBE;  
+  }
+  .banner__subtitle{
+    font-size: 1.2em;
+  }
+  .banner__vectore_left_bottom {
+    position: absolute;
+    left:-200px; top: -150px;
+    transform:rotateZ(-0.25turn);
+  };
+  .banner__vectore__left_top{
+    position: absolute;
+    left: -170px; top: -100px;
+    transform:rotateZ(-0.25turn);
+  };
+  .banner__vector_right_top{
+    position: absolute;
+    right: -20px;
+    bottom: -40px;
+    transform:rotateZ(0.06turn);
+  };
+  .banner__vectore_right_bottom{
+    position: absolute;
+    right: -40px;
+    bottom: -40px;
+    transform:rotateZ(0.04turn);
+  };
+
+
+}

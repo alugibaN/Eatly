@@ -22,11 +22,13 @@
 }
 
 .size_m{
-  padding: 17px 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
 }
 
 .size_l{
-  // width: 200px;
   padding: 17px 26px;
 }
 .size_null{
@@ -34,8 +36,9 @@
 }
 
 .none_bg{
-
   color: var(--fronts-color-primary);
+}
+.without__styles{
 }
 .view_all{
   color: var(--link-colors-view);

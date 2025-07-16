@@ -1,11 +1,39 @@
 .title{
   color: #FFFFFF;
   font-size: 4em;
-  font-weight: 900
+  font-weight: 900;
+  position: relative;
 }
 .subtitle{
   font-size: 7.55em;
   color: #7C6FCD;
   font-weight: 900;
   line-height:70%;
+}
+.food{
+  width: 280px;
+  height:280px;
+  position:absolute;
+  right: 50px;
+  bottom:-80px;
+  border: none;
+  z-index: 10;
+}
+
+@media screen and (max-width:1270px) {
+  .title{
+    font-size: 3em;
+  }
+  .subtitle{
+    margin-top: 20px;
+    font-size: 5em
+  }
+}
+
+
+@media screen and (max-width:1110px) {
+  .food{
+    width: 230px;
+    height: 230px;
+  }
 }

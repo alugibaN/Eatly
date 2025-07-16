@@ -38,3 +38,21 @@
   border: none;
   z-index: 10;
 }
+
+@media screen and (max-width:950px) {
+  .fromDiscounts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .food{
+    position: static;
+    height: 170px;
+    width: 170px;
+    margin-top: 30px;
+  }
+
+
+}

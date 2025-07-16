@@ -7,6 +7,7 @@ import SweDish from "shared/assets/icons/SweDish.png";
 import SweBur from "shared/assets/icons/SweBurg.png";
 import FoodOne from "shared/assets/icons/FoodOne.png";
 import { useState } from "react";
+import Vector from "shared/assets/icons/VectorApp.svg";
 
 interface DashboardProps {
   className?: string;
@@ -42,6 +43,8 @@ const Dashboard = (props: DashboardProps) => {
     vocher: "583.45",
     progresVocher: "58.35%",
   });
+
+
 
   const cheangeCost = async (value: string) => {
 
@@ -92,6 +95,7 @@ const Dashboard = (props: DashboardProps) => {
             <MiniDish key={index} item={el} />
           ))}
         </ul>
+        <Vector className={cls.vectore}/>
       </div>
       <div className={cls.dashboard__purchases}>
         <div className={cls.purchases}>
@@ -109,7 +113,7 @@ const Dashboard = (props: DashboardProps) => {
         </div>
         <ul className={cls.purchases_spisok}>
           <li className={cls.purchases__item}>
-            <div className={cls.purchases__wallet}>
+            <div className={`${cls.purchases__wallet} ${cls.purchases__icon}`}>
               <Wallelt />
             </div>
             <div className={cls.purchases_name}>
@@ -128,7 +132,7 @@ const Dashboard = (props: DashboardProps) => {
           </li>
 
           <li className={cls.purchases__item}>
-            <div className={cls.purchases__money}>
+            <div className={`${cls.purchases__money} ${cls.purchases__icon}`}>
               <Money />
             </div>
             <div className={cls.purchases__name}>

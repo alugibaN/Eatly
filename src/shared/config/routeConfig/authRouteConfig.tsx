@@ -4,13 +4,13 @@ import LoginPage from "pages/Auth/LoginPage/ui/LoginPage";
 import React from "react";
 import { RouteProps } from "react-router-dom";
 
-export enum AuthRoutes {
+ enum AuthRoutes {
   LOGIN = 'login',
   AUTH = 'auth',
   FORGET_PASSWORD = 'forgot_password'
 };
 
-export const AuthRoutePath: Record<AuthRoutes, string> = {
+ const AuthRoutePath: Record<AuthRoutes, string> = {
   [AuthRoutes.LOGIN]: '/login',
   [AuthRoutes.AUTH]: '/auth',
   [AuthRoutes.FORGET_PASSWORD]: '/forgot-password'

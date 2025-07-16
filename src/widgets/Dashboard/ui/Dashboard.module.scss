@@ -1,7 +1,7 @@
 .Dashboard {
   border-top: 1px solid #d7d7d7;
   border-bottom: 1px solid #d7d7d7;
-  width: var(--component-width-max);
+  max-width: var(--component-width-max);
   margin: 0 auto;
   padding-top: 11.5vh;
   padding-bottom: 15.3vh;
@@ -9,12 +9,15 @@
   justify-content: space-between;
   color: #18181b;
 }
+.Dashboard__container {
+  position: relative;
+}
 
 .dashboard__title {
   font-weight: 700;
   font-size: 3.5em;
   max-width: 600px;
-  line-height: 70px;
+  // line-height: 70px
 }
 .dashboard__purchases_words {
   color: var(--button-bg-primary-color);
@@ -27,8 +30,17 @@
   margin-top: 5vh;
 }
 
+.vectore {
+  transform: rotateZ(-100deg);
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  visibility: hidden;
+}
+
 .dashboard__purchases {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -43,6 +55,9 @@
 }
 .purchases__title {
   font-size: 2.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .purchases__select {
   border: none;
@@ -75,8 +90,7 @@
   position: relative;
 }
 
-.purchases__money {
-  background-color: #f2fdf6;
+.purchases__icon{
   width: 60px;
   height: 60px;
   display: flex;
@@ -84,14 +98,14 @@
   align-items: center;
   border-radius: 50px;
 }
+
+
+.purchases__money {
+  background-color: #f2fdf6;
+
+}
 .purchases__wallet {
   background-color: #f4f0ff;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
 }
 
 .purchases__item_title {
@@ -119,7 +133,7 @@
   grid-column-start: 1;
   grid-column-end: 4;
   border-radius: 20px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 .purchases__item_load {
   height: 10px;
@@ -129,10 +143,9 @@
   margin-bottom: 20px;
   position: relative;
   z-index: 0;
-
 }
 
-.wallet{
+.wallet {
   background-color: #e2dff2;
 }
 
@@ -140,16 +153,94 @@
   background-color: #feefd1;
 }
 
-.progress__value_expense{
+.progress__value_expense {
   height: 10px;
-  background-color: #6C5FBC;
+  background-color: #6c5fbc;
   border-radius: 20px;
   transition: width 0.5s;
 }
 
-.progress__value_vocher{
+.progress__value_vocher {
   height: 10px;
-  background-color: #FBAD18;
+  background-color: #fbad18;
   border-radius: 20px;
   transition: width 0.5s;
+}
+
+@media screen and (max-width: 1320px) {
+  .Dashboard {
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .dashboard__title {
+    font-size: 2.5em;
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .Dashboard {
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  .dashboard__purchases {
+    margin: 0 auto;
+  }
+  .Dashboard__container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .vectore {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .banners {
+    margin-top: 30px;
+  }
+  .dashboard__title {
+    font-size: 2.3em;
+    width: 360px;
+  }
+  .purchases {
+    margin: 26px 24px 0;
+  }
+  .purchases__title {
+    font-size: 23px;
+  }
+  .purchases__select {
+    font-size: 16px;
+    width: 125px;
+  }
+  .purchases_spisok{
+    margin-top: 25px;
+  }
+  .purchases__item {
+    height: 120px;
+    grid-template-columns: auto 1fr auto;
+  }
+  .purchases__icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+  }
+  .purchases__item_title {
+    font-size: 1em;
+  }
+  .purchases__item_subtitle {
+    margin-top: 3px;
+    font-size: 0.8em;
+  }
+  .purchases__item_coast {
+    font-size: 1em;
+  }
+  
 }

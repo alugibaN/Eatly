@@ -15,7 +15,7 @@ const MenuHead = (props: MenuHeadProps) => {
   return (
      <section className={classNames(cls.MenuHead, {}, [className])}>
         <FromDiscounts isInput={false} size={FromDiscountsSize.M}/>
-        <Input/>
+         <Input/>
         <div className={cls.buttons}>
         <Button  theme={ButtonTheme.BORDER} className={cls.button}>Food</Button>
         <Button theme={ButtonTheme.BACKGROUND} className={cls.button}>Resturent</Button>

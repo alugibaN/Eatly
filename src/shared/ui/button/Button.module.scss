@@ -22,8 +22,6 @@
   border-radius: 10px;
   outline: none;
   background-color: var(--button-bg-link-color);
-
-  
 }
 
 .bacgroundInverted {
@@ -48,23 +46,13 @@
   color: var(--fronts-color-secondary) 
 }
 
-// .square{
-//   padding: 0;
-// }
-
 .size_m{
-  // width: var(--font-line-m);
-  // height: var(--font-line-m);
-  // font-size: var(--font-size-m);
-  width: 200px;
+
 }
 .size_l{
   width: var(--button-size-L);
   height: var(--button-height-size-L);
-  // font-size: var(--font-size-l);
 }
 .size_xl{
   width: var(--button-size-L);
-  // height: var(--font-line-xl);
-  // font-size: var(--font-size-xl);
 }

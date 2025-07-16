@@ -7,12 +7,14 @@
 body{
   font-size: var(--font-m);
   font-family:"Montserrat", 'Roboto';
-  scrollbar-color:#FFF3D6
+  scrollbar-color:#FFF3D6;
+  max-width: 1800px;
+  margin: auto;
 }
 .app {
   background: var(--bg-color);
   color: var(--primary-color);
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .content-page {
@@ -21,4 +23,15 @@ body{
 
 .page-wrapper {
   flex-grow: 1;
+  max-width: var(--component-width-max);
+  margin: auto;
+}
+
+
+.sas{
+  border: solid 5px #FFFF;
+  display: flex;
+  flex-wrap: wrap;
+  width: 180px; height:180px;
+
 }
