@@ -38,14 +38,14 @@ const Banner = (props: BannerProps) => {
               className={cls.banner__text_button}
               theme={AppLinkTheme.PRIMARY}
               size={windowWidth < 630 ? AppLinkSize.sizeM : AppLinkSize.sizeL}
-              to={"/"}
+              to={"/menu"}
             >
               {t("Начать")}
             </AppLink>
             <AppLink
               className={cls.banner__text_button}
               theme={AppLinkTheme.BORDER_PRIMARY}
-              to={"/"}
+              to={"/pricing"}
             >
               {t("Перейти на Pro")}
             </AppLink>

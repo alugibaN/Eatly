@@ -6,25 +6,31 @@ import { listRestaurantState } from "../types/ListRestaurantShema";
 const initialState: listRestaurantState = {
   restaurants: [
     {
+      id:"a123fdsafs52r386didgyh",
       img: ChickenRest,
       name: "The Chicken King",
       property: "Healthy",
       time: "24 min",
       star: 4.8,
+      users:[]
     },
     {
+      id: "ksjhdjfdg562413987asd",
       img: burgerKing,
       name: "The Burger King",
       property: "Trending",
       time: "24 min",
       star: 4.9,
+      users:["we9ry98uihjn1a9sf75sa2d"]
     },
     {
+      id: "xcvbn4jk5m32l1ljjj",
       img: ChickenRest,
       name: "Pizza",
       property: "Healthy",
       time: "24 min",
       star: 4.8,
+      users:[]
     },
   ],
 };

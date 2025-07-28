@@ -1,7 +1,9 @@
 export interface IlistRestaurant {
-  img:string;
-  name: string;
+  id:       string;
+  img:      string;
+  name:     string;
   property: string;
-  time: string;
-  star: number
+  time:     string;
+  star:     number;
+  users:    string[];
 }

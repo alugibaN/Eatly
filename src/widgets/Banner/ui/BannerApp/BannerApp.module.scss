@@ -24,7 +24,7 @@
   grid-area: title;
   padding-top: 70px;
   margin-bottom: 40px;
-  text-align: center;
+  // text-align: center;
 }
 
 .bunner__text_container {
@@ -51,6 +51,9 @@
 .bunner__text_button {
   margin-top: 60px;
   margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px
 }
 
 .bunner__vectore {

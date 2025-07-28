@@ -73,20 +73,21 @@
   margin-top: 2px;
   grid-area: rating;
 }
-.restaurant__category_bookmark {
-  margin-top: -10px;
-  fill: #6c5fbc;
+.restaurant__circle {
+  background-color: #dbd9ee;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
   display: grid;
   grid-area: book;
 }
-
-.restaurant__category_bookmark::before {
-  content: "";
-  // display: grid;
-  grid-area: book;
-  width: 100px;
-  height: 100px;
-  background-color: black;
+.restaurant__category_bookmark {
+  margin-top: -10px;
+  fill: #f9f9f9;
+  margin: auto;
+}
+.restaurant__category_bookmark.favorite {
+  fill: #6c5fbc;
 }
 
 @media screen and (max-width: 1320px) {

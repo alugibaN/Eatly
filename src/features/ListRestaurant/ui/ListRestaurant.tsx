@@ -11,11 +11,9 @@ const ListRestaurant = (props: ListRestaurantProps) => {
   const { className } = props;
   const restaurants = useSelector(getRestaurantValue);
 
-  console.log(restaurants);
-
   return (
     <ul className={cls.restaurant__spisok}>
-       {restaurants.map((restaurant, index)=> <CardRestaurant restaurant={restaurant} key={index}/> )} 
+       {restaurants.map((restaurant)=> <CardRestaurant restaurant={restaurant} key={restaurant.id}/> )} 
     </ul>
   );
 };

@@ -18,24 +18,24 @@ function Navbar(props: NavbarProps) {
   const { t } = useTranslation();
   const { windowWidth } = useSizeWindow();
   const [open, setOpen] = useState(false);
-  const [isSmall, setIsSmall] = useState(false)
+  const [isSmall, setIsSmall] = useState(false);
 
   const mods: Record<string, boolean> = {
-    [cls.open]: open
-  }
+    [cls.open]: open,
+  };
 
-  const openMenu = () =>{
-    setOpen(!open)
-  }
-
-    
+  const openMenu = () => {
+    setOpen(!open);
+  };
 
   return (
     <>
       {windowWidth > 980 ? (
         <header className={cls.navbar}>
           <div className={cls.navbar__container}>
-            <Logo className={cls.navbar__logo} />
+            <AppLink to={"/"} theme={AppLinkTheme.NONE_BG}>
+              <Logo className={cls.navbar__logo} />
+            </AppLink>
             <div className={cls.navbar__links}>
               <AppLink
                 size={AppLinkSize.size_null}
@@ -83,9 +83,13 @@ function Navbar(props: NavbarProps) {
       ) : (
         <header className={cls.navbar}>
           <div className={cls.navbar__container}>
-            <Logo className={cls.navbar__logo} />
-            <button onClick={openMenu}
-            className={classNames( `${cls.navbar__menu}`,mods, [])}>
+            <AppLink to={"/"} theme={AppLinkTheme.NONE_BG}>
+              <Logo className={cls.navbar__logo} />
+            </AppLink>
+            <button
+              onClick={openMenu}
+              className={classNames(`${cls.navbar__menu}`, mods, [])}
+            >
               <IconMenu className={cls.navbar__menu_icon} />
             </button>
           </div>
