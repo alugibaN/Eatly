@@ -1,12 +1,8 @@
 import { useTranslation } from "react-i18next";
 import cls from "./DishesTop.module.scss";
 import { classNames } from "shared/lib/classNames/ClassNames";
-import FoodOne from "shared/assets/icons/FoodOne.png";
-import SweDish from "shared/assets/icons/SweDish.png";
-import SweBur from "shared/assets/icons/SweBurg.png";
-import AppLink, { AppLinkTheme } from "shared/ui/appLink/AppLink";
+import AppLink, { AppLinkSize, AppLinkType } from "shared/ui/appLink/AppLink";
 import Arrow from "shared/assets/icons/arrow-right-ser.svg";
-import { CardDish } from "entities/CardDish";
 import { ListDishes } from "features/ListDishes";
 
 interface DishesTopProps {
@@ -24,13 +20,13 @@ const DishesTop = (props: DishesTopProps) => {
         <span className={cls.dishesTop__title_word}> Dishes</span>
       </h2>
       <ListDishes/>
-      {/* <ul className={cls.dishes}>
-        {dish.map((el, i) => (
-          <CardDish dish={el} key={i} />
-        ))}
-      </ul> */}
-      <AppLink theme={AppLinkTheme.VIEW_ALL} to={"/"} className={cls.applink}>
-        View All <Arrow/>
+          <AppLink
+        type={AppLinkType.SECONDARY}
+        to={"/menu"}
+        size={AppLinkSize.SMALL}
+        className={cls.applink}
+      >
+        View All <Arrow className={cls.arrow} />
       </AppLink>
     </section>
   );

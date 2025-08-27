@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import cls from "./BannerApp.module.scss";
 import { classNames } from "shared/lib/classNames/ClassNames";
 import Mobail from "shared/assets/icons/Mobile.png";
-import AppLink, { AppLinkSize, AppLinkTheme } from "shared/ui/appLink/AppLink";
+import AppLink, { AppLinkSize, AppLinkType } from "shared/ui/appLink/AppLink";
 import Arrow from "shared/assets/icons/arrow-right.svg";
 import Vector from "shared/assets/icons/VectorApp.svg";
 import useSizeWindow from "shared/lib/hooks/useSizeWindow/useSizeWindow";
@@ -29,8 +29,8 @@ const BannerApp = (props: BannerAppProps) => {
         <li className={cls.bunner__text_list}>{t("Эти продукты")}</li>
         <AppLink
           className={cls.bunner__text_button}
-          theme={AppLinkTheme.PRIMARY}
-          size={AppLinkSize.sizeL}
+          type={AppLinkType.PRIMARY}
+          size={AppLinkSize.MEDIUM}
           to={"/"}
         >
           {t("Загрузить")}

@@ -38,7 +38,7 @@
 .BannerAuth__title{
   display: flex;
   justify-content:center ;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 2.5em;
   color: var(--fronts-color-secondary)
 }
@@ -48,4 +48,5 @@
   color: #D3CFEB;
   font-size: 0.9em;
   width: 500px;
+  line-height: 150%;
 }

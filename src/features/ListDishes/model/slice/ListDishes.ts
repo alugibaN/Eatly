@@ -1,62 +1,47 @@
-import { createSlice } from "@reduxjs/toolkit";
-import FoodOne from "shared/assets/icons/FoodOne.png";
-import SweDish from "shared/assets/icons/SweDish.png";
-import SweBur from "shared/assets/icons/SweBurg.png";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { ListDishesShema } from "../types/ListDishesShema";
 
-
-
-const initialState = {
-  dishes: [
-    {
-      img: FoodOne,
-      property: "Healthy",
-      name: "Chicken Hell",
-      time: "24 min",
-      star: 4.8,
-      cost: 12,
-    },
-    {
-      img: SweDish,
-      property: "Healthy",
-      name: "Swe Dish",
-      time: "34 min",
-      star: 4.9,
-      cost: 19,
-    },
-    {
-      img: SweBur,
-      property: "Trending",
-      name: "Swe Dish",
-      time: "34 min",
-      star: 4.9,
-      cost: 19,
-    },
-    {
-      img: FoodOne,
-      property: "Healthy",
-      name: "Chicken Hell",
-      time: "24 min",
-      star: 4.8,
-      cost: 12,
-    },
-    {
-      img: FoodOne,
-      property: "Trending",
-      name: "Swe Dish",
-      time: "24 min",
-      star: 4.8,
-      cost: 19,
-    },
-  ],
+const initialState: ListDishesShema = {
+  dishes: [],
+  status: "idle",
+  error: null,
 };
+
+
+
+export const  fetchCardValue = createAsyncThunk<
+  number,
+  void, 
+  {rejectValue: string}
+>(
+  "dish/getCard",
+  async (_, { rejectWithValue }) => {
+  try {
+      const response = await fetch('https://api');
+      if (!response.ok) {
+        throw new Error('Network error');
+      }
+      const data = await response.json();
+      return data.value; 
+    } catch (error) {
+      return rejectWithValue('Failed to fetch counter value'); 
+    }
+  }
+)
+
+
+
 
 const dishesListSlice = createSlice({
   name: "dishesList",
   initialState,
-  reducers: {
+  reducers: {},
+  // extraReducers: (builder) => {
+  //   builder.
+  //   getCards(
+  // }
+});
 
-  }
-})
+export const { actions: ActionDishesList } = dishesListSlice;
+export const { reducer: ReducersDishesList } = dishesListSlice;
 
-export const {actions: ActionDishesList} = dishesListSlice
-export const {reducer: ReducersDishesList} = dishesListSlice

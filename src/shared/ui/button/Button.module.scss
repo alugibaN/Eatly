@@ -15,7 +15,7 @@
   border: none;
 }
 
-.clear {
+.secondary {
   padding:0;
   background: none;
   border:none;
@@ -31,28 +31,16 @@
 }
 
 .border{
-  width: 50%; height: 100%;
   border: solid 1px var( --button-bg-primary-color);
-  border-radius: 20px 0 0 20px;
-  background-color: var(--button-bg-second-primary-color);
-  color: var(--fronts-color-primary)
 };
 
-.background{
-  width: 50%; height: 100%;
-  border:none;
-  border-radius: 0 20px 20px 0;
-  background-color: var(--button-bg-primary-color);
-  color: var(--fronts-color-secondary) 
-}
-
-.size_m{
+.small{
 
 }
-.size_l{
+.medium{
   width: var(--button-size-L);
   height: var(--button-height-size-L);
 }
-.size_xl{
+.large{
   width: var(--button-size-L);
 }

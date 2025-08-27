@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Roboto";
   font-weight: 900;
   color: #323142;
   gap:68px
@@ -23,6 +22,7 @@
   gap:30px;
 }
 .applink{
+  font-weight:500;
   display: flex;
   gap: 10px;
   margin-left: auto;

@@ -1,7 +1,7 @@
 import React from "react";
 import cls from "./PopupNavbar.module.scss";
 import { classNames } from "shared/lib/classNames/ClassNames";
-import AppLink, { AppLinkSize, AppLinkTheme } from "shared/ui/appLink/AppLink";
+import AppLink, { AppLinkSize, AppLinkType } from "shared/ui/appLink/AppLink";
 import { useTranslation } from "react-i18next";
 
 interface PopupNavbarProps {
@@ -24,8 +24,8 @@ const PopupNavbar = (props: PopupNavbarProps) => {
       <ul className={cls.popup__links}>
         <li className={cls.popup__link}>
           <AppLink
-            size={AppLinkSize.sizeM}
-            theme={AppLinkTheme.SECONDARY}
+            size={AppLinkSize.SMALL}
+            type={AppLinkType.SECONDARY}
             to={"/menu"}
           >
             {t("Меню")}
@@ -33,8 +33,8 @@ const PopupNavbar = (props: PopupNavbarProps) => {
         </li>
         <li className={cls.popup__link}>
           <AppLink
-            size={AppLinkSize.sizeM}
-            theme={AppLinkTheme.SECONDARY}
+            size={AppLinkSize.SMALL}
+            type={AppLinkType.SECONDARY}
             to={"/blog"}
           >
             {t("Блог")}
@@ -42,8 +42,8 @@ const PopupNavbar = (props: PopupNavbarProps) => {
         </li>
         <li className={cls.popup__link}>
           <AppLink
-            size={AppLinkSize.sizeM}
-            theme={AppLinkTheme.SECONDARY}
+            size={AppLinkSize.SMALL}
+            type={AppLinkType.SECONDARY}
             to={"/pricing"}
           >
             {t("Ценообразование")}
@@ -51,8 +51,8 @@ const PopupNavbar = (props: PopupNavbarProps) => {
         </li>
         <li className={cls.popup__link}>
           <AppLink
-            size={AppLinkSize.sizeM}
-            theme={AppLinkTheme.SECONDARY}
+            size={AppLinkSize.SMALL}
+            type={AppLinkType.SECONDARY}
             to={"/contact"}
           >
             {t("Контакты")}
@@ -62,15 +62,15 @@ const PopupNavbar = (props: PopupNavbarProps) => {
       <ul className={cls.popup__links}>
         <li className={cls.popup__link}>
           <AppLink
-            size={AppLinkSize.sizeM}
-            theme={AppLinkTheme.SECONDARY}
+            size={AppLinkSize.SMALL}
+            type={AppLinkType.SECONDARY}
             to={"/login"}
           >
             {t("Вход")}
           </AppLink>
         </li>
         <li className={cls.popup__link}>
-          <AppLink size={AppLinkSize.sizeM} className="pd" to={"/auth"}>
+          <AppLink size={AppLinkSize.SMALL} className="pd" to={"/auth"}>
             Присоеденится к Eatly
           </AppLink>
         </li>

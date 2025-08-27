@@ -7,7 +7,7 @@ import PostCard from "widgets/Post/ui/PostCard/PostCard";
 import ImgThree from "shared/assets/icons/ImageThree.jpg";
 import ImgFour from "shared/assets/icons/ImageFour.jpg";
 import ImgFive from "shared/assets/icons/ImageFive.jpg";
-import Button, { ButtonTheme } from "shared/ui/button/Button";
+import Button, { ButtonType } from "shared/ui/button/Button";
 
 interface WritingProps {
   className?: string;
@@ -76,7 +76,7 @@ const ArticlePage = (props: WritingProps) => {
         <PostCard key={i} obj={el} />
        ))}
       </ul>
-      <Button className={cls.button} theme={ButtonTheme.PRIMARY}>Next Article</Button>
+      <Button className={cls.button} type={ButtonType.PRIMARY}>Next Article</Button>
      </main>
   );
 };

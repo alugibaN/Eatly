@@ -5,7 +5,7 @@ import Pizza from "shared/assets/icons/Pizza.svg";
 import Asian from "shared/assets/icons/Hotdog.svg";
 import Donat from "shared/assets/icons/Doughnut.svg";
 import Ice from "shared/assets/icons/Icecream.svg";
-import Button, { ButtonTheme } from "shared/ui/button/Button";
+import Button from "shared/ui/button/Button";
 import { text } from "stream/consumers";
 import RangeWithMarks from "./RangeWithMarks/RangeWithMarks";
 

@@ -2,10 +2,10 @@ import React from "react";
 import { classNames } from "shared/lib/classNames/ClassNames";
 import cls from "./Sidebar.module.scss";
 import { useState } from "react";
-import Button, { ButtonSize, ButtonTheme } from "shared/ui/button/Button";
+import Button, { ButtonSize, ButtonType } from "shared/ui/button/Button";
 import Logo from "shared/assets/icons/logo.svg";
 import LogoMin from "shared/assets/icons/LogoMin.svg";
-import AppLink, { AppLinkTheme } from "shared/ui/appLink/AppLink";
+import AppLink from "shared/ui/appLink/AppLink";
 import Order from "shared/assets/icons/OrdersIcon.svg";
 import Home from "shared/assets/icons/HomeIcon.svg";
 import Messages from "shared/assets/icons/MessagesIcon.svg";
@@ -32,7 +32,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
       <AppLink
         to={"/"}
         className={cls.sidebar__item}
-        theme={AppLinkTheme.WITHOUT_STYLES}
+        // type={AppLinkTheme}
       >
         <Home className={cls.home} />
         {!collapsed ? <p className={cls.sidbar__text}>Dashboard</p> : null}
@@ -40,7 +40,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
       <AppLink
         to={"/"}
         className={cls.sidebar__item}
-        theme={AppLinkTheme.WITHOUT_STYLES}
+        // theme={AppLinkTheme.WITHOUT_STYLES}
       >
         <Order className={cls.order} />
         {!collapsed ? <p className={cls.sidbar__text}>Orders</p> : null}
@@ -48,7 +48,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
       <AppLink
         to={"/"}
         className={cls.sidebar__item}
-        theme={AppLinkTheme.WITHOUT_STYLES}
+        // theme={AppLinkTheme.WITHOUT_STYLES}
       >
         <Messages className={cls.messages} />
         {!collapsed ? <p className={cls.sidbar__text}>Messages</p> : null}
@@ -56,18 +56,17 @@ export const Sidebar = ({ className }: SidebarProps) => {
       <AppLink
         to={"/"}
         className={cls.sidebar__item}
-        theme={AppLinkTheme.WITHOUT_STYLES}
+        // theme={AppLinkTheme.WITHOUT_STYLES}
       >
         <Wallet className={cls.wallet} />
         {!collapsed ? <p className={cls.sidbar__text}>My Wallets</p> : null}
       </AppLink>
       <Button
-        type="button"
         onClick={onToggle}
         className={cls.collapseBtn}
-        theme={ButtonTheme.BACGROUND_INVERTED}
+        type={ButtonType.SECONDARY}
         square
-        size={ButtonSize.L}
+        size={ButtonSize.MEDIUM}
       >
         {collapsed ? ">" : "<"}
       </Button>

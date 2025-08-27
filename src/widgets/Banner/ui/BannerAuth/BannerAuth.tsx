@@ -23,8 +23,8 @@ const BannerAuth = (props: bannerAuthProps) => {
       <Gro className={cls.gro}/>
       <h2 className={cls.BannerAuth__title}>Find Foods With Love</h2>
       <p className={cls.BannerAuth__text}>
-      Eatly Is The Food Delivery Dashboard And Having More Than 2K+ Dishes <br/>
-      Including Asian, Chinese, Italians And Many More. Our Dashboard Helps <br/>
+      Eatly Is The Food Delivery Dashboard And Having More Than 2K+ Dishes 
+      Including Asian, Chinese, Italians And Many More. Our Dashboard Helps
       You To Manage Orders And Money.
       </p>
     </div>

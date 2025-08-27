@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import cls from "./NavbarProfile.module.scss";
 import { classNames } from "shared/lib/classNames/ClassNames";
-import Button, { ButtonTheme } from "shared/ui/button/Button";
+import Button, { ButtonType } from "shared/ui/button/Button";
 import MagnifyingGlass from "shared/assets/icons/MagnifyingGlass.svg";
 import Notification from "shared/assets/icons/notification.svg";
 import NotificationActive from "shared/assets/icons/notification-active.svg";
@@ -32,14 +32,14 @@ const NavbarProfile = (props: NavbarProfileProps) => {
          <h1>Dashboard</h1>
         <div className={cls.navbar__links}>
           <Button
-            theme={ButtonTheme.CLEAR}
+            type={ButtonType.SECONDARY}
             className={cls.navbar__links_button}
           >
             <MagnifyingGlass className={cls.lupa} />
           </Button>
 
           <Button
-            theme={ButtonTheme.CLEAR}
+            type={ButtonType.SECONDARY}
             className={cls.navbar__links_button}
           >
             {messagesActive ? (

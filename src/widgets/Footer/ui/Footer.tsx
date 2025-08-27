@@ -1,7 +1,7 @@
 import cls from "./Footer.module.scss";
 import { classNames } from "shared/lib/classNames/ClassNames";
 import Logo from "shared/assets/icons/logo.svg";
-import AppLink, { AppLinkTheme } from "shared/ui/appLink/AppLink";
+import AppLink, { AppLinkType } from "shared/ui/appLink/AppLink";
 import Insta from "shared/assets/icons/insta.svg";
 import LinkedIn from "shared/assets/icons/linkedin.svg";
 import Facebook from "shared/assets/icons/feicbuk.svg";
@@ -19,28 +19,28 @@ const Footer = (props: FooterProps) => {
         <Logo className={cls.footer__link_logo} />
         <AppLink
           className={cls.footer__link_blog}
-          theme={AppLinkTheme.SECONDARY}
+          type={AppLinkType.SECONDARY}
           to={"/"}
         >
           Blog
         </AppLink>
         <AppLink
           className={cls.footer__link_pricing}
-          theme={AppLinkTheme.SECONDARY}
+          type={AppLinkType.SECONDARY}
           to={"/"}
         >
           Pricing
         </AppLink>
         <AppLink
           className={cls.footer__link_about}
-          theme={AppLinkTheme.SECONDARY}
+          type={AppLinkType.SECONDARY}
           to={"/"}
         >
           About Us
         </AppLink>
         <AppLink
           className={cls.footer__link_contact}
-          theme={AppLinkTheme.SECONDARY}
+          type={AppLinkType.SECONDARY}
           to={"/"}
         >
           Contact

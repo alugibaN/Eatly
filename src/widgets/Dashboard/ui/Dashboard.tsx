@@ -3,9 +3,9 @@ import { classNames } from "shared/lib/classNames/ClassNames";
 import Money from "shared/assets/icons/money.svg";
 import Wallelt from "shared/assets/icons/wallet.svg";
 import MiniDish from "widgets/Dishes/ui/MiniDish/MiniDish";
-import SweDish from "shared/assets/icons/SweDish.png";
-import SweBur from "shared/assets/icons/SweBurg.png";
-import FoodOne from "shared/assets/icons/FoodOne.png";
+// import SweDish from "shared/assets/icons/SweDish.png";
+// import SweBur from "shared/assets/icons/SweBurg.png";
+// import FoodOne from "shared/assets/icons/FoodOne.png";
 import { useState } from "react";
 import Vector from "shared/assets/icons/VectorApp.svg";
 
@@ -14,24 +14,24 @@ interface DashboardProps {
 }
 
 let obj = [
-  {
-    title: "Chicken Hell",
-    subtitle: "On The Way",
-    time: "3:09 PM",
-    img: FoodOne,
-  },
-  {
-    title: "Swe Dish",
-    subtitle: "Delivered",
-    time: "Yesterday",
-    img: SweDish,
-  },
-  {
-    title: "Fish Hell Veg",
-    subtitle: "Cancelled",
-    time: "Yesterday",
-    img: SweBur,
-  },
+  // {
+  //   title: "Chicken Hell",
+  //   subtitle: "On The Way",
+  //   time: "3:09 PM",
+  //   img: FoodOne,
+  // },
+  // {
+  //   title: "Swe Dish",
+  //   subtitle: "Delivered",
+  //   time: "Yesterday",
+  //   img: SweDish,
+  // },
+  // {
+  //   title: "Fish Hell Veg",
+  //   subtitle: "Cancelled",
+  //   time: "Yesterday",
+  //   img: SweBur,
+  // },
 ];
 
 const Dashboard = (props: DashboardProps) => {
@@ -91,9 +91,9 @@ const Dashboard = (props: DashboardProps) => {
           Dashboard
         </h2>
         <ul className={cls.banners}>
-          {obj.map((el, index) => (
-            <MiniDish key={index} item={el} />
-          ))}
+          {/* {obj.map((el, index) => ( */}
+            {/* <MiniDish key={index} item={el} /> */}
+          {/* ))} */}
         </ul>
         <Vector className={cls.vectore}/>
       </div>

@@ -1,14 +1,13 @@
 import cls from "./Navbar.module.scss";
 import Logo from "shared/assets/icons/logo.svg";
 import { useTranslation } from "react-i18next";
-import AppLink, { AppLinkSize, AppLinkTheme } from "shared/ui/appLink/AppLink";
-import LangSwitcher from "widgets/LangSwwitcher/LangSwitcher";
-import { Sidebar } from "widgets/Sidebar";
+import AppLink, { AppLinkSize, AppLinkType } from "shared/ui/appLink/AppLink";
 import useSizeWindow from "shared/lib/hooks/useSizeWindow/useSizeWindow";
 import IconMenu from "shared/assets/icons/iconMenuNavbar.svg";
 import PopupNavbar from "widgets/pop-up/navbar/PopupNavbar";
 import { useState } from "react";
 import { classNames } from "shared/lib/classNames/ClassNames";
+import GlobalIcon from "shared/assets/icons/GlobalIcon.svg";
 
 interface NavbarProps {
   className?: string;
@@ -33,34 +32,34 @@ function Navbar(props: NavbarProps) {
       {windowWidth > 980 ? (
         <header className={cls.navbar}>
           <div className={cls.navbar__container}>
-            <AppLink to={"/"} theme={AppLinkTheme.NONE_BG}>
+            <AppLink to={"/"} type={AppLinkType.SECONDARY}>
               <Logo className={cls.navbar__logo} />
             </AppLink>
             <div className={cls.navbar__links}>
               <AppLink
-                size={AppLinkSize.size_null}
-                theme={AppLinkTheme.SECONDARY}
+                size={AppLinkSize.SMALL}
+                type={AppLinkType.SECONDARY}
                 to={"/menu"}
               >
                 {t("Меню")}
               </AppLink>
               <AppLink
-                size={AppLinkSize.size_null}
-                theme={AppLinkTheme.SECONDARY}
+                size={AppLinkSize.SMALL}
+                type={AppLinkType.SECONDARY}
                 to={"/blog"}
               >
                 {t("Блог")}
               </AppLink>
               <AppLink
-                size={AppLinkSize.size_null}
-                theme={AppLinkTheme.SECONDARY}
+                size={AppLinkSize.SMALL}
+                type={AppLinkType.SECONDARY}
                 to={"/pricing"}
               >
                 {t("Ценообразование")}
               </AppLink>
               <AppLink
-                size={AppLinkSize.size_null}
-                theme={AppLinkTheme.SECONDARY}
+                size={AppLinkSize.SMALL}
+                type={AppLinkType.SECONDARY}
                 to={"/contact"}
               >
                 {t("Контакты")}
@@ -68,14 +67,14 @@ function Navbar(props: NavbarProps) {
             </div>
             <div className={cls.navbar__auth}>
               <AppLink
-                size={AppLinkSize.sizeM}
-                theme={AppLinkTheme.SECONDARY}
+                size={AppLinkSize.MEDIUM}
+                type={AppLinkType.SECONDARY}
                 to={"/login"}
               >
-                {t("Вход")}
+              <GlobalIcon/>
               </AppLink>
-              <AppLink size={AppLinkSize.sizeM} className="pd" to={"/auth"}>
-                Присоеденится к Eatly
+              <AppLink size={AppLinkSize.MEDIUM} className="pd" to={"/login"}>
+                {t("Вход")}
               </AppLink>
             </div>
           </div>
@@ -83,7 +82,7 @@ function Navbar(props: NavbarProps) {
       ) : (
         <header className={cls.navbar}>
           <div className={cls.navbar__container}>
-            <AppLink to={"/"} theme={AppLinkTheme.NONE_BG}>
+            <AppLink to={"/"} type={AppLinkType.SECONDARY}>
               <Logo className={cls.navbar__logo} />
             </AppLink>
             <button

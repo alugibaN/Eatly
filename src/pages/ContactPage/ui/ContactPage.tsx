@@ -4,7 +4,7 @@ import { classNames } from "shared/lib/classNames/ClassNames";
 import Mobail from "shared/assets/icons/Mobile.png";
 import TitleGroup from "shared/assets/icons/Grouppp.svg";
 import StarGroup from "shared/assets/icons/Group.png";
-import Button, { ButtonTheme } from "shared/ui/button/Button";
+import Button, { ButtonType } from "shared/ui/button/Button";
 
 interface ContactPageProps {
   className?: string;
@@ -44,7 +44,7 @@ const ContactPage = (props: ContactPageProps) => {
             id=""
           />
           <Button
-            theme={ButtonTheme.PRIMARY}
+            type={ButtonType.PRIMARY}
             className={cls.contact__form_button}
           >
             {" "}
