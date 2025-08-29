@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import cls from "./TopRestaurants.module.scss";
 import { classNames } from "shared/lib/classNames/ClassNames";
-import Arrow from "shared/assets/icons/arrow-right-ser.svg";
+// import Arrow from "shared/assets/icons/arrow-right-ser.svg";
 import AppLink, { AppLinkSize, AppLinkType } from "shared/ui/appLink/AppLink";
 import { ListRestaurant } from "features/ListRestaurant";
 
@@ -26,7 +26,7 @@ const TopRestaurants = (props: TopRestaurantsProps) => {
         size={AppLinkSize.SMALL}
         className={cls.applink}
       >
-        View All <Arrow className={cls.arrow} />
+        View All
       </AppLink>
     </section>
   );

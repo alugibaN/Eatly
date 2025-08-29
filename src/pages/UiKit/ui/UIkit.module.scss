@@ -1,29 +1,8 @@
 .ui{
-  height:80vh; width:100vw;
+  height:80vh; width:100%;
   display:flex;
   justify-content: center;
   align-items: center;
-}
-.n{
-  font-weight: 900;
-}
-.nn{
-  font-weight: 700;
-}
-.nnn{
-  font-weight: 500;
-
-}
-.nnnn{
-  font-weight: 400;
-
-
-}
-.nnnnn{
-  font-weight: 300;
-
-}
-.nnnnnn{
-  font-weight: 100;
-
+  flex-direction: column;
+  gap: 20px
 }

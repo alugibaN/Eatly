@@ -30,7 +30,7 @@ const BannerApp = (props: BannerAppProps) => {
         <AppLink
           className={cls.bunner__text_button}
           type={AppLinkType.PRIMARY}
-          size={AppLinkSize.MEDIUM}
+          size={AppLinkSize.LARGE}
           to={"/"}
         >
           {t("Загрузить")}

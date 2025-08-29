@@ -73,7 +73,7 @@ function Navbar(props: NavbarProps) {
               >
               <GlobalIcon/>
               </AppLink>
-              <AppLink size={AppLinkSize.MEDIUM} className="pd" to={"/login"}>
+              <AppLink size={AppLinkSize.LARGE} className="pd" to={"/login"}>
                 {t("Вход")}
               </AppLink>
             </div>

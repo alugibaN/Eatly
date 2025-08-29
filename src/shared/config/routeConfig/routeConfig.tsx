@@ -9,41 +9,38 @@ import PricingPage from "pages/PrcingPage/PricingPage";
 import BlogPage from "pages/Blog/ui/BlogPage";
 import ArticlePage from "pages/ArticlePage/ui/ArticlePage";
 import ContactPage from "pages/ContactPage/ui/ContactPage";
-import LoginPage from "pages/Auth/LoginPage/ui/LoginPage";
-import AuthPage from "pages/Auth/AuthPage/ui/AuthPage";
-import ForgotPasswordPage from "pages/Auth/ForgotPasswordPage/ui/ForgotPasswordPage";
 
  enum AppRoutes {
-  HOME = "home",
-  ABOUT = "about",
-  UIKIT = "ui_kit",
-  MENU = "menu",
-  PRICING = "pricing",
-  BLOG = "blog",
-  POST = "post",
-  CONTACT = "contact",
+  HOME =      "home",
+  ABOUT =     "about",
+  UIKIT =     "ui_kit",
+  MENU =      "menu",
+  PRICING =   "pricing",
+  BLOG =      "blog",
+  POST =      "post",
+  CONTACT =   "contact",
   NOT_FOUND = "not_found",
 }
  const NedWrapperRoutes: Record<AppRoutes, boolean> = {
-    [AppRoutes.HOME]: true,
-    [AppRoutes.ABOUT]: true,
-    [AppRoutes.UIKIT]: true,
-    [AppRoutes.MENU]: true,
-    [AppRoutes.PRICING]: true,
-    [AppRoutes.BLOG]: true,
-    [AppRoutes.POST]: true,
-    [AppRoutes.CONTACT]: true,
+    [AppRoutes.HOME]:      true,
+    [AppRoutes.ABOUT]:     true,
+    [AppRoutes.UIKIT]:     true,
+    [AppRoutes.MENU]:      true,
+    [AppRoutes.PRICING]:   true,
+    [AppRoutes.BLOG]:      true,
+    [AppRoutes.POST]:      true,
+    [AppRoutes.CONTACT]:   true,
     [AppRoutes.NOT_FOUND]: true,    
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
-  [AppRoutes.HOME]: "/",
-  [AppRoutes.ABOUT]: "/about",
-  [AppRoutes.UIKIT]: "/uikit",
-  [AppRoutes.MENU]: "/menu",
+  [AppRoutes.HOME]:    "/",
+  [AppRoutes.ABOUT]:   "/about",
+  [AppRoutes.UIKIT]:   "/uikit",
+  [AppRoutes.MENU]:    "/menu",
   [AppRoutes.PRICING]: "/pricing",
-  [AppRoutes.BLOG]: "/blog",
-  [AppRoutes.POST]: "/post",
+  [AppRoutes.BLOG]:    "/blog",
+  [AppRoutes.POST]:    "/post",
   [AppRoutes.CONTACT]: "/contact",
 
   [AppRoutes.NOT_FOUND]: "*",

@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import cls from "./DishesTop.module.scss";
 import { classNames } from "shared/lib/classNames/ClassNames";
 import AppLink, { AppLinkSize, AppLinkType } from "shared/ui/appLink/AppLink";
-import Arrow from "shared/assets/icons/arrow-right-ser.svg";
+// import Arrow from "shared/assets/icons/arrow-right-ser.svg";
 import { ListDishes } from "features/ListDishes";
 
 interface DishesTopProps {
@@ -19,14 +19,14 @@ const DishesTop = (props: DishesTopProps) => {
         Our Top
         <span className={cls.dishesTop__title_word}> Dishes</span>
       </h2>
-      <ListDishes/>
-          <AppLink
+      <ListDishes />
+      <AppLink
         type={AppLinkType.SECONDARY}
         to={"/menu"}
         size={AppLinkSize.SMALL}
         className={cls.applink}
       >
-        View All <Arrow className={cls.arrow} />
+        View All
       </AppLink>
     </section>
   );

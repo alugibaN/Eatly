@@ -37,7 +37,7 @@ const Banner = (props: BannerProps) => {
             <AppLink
               className={cls.banner__text_button}
               type={AppLinkType.PRIMARY}
-              size={windowWidth < 630 ? AppLinkSize.SMALL : AppLinkSize.MEDIUM}
+              size={windowWidth < 630 ? AppLinkSize.MEDIUM : AppLinkSize.LARGE}
               to={"/menu"}
             >
               {t("Начать")}
@@ -45,7 +45,7 @@ const Banner = (props: BannerProps) => {
             <AppLink
               className={cls.banner__text_button}
               type={AppLinkType.SECONDARY}
-              size={AppLinkSize.MEDIUM}
+              size={windowWidth < 630 ? AppLinkSize.MEDIUM : AppLinkSize.LARGE}
               border={true}
               to={"/pricing"}
             >
