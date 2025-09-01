@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import cls from "./CardRestaurant.module.scss";
-import Star from "shared/assets/icons/Star.svg";
-import Bookmark from "shared/assets/icons/Bookmark.svg";
+import Star from "shared/assets/img/Star.svg";
+import Bookmark from "shared/assets/img/Bookmark.svg";
 import { IlistRestaurant } from "../model/types/CardRestaurant";
-import { classNames } from "shared/lib/classNames/ClassNames";
+import { classNames } from "shared/utils/classNames/ClassNames";
 
 interface CardRestaurantProps {
   className?: string;

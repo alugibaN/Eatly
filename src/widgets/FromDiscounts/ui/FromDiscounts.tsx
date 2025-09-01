@@ -1,5 +1,5 @@
 import cls from "./FromDiscounts.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
+import { classNames } from "shared/utils/classNames/ClassNames";
 // import Food from "shared/assets/icons/FoodSalat.png";
 import GetForm from "./GetForm/GetForm";
 import Discounts from "./Discounts/Discounts";

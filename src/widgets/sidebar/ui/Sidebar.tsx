@@ -1,15 +1,13 @@
-import React from "react";
-import { classNames } from "shared/lib/classNames/ClassNames";
+import React, { useState } from "react";
+import { classNames } from "shared/utils/classNames/ClassNames";
 import cls from "./Sidebar.module.scss";
-import { useState } from "react";
 import Button, { ButtonSize, ButtonType } from "shared/ui/button/Button";
-import Logo from "shared/assets/icons/logo.svg";
-import LogoMin from "shared/assets/icons/LogoMin.svg";
+import Logo from "shared/assets/img/logo.svg";
+import LogoMin from "shared/assets/img/LogoMin.svg";
 import AppLink from "shared/ui/appLink/AppLink";
-import Order from "shared/assets/icons/OrdersIcon.svg";
-import Home from "shared/assets/icons/HomeIcon.svg";
-import Messages from "shared/assets/icons/MessagesIcon.svg";
-import Wallet from "shared/assets/icons/WalletIcon.svg";
+import Order from "shared/assets/img/OrdersIcon.svg";
+import Home from "shared/assets/img/HomeIcon.svg";
+import Messages from "shared/assets/img/MessagesIcon.svg";
 
 interface SidebarProps {
   className?: string;
@@ -40,7 +38,6 @@ export const Sidebar = ({ className }: SidebarProps) => {
       <AppLink
         to={"/"}
         className={cls.sidebar__item}
-        // theme={AppLinkTheme.WITHOUT_STYLES}
       >
         <Order className={cls.order} />
         {!collapsed ? <p className={cls.sidbar__text}>Orders</p> : null}
@@ -48,7 +45,6 @@ export const Sidebar = ({ className }: SidebarProps) => {
       <AppLink
         to={"/"}
         className={cls.sidebar__item}
-        // theme={AppLinkTheme.WITHOUT_STYLES}
       >
         <Messages className={cls.messages} />
         {!collapsed ? <p className={cls.sidbar__text}>Messages</p> : null}
@@ -56,9 +52,8 @@ export const Sidebar = ({ className }: SidebarProps) => {
       <AppLink
         to={"/"}
         className={cls.sidebar__item}
-        // theme={AppLinkTheme.WITHOUT_STYLES}
       >
-        <Wallet className={cls.wallet} />
+
         {!collapsed ? <p className={cls.sidbar__text}>My Wallets</p> : null}
       </AppLink>
       <Button

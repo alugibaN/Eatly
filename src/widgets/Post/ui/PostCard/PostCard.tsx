@@ -1,6 +1,6 @@
 import React from "react";
 import cls from "./PostCard.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
+import { classNames } from "shared/utils/classNames/ClassNames";
 import PostHEader from "../PostHeader/PostHeader";
 
 enum PostSize {

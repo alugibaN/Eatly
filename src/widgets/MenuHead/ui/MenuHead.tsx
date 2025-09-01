@@ -1,6 +1,6 @@
 import React, { SyntheticEvent, useState } from "react"
 import cls from "./MenuHead.module.scss"
-import { classNames } from "shared/lib/classNames/ClassNames"
+import { classNames } from "shared/utils/classNames/ClassNames"
 import FromDiscounts, { FromDiscountsSize } from "widgets/FromDiscounts/ui/FromDiscounts";
 import Input from "shared/ui/Input/Input";
 import Button, { ButtonType } from "shared/ui/button/Button";

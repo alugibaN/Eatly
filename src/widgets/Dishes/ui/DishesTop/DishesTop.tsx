@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import cls from "./DishesTop.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
+import { classNames } from "shared/utils/classNames/ClassNames";
 import AppLink, { AppLinkSize, AppLinkType } from "shared/ui/appLink/AppLink";
 // import Arrow from "shared/assets/icons/arrow-right-ser.svg";
 import { ListDishes } from "features/ListDishes";

@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import cls from "./AuthForm.module.scss"
 import Button, { ButtonSize, ButtonType } from "shared/ui/button/Button";
-import Apple from "shared/assets/icons/Apple.svg";
-import G from "shared/assets/icons/G.svg";
+import Apple from "shared/assets/img/Apple.svg";
+import G from "shared/assets/img/G.svg";
 import AppLink, { AppLinkSize, AppLinkType } from "shared/ui/appLink/AppLink";
  interface AuthFormProps {
  className?: string

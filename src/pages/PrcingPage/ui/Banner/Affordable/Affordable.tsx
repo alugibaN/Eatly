@@ -1,8 +1,8 @@
 import React from "react";
 import cls from "./Affordable.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
-import Check from "shared/assets/icons/Check.svg";
-import MarkCross from "shared/assets/icons/MarkCross.svg";
+import { classNames } from "shared/utils/classNames/ClassNames";
+import Check from "shared/assets/img/Check.svg";
+import MarkCross from "shared/assets/img/MarkCross.svg";
 
 interface AffordableProps {
   className?: string;

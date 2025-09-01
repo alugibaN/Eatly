@@ -1,11 +1,11 @@
 import cls from "./Banner.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
-import Trustpilot from "../../../shared/assets/icons/trust-reviews.png";
+import { classNames } from "shared/utils/classNames/ClassNames";
+import Trustpilot from "../../../shared/assets/img/trust-reviews.png";
 import { useTranslation } from "react-i18next";
 import AppLink, { AppLinkSize, AppLinkType } from "shared/ui/appLink/AppLink";
-import BannerFood from "shared/assets/icons/BannerFood.png";
+import BannerFood from "shared/assets/img/BannerFood.png";
 import { useState } from "react";
-import useSizeWindow from "shared/lib/hooks/useSizeWindow/useSizeWindow";
+import useSizeWindow from "shared/utils/hooks/useSizeWindow/useSizeWindow";
 
 interface BannerProps {
   className?: string;

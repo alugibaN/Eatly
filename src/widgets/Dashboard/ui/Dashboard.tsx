@@ -1,13 +1,10 @@
 import cls from "./Dashboard.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
-import Money from "shared/assets/icons/money.svg";
-import Wallelt from "shared/assets/icons/wallet.svg";
+import { classNames } from "shared/utils/classNames/ClassNames";
+import Money from "shared/assets/img/money.svg";
+import Wallelt from "shared/assets/img/wallet.svg";
 import MiniDish from "widgets/Dishes/ui/MiniDish/MiniDish";
-// import SweDish from "shared/assets/icons/SweDish.png";
-// import SweBur from "shared/assets/icons/SweBurg.png";
-// import FoodOne from "shared/assets/icons/FoodOne.png";
 import { useState } from "react";
-import Vector from "shared/assets/icons/VectorApp.svg";
+import Vector from "shared/assets/img/VectorApp.svg";
 
 interface DashboardProps {
   className?: string;

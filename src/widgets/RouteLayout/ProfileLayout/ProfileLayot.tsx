@@ -1,6 +1,6 @@
 import React from "react"
 import cls from "./ProfileLayout.module.scss"
-import { classNames } from "shared/lib/classNames/ClassNames"
+import { classNames } from "shared/utils/classNames/ClassNames"
 import { NavbarProfile } from "widgets/ProfileNavbar/ui/NavbarProfile";
 import { Sidebar } from "widgets/Sidebar";
 

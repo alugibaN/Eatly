@@ -1,7 +1,7 @@
 import React from "react"
 import cls from "./ForgotPasswordPage.module.scss"
-import { classNames } from "shared/lib/classNames/ClassNames"
-import Logo from "shared/assets/icons/LogoMin.svg";
+import { classNames } from "shared/utils/classNames/ClassNames"
+import Logo from "shared/assets/img/LogoMin.svg";
 import Button, { ButtonType } from "shared/ui/button/Button";
 import AppLink, { AppLinkType } from "shared/ui/appLink/AppLink";
 import BannerAuth from "widgets/Banner/ui/BannerAuth/BannerAuth";

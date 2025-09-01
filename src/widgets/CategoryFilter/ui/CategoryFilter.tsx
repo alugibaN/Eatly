@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import cls from "./CategoryFilter.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
-import Pizza from "shared/assets/icons/Pizza.svg";
-import Asian from "shared/assets/icons/Hotdog.svg";
-import Donat from "shared/assets/icons/Doughnut.svg";
-import Ice from "shared/assets/icons/Icecream.svg";
+import { classNames } from "shared/utils/classNames/ClassNames";
+import Pizza from "shared/assets/img/Pizza.svg";
+import Asian from "shared/assets/img/Hotdog.svg";
+import Donat from "shared/assets/img/Doughnut.svg";
+import Ice from "shared/assets/img/Icecream.svg";
 import Button from "shared/ui/button/Button";
 import { text } from "stream/consumers";
 import RangeWithMarks from "./RangeWithMarks/RangeWithMarks";

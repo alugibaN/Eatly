@@ -1,9 +1,9 @@
 import React from "react";
 import cls from "./ContactPage.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
-import Mobail from "shared/assets/icons/Mobile.png";
-import TitleGroup from "shared/assets/icons/Grouppp.svg";
-import StarGroup from "shared/assets/icons/Group.png";
+import { classNames } from "shared/utils/classNames/ClassNames";
+import Mobail from "shared/assets/img/Mobile.png";
+import TitleGroup from "shared/assets/img/Grouppp.svg";
+import StarGroup from "shared/assets/img/Group.png";
 import Button, { ButtonType } from "shared/ui/button/Button";
 
 interface ContactPageProps {

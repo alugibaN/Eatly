@@ -1,7 +1,5 @@
 import React from "react";
 import cls from "./ItemRestaurants.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
-import ChickenRest from "shared/assets/icons/ChickenRest.png";
 import Star from "shared/assets/icons/Star.svg";
 import Bookmark from "shared/assets/icons/Bookmark.svg";
 import { useTranslation } from "react-i18next";

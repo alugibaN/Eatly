@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useMemo } from "react";
 import cls from "./Input.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
+import { classNames } from "shared/utils/classNames/ClassNames";
 import Search from "shared/assets/icons/Search.svg";
 
 interface InputProps {
@@ -42,12 +42,25 @@ const Input = (props: InputProps) => {
 
   const mods: Record<string, boolean> = {
     [cls.border]: border,
+    [cls.error]: error,
   };
 
+  const validationError = useMemo(
+    () =>
+      error &&
+      errorText && (
+        <p className={classNames(cls.input__error_text, {}, [])}>{errorText}</p>
+      ),
+    [error, error, size]
+  );
+
   return (
-    <div className={classNames(cls.input__container, mods, [])}>
-      <label className={cls.label}>{placeholder}</label>
-      <input className={cls.input} type={type} />
+    <div className={classNames(cls.input__container, {}, [className])}>
+      <div className={classNames(cls.input, mods, [])}>
+        <label className={cls.label}>{placeholder}</label>
+        <input className={cls.text} type={type} />
+      </div>
+      {validationError}
     </div>
   );
 };

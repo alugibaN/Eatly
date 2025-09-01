@@ -1,6 +1,6 @@
 import React from "react"
 import cls from "./PricingPage.module.scss"
-import { classNames } from "shared/lib/classNames/ClassNames"
+import { classNames } from "shared/utils/classNames/ClassNames"
 import Banner from "./ui/Banner/Banner";
 import Affordable from "./ui/Banner/Affordable/Affordable";
 import Dashboard from "widgets/Dashboard/ui/Dashboard";

@@ -5,7 +5,7 @@ import Input from "shared/ui/Input/Input";
 const UiKit = () => {
   return (
     <div className={cls.ui}>
-      <Input placeholder="Search"/>
+      <Input placeholder="Search" error={true} errorText="Ошибка"/>
       <Input border={true} placeholder="E-mail" />
     </div> 
 

@@ -1,11 +1,11 @@
 import cls from "./Footer.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
-import Logo from "shared/assets/icons/logo.svg";
+import { classNames } from "shared/utils/classNames/ClassNames";
+import Logo from "shared/assets/img/logo.svg";
 import AppLink, { AppLinkType } from "shared/ui/appLink/AppLink";
-import Insta from "shared/assets/icons/insta.svg";
-import LinkedIn from "shared/assets/icons/linkedin.svg";
-import Facebook from "shared/assets/icons/feicbuk.svg";
-import Tviter from "shared/assets/icons/tviter.svg";
+import Insta from "shared/assets/img/insta.svg";
+import LinkedIn from "shared/assets/img/linkedin.svg";
+import Facebook from "shared/assets/img/feicbuk.svg";
+import Tviter from "shared/assets/img/tviter.svg";
 
 interface FooterProps {
   className?: string;

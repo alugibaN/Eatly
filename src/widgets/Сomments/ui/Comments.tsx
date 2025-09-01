@@ -1,5 +1,5 @@
 import cls from "./Coments.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
+import { classNames } from "shared/utils/classNames/ClassNames";
 import Path from "shared/assets/icons/Path.svg";
 import Avatar from "shared/assets/icons/Avatar.png";
 import Stars from "shared/assets/icons/Stars.svg";

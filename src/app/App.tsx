@@ -1,6 +1,6 @@
 import "./styles/index.scss";
 import { useTheme } from "app/providers/themeProvaider/index";
-import { classNames } from "shared/lib/classNames/ClassNames";
+import { classNames } from "shared/utils/classNames/ClassNames";
 import { AppRouter } from "./providers/router/index";
 import { Suspense} from "react";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { classNames } from "shared/lib/classNames/ClassNames";
+import { classNames } from "shared/utils/classNames/ClassNames";
 import "./PageLoader.scss";
 
 

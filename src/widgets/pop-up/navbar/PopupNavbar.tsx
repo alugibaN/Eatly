@@ -1,6 +1,6 @@
 import React from "react";
 import cls from "./PopupNavbar.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
+import { classNames } from "shared/utils/classNames/ClassNames";
 import AppLink, { AppLinkSize, AppLinkType } from "shared/ui/appLink/AppLink";
 import { useTranslation } from "react-i18next";
 

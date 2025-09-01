@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import cls from "./NavbarProfile.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
+import { classNames } from "shared/utils/classNames/ClassNames";
 import Button, { ButtonType } from "shared/ui/button/Button";
-import MagnifyingGlass from "shared/assets/icons/MagnifyingGlass.svg";
-import Notification from "shared/assets/icons/notification.svg";
-import NotificationActive from "shared/assets/icons/notification-active.svg";
-import V from "shared/assets/icons/V.svg";
-import MiniAvatar from "shared/assets/icons/MiniAvatar.png";
-import Logo from 'shared/assets/icons/logo.svg';
+import MagnifyingGlass from "shared/assets/img/MagnifyingGlass.svg";
+import Notification from "shared/assets/img/notification.svg";
+import NotificationActive from "shared/assets/img/notification-active.svg";
+import V from "shared/assets/img/V.svg";
+import MiniAvatar from "shared/assets/img/MiniAvatar.png";
+import Logo from 'shared/assets/img/logo.svg';
 
 interface NavbarProfileProps {
   className?: string;

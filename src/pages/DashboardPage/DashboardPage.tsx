@@ -1,6 +1,6 @@
 import React from "react"
 import cls from "./DashboardPage.module.scss"
-import { classNames } from "shared/lib/classNames/ClassNames"
+import { classNames } from "shared/utils/classNames/ClassNames"
 
  interface DashboardPageProps {
  className?: string

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import cls from "./RangeWithMarks.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
+import { classNames } from "shared/utils/classNames/ClassNames";
 
 interface RangeWithMarksProps {
   className?: string;

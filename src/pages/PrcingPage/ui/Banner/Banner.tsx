@@ -1,8 +1,8 @@
 import React from "react";
 import cls from "./Banner.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
-import Pricing from "shared/assets/icons/Pricing.jpg";
-import Pring from "shared/assets/icons/VectorPricing.svg"
+import { classNames } from "shared/utils/classNames/ClassNames";
+import Pricing from "shared/assets/img/Pricing.jpg";
+import Pring from "shared/assets/img/VectorPricing.svg"
 
  interface BannerProps {
  className?: string

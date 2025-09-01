@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import cls from "./AuthPage.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
-import Logo from "shared/assets/icons/LogoMin.svg";
+import { classNames } from "shared/utils/classNames/ClassNames";
+import Logo from "shared/assets/img/LogoMin.svg";
 import AppLink, { AppLinkType } from "shared/ui/appLink/AppLink";
 import BannerAuth from "widgets/Banner/ui/BannerAuth/BannerAuth";
 import AuthForm from "entities/Auth/ui/AuthForm";

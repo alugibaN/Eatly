@@ -1,7 +1,6 @@
 import React from "react"
 import cls from "./Discounts.module.scss"
-import { classNames } from "shared/lib/classNames/ClassNames"
-// import Food from "shared/assets/icons/FoodSalat.png";
+import { classNames } from "shared/utils/classNames/ClassNames"
 
  interface DiscountsProps {
  className?: string

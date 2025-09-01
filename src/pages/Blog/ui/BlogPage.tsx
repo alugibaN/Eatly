@@ -1,15 +1,15 @@
 import React from "react";
 import cls from "./BlogPage.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
+import { classNames } from "shared/utils/classNames/ClassNames";
 import FromDiscounts from "widgets/FromDiscounts/ui/FromDiscounts";
 import Questions from "widgets/Questions/ui/Questions";
-import Img from "shared/assets/icons/Image.jpg";
-import ImgOne from "shared/assets/icons/ImageOne.jpg";
-import ImgTwo from "shared/assets/icons/ImageTwo.jpg";
-import ImgThree from "shared/assets/icons/ImageThree.jpg";
-import ImgFour from "shared/assets/icons/ImageFour.jpg";
-import ImgFive from "shared/assets/icons/ImageFive.jpg";
-import PostCard, { PostCardProps } from "widgets/Post/ui/PostCard/PostCard";
+import Img from "shared/assets/img/Image.jpg";
+import ImgOne from "shared/assets/img/ImageOne.jpg";
+import ImgTwo from "shared/assets/img/ImageTwo.jpg";
+import ImgThree from "shared/assets/img/ImageThree.jpg";
+import ImgFour from "shared/assets/img/ImageFour.jpg";
+import ImgFive from "shared/assets/img/ImageFive.jpg";
+import PostCard from "widgets/Post/ui/PostCard/PostCard";
 
 interface BlogPageProps {
   className?: string;

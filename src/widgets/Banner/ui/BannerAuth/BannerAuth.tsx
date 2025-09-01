@@ -1,10 +1,10 @@
 import React from "react";
 import cls from "./BannerAuth.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
-import Group from "shared/assets/icons/GroupMenu.png";
-import Vector from "shared/assets/icons/Vectoron.svg";
-import Vect from "shared/assets/icons/Vectorjjj.svg";
-import Gro from "shared/assets/icons/Gro.svg";
+import { classNames } from "shared/utils/classNames/ClassNames";
+import Group from "shared/assets/img/GroupMenu.png";
+import Vector from "shared/assets/img/Vectoron.svg";
+import Vect from "shared/assets/img/Vectorjjj.svg";
+import Gro from "shared/assets/img/Gro.svg";
 
  interface bannerAuthProps {
  className?: string

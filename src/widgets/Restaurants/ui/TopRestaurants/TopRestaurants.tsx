@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import cls from "./TopRestaurants.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
-// import Arrow from "shared/assets/icons/arrow-right-ser.svg";
+import { classNames } from "shared/utils/classNames/ClassNames";
 import AppLink, { AppLinkSize, AppLinkType } from "shared/ui/appLink/AppLink";
 import { ListRestaurant } from "features/ListRestaurant";
 

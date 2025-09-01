@@ -1,12 +1,12 @@
 import React from "react";
 import cls from "./ArticlePage.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
-import Img from "shared/assets/icons/Pic.jpg";
+import { classNames } from "shared/utils/classNames/ClassNames";
+import Img from "shared/assets/img/Pic.jpg";
 import PostHEader from "widgets/Post/ui/PostHeader/PostHeader";
 import PostCard from "widgets/Post/ui/PostCard/PostCard";
-import ImgThree from "shared/assets/icons/ImageThree.jpg";
-import ImgFour from "shared/assets/icons/ImageFour.jpg";
-import ImgFive from "shared/assets/icons/ImageFive.jpg";
+import ImgThree from "shared/assets/img/ImageThree.jpg";
+import ImgFour from "shared/assets/img/ImageFour.jpg";
+import ImgFive from "shared/assets/img/ImageFive.jpg";
 import Button, { ButtonType } from "shared/ui/button/Button";
 
 interface WritingProps {

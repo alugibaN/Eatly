@@ -1,7 +1,7 @@
 import React from "react";
 import cls from "./PostHEader.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
-import MiniAvatar from "shared/assets/icons/MiniAvatar.png";
+import { classNames } from "shared/utils/classNames/ClassNames";
+import MiniAvatar from "shared/assets/img/MiniAvatar.png";
 
  interface PostHEaderProps {
  className?: string

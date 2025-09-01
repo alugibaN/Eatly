@@ -1,13 +1,13 @@
 import cls from "./Navbar.module.scss";
-import Logo from "shared/assets/icons/logo.svg";
+import Logo from "shared/assets/img/logo.svg";
 import { useTranslation } from "react-i18next";
 import AppLink, { AppLinkSize, AppLinkType } from "shared/ui/appLink/AppLink";
-import useSizeWindow from "shared/lib/hooks/useSizeWindow/useSizeWindow";
-import IconMenu from "shared/assets/icons/iconMenuNavbar.svg";
+import useSizeWindow from "shared/utils/hooks/useSizeWindow/useSizeWindow";
+import IconMenu from "shared/assets/img/iconMenuNavbar.svg";
 import PopupNavbar from "widgets/pop-up/navbar/PopupNavbar";
 import { useState } from "react";
-import { classNames } from "shared/lib/classNames/ClassNames";
-import GlobalIcon from "shared/assets/icons/GlobalIcon.svg";
+import { classNames } from "shared/utils/classNames/ClassNames";
+import GlobalIcon from "shared/assets/img/GlobalIcon.svg";
 
 interface NavbarProps {
   className?: string;

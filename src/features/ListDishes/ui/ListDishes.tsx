@@ -1,6 +1,5 @@
 import React from "react"
 import cls from "./ListDishes.module.scss"
-import { classNames } from "shared/lib/classNames/ClassNames"
 import { getCardValue } from "../model/selectors/GetCardValue/GetCardValue";
 import { useSelector } from "react-redux";
 import { CardDish } from "entities/CardDish";

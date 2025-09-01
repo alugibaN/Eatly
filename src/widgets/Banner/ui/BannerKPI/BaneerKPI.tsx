@@ -1,9 +1,9 @@
 import cls from "./BannerKPI.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
-import VectorRightTop from "../../../../shared/assets/icons/VectorRightTop.svg";
-import VectorRightBottom from "../../../../shared/assets/icons/VectorRightBottom.svg";
-import VectorLeftTop from "../../../../shared/assets/icons/VectorLeftTop.svg";
-import VectorLeftBottom from "../../../../shared/assets/icons/VectorLeftBottom.svg";
+import { classNames } from "shared/utils/classNames/ClassNames";
+import VectorRightTop from "shared/assets/img/VectorRightTop.svg";
+import VectorRightBottom from "shared/assets/img/VectorRightBottom.svg";
+import VectorLeftTop from "shared/assets/img/VectorLeftTop.svg";
+import VectorLeftBottom from "shared/assets/img/VectorLeftBottom.svg";
 import { useTranslation } from "react-i18next";
 
 interface BannerKPIProps {

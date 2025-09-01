@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
 import cls from "./BannerApp.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
-import Mobail from "shared/assets/icons/Mobile.png";
+import { classNames } from "shared/utils/classNames/ClassNames";
+import Mobail from "shared/assets/img/Mobile.png";
 import AppLink, { AppLinkSize, AppLinkType } from "shared/ui/appLink/AppLink";
-import Arrow from "shared/assets/icons/arrow-right.svg";
-import Vector from "shared/assets/icons/VectorApp.svg";
-import useSizeWindow from "shared/lib/hooks/useSizeWindow/useSizeWindow";
+import Arrow from "shared/assets/img/arrow-right.svg";
+import Vector from "shared/assets/img/VectorApp.svg";
+import useSizeWindow from "shared/utils/hooks/useSizeWindow/useSizeWindow";
 
 interface BannerAppProps {
   className?: string;

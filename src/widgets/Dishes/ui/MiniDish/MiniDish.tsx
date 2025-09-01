@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import cls from "./MiniDish.module.scss";
-import { classNames } from "shared/lib/classNames/ClassNames";
-import Food from "shared/assets/icons/Food.png";
+import { classNames } from "shared/utils/classNames/ClassNames";
 
 
 type TDish = {
