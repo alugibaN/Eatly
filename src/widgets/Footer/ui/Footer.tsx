@@ -1,11 +1,8 @@
 import cls from "./Footer.module.scss";
 import { classNames } from "shared/utils/classNames/ClassNames";
-import Logo from "shared/assets/img/logo.svg";
-import AppLink, { AppLinkType } from "shared/ui/appLink/AppLink";
-import Insta from "shared/assets/img/insta.svg";
-import LinkedIn from "shared/assets/img/linkedin.svg";
-import Facebook from "shared/assets/img/feicbuk.svg";
-import Tviter from "shared/assets/img/tviter.svg";
+import AppLink, { AppLinkSize, AppLinkType } from "shared/ui/appLink/AppLink";
+import SocialMediaIcons from "shared/assets/icons/SocialMediaIcons";
+import { UiIcons } from "shared/assets/icons/UIIcons";
 
 interface FooterProps {
   className?: string;
@@ -16,7 +13,14 @@ const Footer = (props: FooterProps) => {
   return (
     <footer className={classNames(cls.footer, {}, [className])}>
       <div className={cls.footer__links}>
-        <Logo className={cls.footer__link_logo} />
+        <AppLink
+          to={"/"}
+          type={AppLinkType.SECONDARY}
+          size={AppLinkSize.SMALL}
+          className={cls.footer__link_logo}
+        >
+          <UiIcons.logo/>
+        </AppLink>
         <AppLink
           className={cls.footer__link_blog}
           type={AppLinkType.SECONDARY}
@@ -48,17 +52,16 @@ const Footer = (props: FooterProps) => {
       </div>
       <div className={cls.footer__social}>
         <a href="/" className={cls.footer__social_link}>
-          {" "}
-          <Insta className={cls.footer__icons} />{" "}
+          <SocialMediaIcons.insstagram type={"secondary"} />
         </a>
         <a href="/" className={cls.footer__social_link}>
-          <LinkedIn className={cls.footer__icons} />
+          <SocialMediaIcons.linkedIn type={"secondary"} />
         </a>
         <a href="/" className={cls.footer__social_link}>
-          <Facebook className={cls.footer__icons} />
+          <SocialMediaIcons.facebook type={"secondary"} />
         </a>
         <a href="/" className={cls.footer__social_link}>
-          <Tviter className={cls.footer__icons} />
+          <SocialMediaIcons.twiter type={"primary"} />
         </a>
       </div>
       <span className={cls.eatly}>© 2023 EATLY All Rights Reserved.</span>

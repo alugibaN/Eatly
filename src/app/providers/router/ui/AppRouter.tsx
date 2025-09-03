@@ -1,11 +1,10 @@
 import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import { routeConfig } from "shared/config/routeConfig/routeConfig";
-import React from "react";
 import { PageLoader } from "widgets/PageLoader/index";
 import { AuthRouteConfig } from "shared/config/routeConfig/authRouteConfig";
 import Footer from "widgets/Footer/ui/Footer";
-import { Navbar } from "widgets/navbar";
+import { Navbar } from "widgets/Navbar";
 import { ProfileRouteConfig } from "shared/config/routeConfig/profileRouteConfig";
 import ProfileLayot from "widgets/RouteLayout/ProfileLayout/ProfileLayot";
 

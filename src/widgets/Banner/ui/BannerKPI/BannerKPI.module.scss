@@ -39,7 +39,7 @@
 }
 .banner__vectore_left_bottom {
   position: absolute;
-  left:-10px; bottom: 0
+  left:-40px; bottom: 0
 };
 .banner__vectore__left_top{
   position: absolute;
@@ -53,7 +53,7 @@
 };
 .banner__vectore_right_bottom{
   position: absolute;
-  right: 10px;
+  right: 20px;
   height: 300px
 };
 
@@ -94,7 +94,7 @@
   };
   .banner__vectore_right_bottom{
     position: absolute;
-    right: -40px;
+    right: -50px;
     bottom: -40px;
     transform:rotateZ(0.04turn);
   };

@@ -1,4 +1,3 @@
-import React from "react";
 import cls from "./PostHEader.module.scss";
 import { classNames } from "shared/utils/classNames/ClassNames";
 import MiniAvatar from "shared/assets/img/MiniAvatar.png";

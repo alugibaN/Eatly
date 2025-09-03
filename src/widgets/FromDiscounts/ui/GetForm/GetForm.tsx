@@ -1,4 +1,3 @@
-import React from "react";
 import cls from "./GetForm.module.scss";
 import { classNames } from "shared/utils/classNames/ClassNames";
 import Button, {ButtonType} from "shared/ui/button/Button";

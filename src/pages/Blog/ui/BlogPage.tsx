@@ -1,4 +1,3 @@
-import React from "react";
 import cls from "./BlogPage.module.scss";
 import { classNames } from "shared/utils/classNames/ClassNames";
 import FromDiscounts from "widgets/FromDiscounts/ui/FromDiscounts";

@@ -1,4 +1,3 @@
-import React from "react";
 import cls from "./ListRestaurant.module.scss";
 import { useSelector } from "react-redux";
 import { getRestaurantValue } from "../model/selectors/getRestaurant/getRestaurantValue";
@@ -8,7 +7,6 @@ interface ListRestaurantProps {
 }
 
 const ListRestaurant = (props: ListRestaurantProps) => {
-  const { className } = props;
   const restaurants = useSelector(getRestaurantValue);
 
   return (

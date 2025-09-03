@@ -1,8 +1,7 @@
-import { AboutPage } from "pages/aboutPage/index";
-import { HomePage } from "pages/homePage/index";
+import { AboutPage } from "pages/AboutPage/index";
+import { HomePage } from "pages/HomePage/index";
 import { RouteProps } from "react-router-dom";
-import React from "react";
-import { NotFound } from "pages/notFound/NotFound";
+import { NotFound } from "pages/NotFound/NotFound";
 import UiKit from "pages/UiKit/ui/UiKit";
 import MenuPage from "pages/MenuPage/MenuPage";
 import PricingPage from "pages/PrcingPage/PricingPage";

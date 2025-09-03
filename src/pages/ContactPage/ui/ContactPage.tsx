@@ -1,4 +1,3 @@
-import React from "react";
 import cls from "./ContactPage.module.scss";
 import { classNames } from "shared/utils/classNames/ClassNames";
 import Mobail from "shared/assets/img/Mobile.png";

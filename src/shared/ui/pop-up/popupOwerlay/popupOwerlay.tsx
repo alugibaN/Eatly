@@ -1,4 +1,3 @@
-import React from "react"
 import cls from "./popupOwerlay.module.scss"
 import { classNames } from "shared/utils/classNames/ClassNames"
 

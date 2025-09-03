@@ -1,4 +1,3 @@
-import React from "react";
 import cls from "./ArticlePage.module.scss";
 import { classNames } from "shared/utils/classNames/ClassNames";
 import Img from "shared/assets/img/Pic.jpg";

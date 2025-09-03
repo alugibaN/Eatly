@@ -1,6 +1,3 @@
-import React from "react";
-import cls from "./MenuPage.module.scss";
-import { classNames } from "shared/utils/classNames/ClassNames";
 import MenuHead from "widgets/MenuHead/ui/MenuHead";
 import TopRestaurants from "widgets/Restaurants/ui/TopRestaurants/TopRestaurants";
 import DishesTop from "widgets/Dishes/ui/DishesTop/DishesTop";

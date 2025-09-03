@@ -1,4 +1,3 @@
-import React from "react"
 import cls from "./PageError.module.scss"
 import { classNames } from "shared/utils/classNames/ClassNames"
 import { useTranslation } from "react-i18next";

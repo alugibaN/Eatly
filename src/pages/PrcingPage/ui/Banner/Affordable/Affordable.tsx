@@ -1,8 +1,6 @@
-import React from "react";
+import { UiIcons } from "shared/assets/icons/UIIcons";
 import cls from "./Affordable.module.scss";
 import { classNames } from "shared/utils/classNames/ClassNames";
-import Check from "shared/assets/img/Check.svg";
-import MarkCross from "shared/assets/img/MarkCross.svg";
 
 interface AffordableProps {
   className?: string;
@@ -52,50 +50,50 @@ const Affordable = (props: AffordableProps) => {
         <h3 className={cls.affordable__advantage_title}>Core features</h3>
         <li className={cls.affordable__advantage_item}>
           <h4 className={cls.affordable__advantage_item_title}>Support 24/7</h4>
-          <Check className={cls.affordable__advantage_item_basic} />
-          <Check className={cls.affordable__advantage_item_premium} />
+          <UiIcons.right className={cls.affordable__advantage_item_basic} />
+          <UiIcons.right className={cls.affordable__advantage_item_premium} />
         </li>
         <li className={cls.affordable__advantage_item}>
           <h4 className={cls.affordable__advantage_item_title}>
             Fast Delivery
           </h4>
-          <Check className={cls.affordable__advantage_item_basic} />
-          <Check className={cls.affordable__advantage_item_premium} />
+          <UiIcons.right className={cls.affordable__advantage_item_basic} />
+          <UiIcons.right className={cls.affordable__advantage_item_premium} />
         </li>
         <li className={cls.affordable__advantage_item}>
           <h4 className={cls.affordable__advantage_item_title}>
             20% Off Food Deals
           </h4>
-          <Check className={cls.affordable__advantage_item_basic} />
-          <Check className={cls.affordable__advantage_item_premium} />
+          <UiIcons.right className={cls.affordable__advantage_item_basic} />
+          <UiIcons.right className={cls.affordable__advantage_item_premium} />
         </li>
         <li className={cls.affordable__advantage_item}>
           <h4 className={cls.affordable__advantage_item_title}>
             Transaction History
           </h4>
-          <Check className={cls.affordable__advantage_item_basic} />
-          <Check className={cls.affordable__advantage_item_premium} />
+          <UiIcons.right className={cls.affordable__advantage_item_basic} />
+          <UiIcons.right className={cls.affordable__advantage_item_premium} />
         </li>
         <li className={cls.affordable__advantage_item}>
           <h4 className={cls.affordable__advantage_item_title}>
             Weekend Deals
           </h4>
-          <Check className={cls.affordable__advantage_item_basic} />
-          <MarkCross className={cls.affordable__advantage_item_premium} />
+          <UiIcons.right className={cls.affordable__advantage_item_basic} />
+          <UiIcons.notRight className={cls.affordable__advantage_item_premium} />
         </li>
         <li className={cls.affordable__advantage_item}>
           <h4 className={cls.affordable__advantage_item_title}>
             Dashboard Access
           </h4>
-          <Check className={cls.affordable__advantage_item_basic} />
-          <MarkCross className={cls.affordable__advantage_item_premium} />
+          <UiIcons.right className={cls.affordable__advantage_item_basic} />
+          <UiIcons.notRight className={cls.affordable__advantage_item_premium} />
         </li>
         <li className={cls.affordable__advantage_item}>
           <h4 className={cls.affordable__advantage_item_title}>
             Premium Group Access
           </h4>
-          <Check className={cls.affordable__advantage_item_basic} />
-          <MarkCross className={cls.affordable__advantage_item_premium} />
+          <UiIcons.right className={cls.affordable__advantage_item_basic} />
+          <UiIcons.notRight className={cls.affordable__advantage_item_premium} />
         </li>
       </ul>
     </section>

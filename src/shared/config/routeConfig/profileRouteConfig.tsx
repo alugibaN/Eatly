@@ -1,5 +1,4 @@
 import DashboardPage from "pages/DashboardPage/DashboardPage";
-import React from "react";
 import { RouteProps } from "react-router-dom";
 
  enum ProfileRoutes {

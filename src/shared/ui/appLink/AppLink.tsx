@@ -1,4 +1,3 @@
-import React from "react";
 import { classNames } from "shared/utils/classNames/ClassNames";
 import cls from "./AppLink.module.scss";
 import { LinkProps, NavLink } from "react-router-dom";

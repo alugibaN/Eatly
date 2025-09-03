@@ -3,9 +3,7 @@ import cls from "./BannerApp.module.scss";
 import { classNames } from "shared/utils/classNames/ClassNames";
 import Mobail from "shared/assets/img/Mobile.png";
 import AppLink, { AppLinkSize, AppLinkType } from "shared/ui/appLink/AppLink";
-import Arrow from "shared/assets/img/arrow-right.svg";
-import Vector from "shared/assets/img/VectorApp.svg";
-import useSizeWindow from "shared/utils/hooks/useSizeWindow/useSizeWindow";
+import { UiIcons } from "shared/assets/icons/UIIcons";
 
 interface BannerAppProps {
   className?: string;
@@ -14,7 +12,6 @@ interface BannerAppProps {
 const BannerApp = (props: BannerAppProps) => {
   const { className } = props;
   const { t } = useTranslation();
-  const { windowWidth } = useSizeWindow();
 
   return (
     <div className={classNames(cls.bunner, {}, [className])}>
@@ -34,9 +31,9 @@ const BannerApp = (props: BannerAppProps) => {
           to={"/"}
         >
           {t("Загрузить")}
-          <Arrow className={cls.bunner__text_button_arrow} />
+          <UiIcons.rightArrow type={"secondary"} /> 
         </AppLink>
-        <Vector className={cls.bunner__vectore} />
+        <UiIcons.curvedArrow type={"primary"} className={cls.bunner__vectore} />
       </ul>
     </div>
   );

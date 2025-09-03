@@ -1,7 +1,6 @@
 import AuthPage from "pages/Auth/AuthPage/ui/AuthPage";
 import ForgotPasswordPage from "pages/Auth/ForgotPasswordPage/ui/ForgotPasswordPage";
 import LoginPage from "pages/Auth/LoginPage/ui/LoginPage";
-import React from "react";
 import { RouteProps } from "react-router-dom";
 
  enum AuthRoutes {

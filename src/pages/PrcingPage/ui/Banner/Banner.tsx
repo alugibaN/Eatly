@@ -1,4 +1,3 @@
-import React from "react";
 import cls from "./Banner.module.scss";
 import { classNames } from "shared/utils/classNames/ClassNames";
 import Pricing from "shared/assets/img/Pricing.jpg";

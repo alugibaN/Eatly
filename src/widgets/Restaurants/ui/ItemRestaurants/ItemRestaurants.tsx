@@ -1,8 +1,6 @@
-import React from "react";
 import cls from "./ItemRestaurants.module.scss";
 import Star from "shared/assets/icons/Star.svg";
 import Bookmark from "shared/assets/icons/Bookmark.svg";
-import { useTranslation } from "react-i18next";
 
 type TRestaurant = {
   img: string;

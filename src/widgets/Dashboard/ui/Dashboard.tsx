@@ -4,7 +4,7 @@ import Money from "shared/assets/img/money.svg";
 import Wallelt from "shared/assets/img/wallet.svg";
 import MiniDish from "widgets/Dishes/ui/MiniDish/MiniDish";
 import { useState } from "react";
-import Vector from "shared/assets/img/VectorApp.svg";
+import { UiIcons } from "shared/assets/icons/UIIcons";
 
 interface DashboardProps {
   className?: string;
@@ -33,7 +33,6 @@ let obj = [
 
 const Dashboard = (props: DashboardProps) => {
   const { className } = props;
-  let [select, setSelect] = useState("");
   let [cost, setCost] = useState({
     expense: "4780.62",
     progresExpense: "95.61%",
@@ -92,7 +91,7 @@ const Dashboard = (props: DashboardProps) => {
             {/* <MiniDish key={index} item={el} /> */}
           {/* ))} */}
         </ul>
-        <Vector className={cls.vectore}/>
+        <UiIcons.curvedArrow type={"primary"} className={cls.vectore}/>
       </div>
       <div className={cls.dashboard__purchases}>
         <div className={cls.purchases}>
@@ -111,7 +110,7 @@ const Dashboard = (props: DashboardProps) => {
         <ul className={cls.purchases_spisok}>
           <li className={cls.purchases__item}>
             <div className={`${cls.purchases__wallet} ${cls.purchases__icon}`}>
-              <Wallelt />
+              <UiIcons.wallet />
             </div>
             <div className={cls.purchases_name}>
               <p className={cls.purchases__item_title}>Расход</p>
@@ -130,7 +129,7 @@ const Dashboard = (props: DashboardProps) => {
 
           <li className={cls.purchases__item}>
             <div className={`${cls.purchases__money} ${cls.purchases__icon}`}>
-              <Money />
+              <UiIcons.money />
             </div>
             <div className={cls.purchases__name}>
               <p className={cls.purchases__item_title}>Использование Vocher </p>

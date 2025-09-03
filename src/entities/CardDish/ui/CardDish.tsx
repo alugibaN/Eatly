@@ -1,10 +1,7 @@
-import React from "react";
 import cls from "./CardDish.module.scss";
 import Heart from "shared/assets/img/Heart.svg";
 import Star from "shared/assets/img/Star.svg";
 import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
-import { getCardValue } from "../model/selectors/getCardValue/GetCardValue";
 import { DishState } from "../model/types/CardDishShema";
 
 

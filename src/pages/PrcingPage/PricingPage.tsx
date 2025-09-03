@@ -1,4 +1,3 @@
-import React from "react"
 import cls from "./PricingPage.module.scss"
 import { classNames } from "shared/utils/classNames/ClassNames"
 import Banner from "./ui/Banner/Banner";

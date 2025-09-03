@@ -4,7 +4,6 @@ import Trustpilot from "../../../shared/assets/img/trust-reviews.png";
 import { useTranslation } from "react-i18next";
 import AppLink, { AppLinkSize, AppLinkType } from "shared/ui/appLink/AppLink";
 import BannerFood from "shared/assets/img/BannerFood.png";
-import { useState } from "react";
 import useSizeWindow from "shared/utils/hooks/useSizeWindow/useSizeWindow";
 
 interface BannerProps {

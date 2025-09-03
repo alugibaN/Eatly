@@ -1,4 +1,3 @@
-import React from "react"
 import cls from "./Discounts.module.scss"
 import { classNames } from "shared/utils/classNames/ClassNames"
 

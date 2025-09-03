@@ -1,0 +1,75 @@
+.navbar {
+  width: 100%;
+  font-weight: 700;
+  display: grid;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 20px;
+  z-index: 100;
+}
+
+.navbar__container {
+  height: var(--navbar-height);
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eeeeee;
+  border-radius: 30px;
+  max-width: 1280px;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto 1fr auto;
+  grid-template-areas: "logo links null auth";
+  margin: auto;
+  padding: 0 15px;
+  position: sticky;
+  margin-bottom: 20px;
+}
+
+.navbar__logo {
+  grid-area: logo;
+  margin-right: 20px;
+}
+.navbar__links {
+  grid-area: links;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar__auth {
+  grid-area: auth;
+  display: flex;
+}
+
+.navbar__menu {
+  grid-area: auth;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  opacity: 0.8;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: background-color 0.6s;
+}
+
+.navbar__menu.open {
+  background-color: #f0eeff;
+  transition: background-color 0.6s;
+}
+
+.navbar__menu_icon {
+  height: 24px;
+  width: 24px;
+}
+
+@media screen and (max-width: 1320px) {
+  .navbar {
+    width: 96%;
+  }
+}
